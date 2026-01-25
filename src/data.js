@@ -10,7 +10,7 @@
 //         subCategory: "Pre-KG",
 //         price: 120,
 //         oldPrice: 150,
-//         image: "/src/assets/Pre.KG/English.png",
+//         image: "/ravi_publishers/assets/Pre.KG/English.png",
 //         rating: 5,
 //         features: ["Digital Content included", "CBSE Guidelines", "Age 3+"]
 //     },
@@ -22,7 +22,7 @@
 //         subCategory: "Pre-KG",
 //         price: 100,
 //         oldPrice: 130,
-//         image: "/src/assets/Pre.KG/Rhymes.png",
+//         image: "/ravi_publishers/assets/Pre.KG/Rhymes.png",
 //         rating: 5,
 //         features: ["Audio Content", "Colorful Illustrations"]
 //     },
@@ -34,7 +34,7 @@
 //         subCategory: "Pre-KG",
 //         price: 210,
 //         oldPrice: 260,
-//         image: "/src/assets/Pre.KG/Semester Course Book-1.png",
+//         image: "/ravi_publishers/assets/Pre.KG/Semester Course Book-1.png",
 //         rating: 5,
 //         features: ["Semester Pattern", "All-in-One"]
 //     },
@@ -46,7 +46,7 @@
 //         subCategory: "Pre-KG",
 //         price: 150,
 //         oldPrice: 190,
-//         image: "/src/assets/Pre.KG/Semester Workbook-1.png",
+//         image: "/ravi_publishers/assets/Pre.KG/Semester Workbook-1.png",
 //         rating: 5,
 //         features: ["Activity Based", "Writing Practice"]
 //     },
@@ -60,7 +60,7 @@
 //         subCategory: "Jr.KG",
 //         price: 180,
 //         oldPrice: 220,
-//         image: "/src/assets/Jr.KG/English.png",
+//         image: "/ravi_publishers/assets/Jr.KG/English.png",
 //         rating: 5,
 //         features: ["Phonics based", "Writing prep"]
 //     },
@@ -72,7 +72,7 @@
 //         subCategory: "Jr.KG",
 //         price: 180,
 //         oldPrice: 220,
-//         image: "/src/assets/Jr.KG/Maths.png",
+//         image: "/ravi_publishers/assets/Jr.KG/Maths.png",
 //         rating: 5,
 //         features: ["Number recognition", "Coloring activities"]
 //     },
@@ -84,7 +84,7 @@
 //         subCategory: "Jr.KG",
 //         price: 150,
 //         oldPrice: 190,
-//         image: "/src/assets/Jr.KG/EVS.png",
+//         image: "/ravi_publishers/assets/Jr.KG/EVS.png",
 //         rating: 5,
 //         features: ["Nature awareness", "Interactive themes"]
 //     },
@@ -98,7 +98,7 @@
 //         subCategory: "Sr.KG",
 //         price: 225,
 //         oldPrice: 280,
-//         image: "/src/assets/Sr.KG/English.png",
+//         image: "/ravi_publishers/assets/Sr.KG/English.png",
 //         rating: 5,
 //         features: ["Sentence building", "Vocabulary"]
 //     },
@@ -110,7 +110,7 @@
 //         subCategory: "Sr.KG",
 //         price: 170,
 //         oldPrice: 210,
-//         image: "/src/assets/Sr.KG/Hindi Reader.png",
+//         image: "/ravi_publishers/assets/Sr.KG/Hindi Reader.png",
 //         rating: 5,
 //         features: ["Varnamala", "Pronunciation"]
 //     },
@@ -122,7 +122,7 @@
 //         subCategory: "Sr.KG",
 //         price: 180,
 //         oldPrice: 230,
-//         image: "/src/assets/Sr.KG/English Grammar.png",
+//         image: "/ravi_publishers/assets/Sr.KG/English Grammar.png",
 //         rating: 5,
 //         features: ["Grammar foundations"]
 //     },
@@ -136,7 +136,7 @@
 //         subCategory: "1st Class",
 //         price: 250,
 //         oldPrice: 310,
-//         image: "/src/assets/1st Class/English.png",
+//         image: "/ravi_publishers/assets/1st Class/English.png",
 //         rating: 5,
 //         features: ["Story based learning", "Comprehension"]
 //     },
@@ -148,7 +148,7 @@
 //         subCategory: "1st Class",
 //         price: 250,
 //         oldPrice: 310,
-//         image: "/src/assets/1st Class/Maths-1.png",
+//         image: "/ravi_publishers/assets/1st Class/Maths-1.png",
 //         rating: 5,
 //         features: ["Mental maths", "Problem solving"]
 //     },
@@ -160,7 +160,7 @@
 //         subCategory: "1st Class",
 //         price: 240,
 //         oldPrice: 300,
-//         image: "/src/assets/1st Class/EVS.png",
+//         image: "/ravi_publishers/assets/1st Class/EVS.png",
 //         rating: 5,
 //         features: ["Project work", "Eco-friendly values"]
 //     },
@@ -174,7 +174,7 @@
 //         subCategory: "3rd Class",
 //         price: 275,
 //         oldPrice: 350,
-//         image: "/src/assets/3rd Class/English.png",
+//         image: "/ravi_publishers/assets/3rd Class/English.png",
 //         rating: 5,
 //         features: ["Creative writing", "Literature"]
 //     },
@@ -186,7 +186,7 @@
 //         subCategory: "3rd Class",
 //         price: 410,
 //         oldPrice: 500,
-//         image: "/src/assets/3rd Class/EVS.png",
+//         image: "/ravi_publishers/assets/3rd Class/EVS.png",
 //         rating: 5,
 //         features: ["Advanced themes", "Activity labs"]
 //     },
@@ -199,7 +199,7 @@
 //         category: "Enlight Kits",
 //         price: 1065,
 //         oldPrice: 1300,
-//         image: "/src/assets/Pre.KG - KIT/Kit Box.png",
+//         image: "/ravi_publishers/assets/Pre.KG - KIT/Kit Box.png",
 //         rating: 5,
 //         features: ["Includes 48 Flash Cards", "Free Completion Certificate", "Number Book 1-20"]
 //     },
@@ -210,7 +210,7 @@
 //         category: "Enlight Kits",
 //         price: 1380,
 //         oldPrice: 1600,
-//         image: "/src/assets/Jr.KG - KIT/Kit Box.png",
+//         image: "/ravi_publishers/assets/Jr.KG - KIT/Kit Box.png",
 //         rating: 5,
 //         features: ["Includes 32 Flash Cards", "Alphabet Capital & Small", "Worksheet Books"]
 //     },
@@ -221,7 +221,7 @@
 //         category: "Enlight Kits",
 //         price: 1690,
 //         oldPrice: 2000,
-//         image: "/src/assets/Sr.KG - KIT/Kit Box.png",
+//         image: "/ravi_publishers/assets/Sr.KG - KIT/Kit Box.png",
 //         rating: 5,
 //         features: ["Hindi Reader-A included", "Number Book 1-1000", "English Practice"]
 //     },
@@ -234,7 +234,7 @@
 //         category: "Flash Cards",
 //         price: 240,
 //         oldPrice: 300,
-//         image: "/src/assets/Pre.KG/Flash Cards.png",
+//         image: "/ravi_publishers/assets/Pre.KG/Flash Cards.png",
 //         rating: 5,
 //         features: ["48 Cards", "Large Size", "Durable Material"]
 //     },
@@ -245,7 +245,7 @@
 //         category: "Flash Cards",
 //         price: 160,
 //         oldPrice: 220,
-//         image: "/src/assets/Jr.KG/Flash Cards.png",
+//         image: "/ravi_publishers/assets/Jr.KG/Flash Cards.png",
 //         rating: 5,
 //         features: ["32 Cards", "Concept focused"]
 //     },
@@ -259,7 +259,7 @@
 //         subCategory: "Kannada",
 //         price: 120,
 //         oldPrice: 150,
-//         image: "/src/assets/Kannada/LKG Vachaka.png",
+//         image: "/ravi_publishers/assets/Kannada/LKG Vachaka.png",
 //         rating: 5,
 //         features: ["Akshara Mala", "Writing Space"]
 //     },
@@ -273,7 +273,7 @@
 //         subCategory: "Sr.KG",
 //         price: 160,
 //         oldPrice: 200,
-//         image: "/src/assets/Sr.KG/English Workbook.png",
+//         image: "/ravi_publishers/assets/Sr.KG/English Workbook.png",
 //         rating: 5,
 //         features: ["Independent Practice"]
 //     },
@@ -285,7 +285,7 @@
 //         subCategory: "Sr.KG",
 //         price: 160,
 //         oldPrice: 200,
-//         image: "/src/assets/Sr.KG/Hindi Workbook.png",
+//         image: "/ravi_publishers/assets/Sr.KG/Hindi Workbook.png",
 //         rating: 5,
 //         features: ["Varnamala Writing"]
 //     },
@@ -299,7 +299,7 @@
 //         subCategory: "1st Class",
 //         price: 375,
 //         oldPrice: 450,
-//         image: "/src/assets/1st Class/Term Coursebook-1.png",
+//         image: "/ravi_publishers/assets/1st Class/Term Coursebook-1.png",
 //         rating: 5,
 //         features: ["Term 1 Ready", "CBSE Mapping"]
 //     },
@@ -311,7 +311,7 @@
 //         subCategory: "2nd Class",
 //         price: 425,
 //         oldPrice: 500,
-//         image: "/src/assets/2nd Class/English-2.png",
+//         image: "/ravi_publishers/assets/2nd Class/English-2.png",
 //         rating: 5,
 //         features: ["Term 1 Ready", "Activity Based"]
 //     },
@@ -323,7 +323,7 @@
 //         subCategory: "1st Class",
 //         price: 525,
 //         oldPrice: 600,
-//         image: "/src/assets/1st Class/Semester Coursebook-1.png",
+//         image: "/ravi_publishers/assets/1st Class/Semester Coursebook-1.png",
 //         rating: 5,
 //         features: ["Semester Pattern", "Composite Book"]
 //     }
@@ -349,7 +349,7 @@ export const booksData = [
         subCategory: "Pre-KG",
         price: 120,
         oldPrice: 150,
-        image: "/src/assets/Pre.KG/English.png",
+        image: "/ravi_publishers/assets/Pre.KG/English.png",
         rating: 5,
         features: ["Digital Content included", "CBSE Guidelines", "Age 3+"]
     },
@@ -361,7 +361,7 @@ export const booksData = [
         subCategory: "Pre-KG",
         price: 100,
         oldPrice: 130,
-        image: "/src/assets/Pre.KG/Rhymes.png",
+        image: "/ravi_publishers/assets/Pre.KG/Rhymes.png",
         rating: 5,
         features: ["Audio Content", "Colorful Illustrations"]
     },
@@ -373,7 +373,7 @@ export const booksData = [
         subCategory: "Pre-KG",
         price: 180,
         oldPrice: 220,
-        image: "/src/assets/Pre.KG/Maths.png",
+        image: "/ravi_publishers/assets/Pre.KG/Maths.png",
         rating: 5,
         features: ["Number recognition 1-20", "Counting activities", "Basic shapes"]
     },
@@ -385,7 +385,7 @@ export const booksData = [
         subCategory: "Pre-KG",
         price: 150,
         oldPrice: 190,
-        image: "/src/assets/Pre.KG/EVS.png",
+        image: "/ravi_publishers/assets/Pre.KG/EVS.png",
         rating: 5,
         features: ["Nature awareness", "Basic concepts", "Interactive learning"]
     },
@@ -397,7 +397,7 @@ export const booksData = [
         subCategory: "Pre-KG",
         price: 210,
         oldPrice: 260,
-        image: "/src/assets/Pre.KG/Semester Course Book-1.png",
+        image: "/ravi_publishers/assets/Pre.KG/Semester Course Book-1.png",
         rating: 5,
         features: ["Semester Pattern", "All-in-One", "Includes English, Numbers, EVS, Rhymes"]
     },
@@ -409,7 +409,7 @@ export const booksData = [
         subCategory: "Pre-KG",
         price: 210,
         oldPrice: 260,
-        image: "/src/assets/Pre.KG/Semester Course Book-2.png",
+        image: "/ravi_publishers/assets/Pre.KG/Semester Course Book-2.png",
         rating: 5,
         features: ["Semester Pattern", "All-in-One", "Continuing curriculum"]
     },
@@ -421,7 +421,7 @@ export const booksData = [
         subCategory: "Pre-KG",
         price: 150,
         oldPrice: 190,
-        image: "/src/assets/Pre.KG/Semester Workbook-1.png",
+        image: "/ravi_publishers/assets/Pre.KG/Semester Workbook-1.png",
         rating: 5,
         features: ["Activity Based", "Writing Practice", "Skill development"]
     },
@@ -433,7 +433,7 @@ export const booksData = [
         subCategory: "Pre-KG",
         price: 150,
         oldPrice: 190,
-        image: "/src/assets/Pre.KG/Semester Workbook-2.png",
+        image: "/ravi_publishers/assets/Pre.KG/Semester Workbook-2.png",
         rating: 5,
         features: ["Activity Based", "Advanced exercises", "Revision"]
     },
@@ -445,7 +445,7 @@ export const booksData = [
         subCategory: "Pre-KG",
         price: 150,
         oldPrice: 190,
-        image: "/src/assets/Pre.KG/Term Coursebook-1.png",
+        image: "/ravi_publishers/assets/Pre.KG/Term Coursebook-1.png",
         rating: 5,
         features: ["Term 1 Ready", "Age-appropriate content", "Basic concepts"]
     },
@@ -457,7 +457,7 @@ export const booksData = [
         subCategory: "Pre-KG",
         price: 150,
         oldPrice: 190,
-        image: "/src/assets/Pre.KG/Term Coursebook-2.png",
+        image: "/ravi_publishers/assets/Pre.KG/Term Coursebook-2.png",
         rating: 5,
         features: ["Term 2 Ready", "Progressive learning", "Skill building"]
     },
@@ -469,7 +469,7 @@ export const booksData = [
         subCategory: "Pre-KG",
         price: 150,
         oldPrice: 190,
-        image: "/src/assets/Pre.KG/Term Coursebook-3.png",
+        image: "/ravi_publishers/assets/Pre.KG/Term Coursebook-3.png",
         rating: 5,
         features: ["Term 3 Ready", "Advanced concepts", "Year-end review"]
     },
@@ -481,7 +481,7 @@ export const booksData = [
         subCategory: "Pre-KG",
         price: 150,
         oldPrice: 190,
-        image: "/src/assets/Pre.KG/Term Workbook-1.png",
+        image: "/ravi_publishers/assets/Pre.KG/Term Workbook-1.png",
         rating: 5,
         features: ["Term-specific exercises", "Practice worksheets", "Skill assessment"]
     },
@@ -493,7 +493,7 @@ export const booksData = [
         subCategory: "Pre-KG",
         price: 150,
         oldPrice: 190,
-        image: "/src/assets/Pre.KG/Term Workbook-2.png",
+        image: "/ravi_publishers/assets/Pre.KG/Term Workbook-2.png",
         rating: 5,
         features: ["Intermediate exercises", "Progress tracking", "Concept reinforcement"]
     },
@@ -505,7 +505,7 @@ export const booksData = [
         subCategory: "Pre-KG",
         price: 150,
         oldPrice: 190,
-        image: "/src/assets/Pre.KG/Term Workbook-3.png",
+        image: "/ravi_publishers/assets/Pre.KG/Term Workbook-3.png",
         rating: 5,
         features: ["Advanced practice", "Final assessment", "Year-round revision"]
     },
@@ -519,7 +519,7 @@ export const booksData = [
         subCategory: "Jr.KG",
         price: 180,
         oldPrice: 220,
-        image: "/src/assets/Jr.KG/English.png",
+        image: "/ravi_publishers/assets/Jr.KG/English.png",
         rating: 5,
         features: ["Phonics based", "Writing prep", "Vocabulary building"]
     },
@@ -531,7 +531,7 @@ export const booksData = [
         subCategory: "Jr.KG",
         price: 180,
         oldPrice: 220,
-        image: "/src/assets/Jr.KG/Maths.png",
+        image: "/ravi_publishers/assets/Jr.KG/Maths.png",
         rating: 5,
         features: ["Number recognition", "Coloring activities", "Basic operations"]
     },
@@ -543,7 +543,7 @@ export const booksData = [
         subCategory: "Jr.KG",
         price: 220,
         oldPrice: 270,
-        image: "/src/assets/Jr.KG/EVS.png",
+        image: "/ravi_publishers/assets/Jr.KG/EVS.png",
         rating: 5,
         features: ["Nature awareness", "Interactive themes", "Social studies basics"]
     },
@@ -555,7 +555,7 @@ export const booksData = [
         subCategory: "Jr.KG",
         price: 300,
         oldPrice: 370,
-        image: "/src/assets/Jr.KG/Semester Coursebook-1.png",
+        image: "/ravi_publishers/assets/Jr.KG/Semester Coursebook-1.png",
         rating: 5,
         features: ["All subjects combined", "Structured learning", "CBSE aligned"]
     },
@@ -567,7 +567,7 @@ export const booksData = [
         subCategory: "Jr.KG",
         price: 300,
         oldPrice: 370,
-        image: "/src/assets/Jr.KG/Semester Coursebook-2.png",
+        image: "/ravi_publishers/assets/Jr.KG/Semester Coursebook-2.png",
         rating: 5,
         features: ["Continuation of syllabus", "Advanced concepts", "Year-round coverage"]
     },
@@ -579,7 +579,7 @@ export const booksData = [
         subCategory: "Jr.KG",
         price: 150,
         oldPrice: 190,
-        image: "/src/assets/Jr.KG/Semester Workbook-1.png",
+        image: "/ravi_publishers/assets/Jr.KG/Semester Workbook-1.png",
         rating: 5,
         features: ["Practice exercises", "Skill development", "Concept reinforcement"]
     },
@@ -591,7 +591,7 @@ export const booksData = [
         subCategory: "Jr.KG",
         price: 150,
         oldPrice: 190,
-        image: "/src/assets/Jr.KG/Semester Workbook-2.png",
+        image: "/ravi_publishers/assets/Jr.KG/Semester Workbook-2.png",
         rating: 5,
         features: ["Advanced practice", "Progress tracking", "Final assessment"]
     },
@@ -603,7 +603,7 @@ export const booksData = [
         subCategory: "Jr.KG",
         price: 225,
         oldPrice: 280,
-        image: "/src/assets/Jr.KG/Term Coursebook-1.png",
+        image: "/ravi_publishers/assets/Jr.KG/Term Coursebook-1.png",
         rating: 5,
         features: ["Term 1 syllabus", "CBSE guidelines", "Interactive content"]
     },
@@ -615,7 +615,7 @@ export const booksData = [
         subCategory: "Jr.KG",
         price: 225,
         oldPrice: 280,
-        image: "/src/assets/Jr.KG/Term Coursebook-2.png",
+        image: "/ravi_publishers/assets/Jr.KG/Term Coursebook-2.png",
         rating: 5,
         features: ["Term 2 syllabus", "Progressive learning", "Skill enhancement"]
     },
@@ -627,7 +627,7 @@ export const booksData = [
         subCategory: "Jr.KG",
         price: 225,
         oldPrice: 280,
-        image: "/src/assets/Jr.KG/Term Coursebook-3.png",
+        image: "/ravi_publishers/assets/Jr.KG/Term Coursebook-3.png",
         rating: 5,
         features: ["Term 3 syllabus", "Advanced concepts", "Final term coverage"]
     },
@@ -639,7 +639,7 @@ export const booksData = [
         subCategory: "Jr.KG",
         price: 150,
         oldPrice: 190,
-        image: "/src/assets/Jr.KG/Term Workbook-1.png",
+        image: "/ravi_publishers/assets/Jr.KG/Term Workbook-1.png",
         rating: 5,
         features: ["Term 1 exercises", "Basic practice", "Foundation building"]
     },
@@ -651,7 +651,7 @@ export const booksData = [
         subCategory: "Jr.KG",
         price: 150,
         oldPrice: 190,
-        image: "/src/assets/Jr.KG/Term Workbook-2.png",
+        image: "/ravi_publishers/assets/Jr.KG/Term Workbook-2.png",
         rating: 5,
         features: ["Term 2 exercises", "Intermediate practice", "Concept application"]
     },
@@ -663,7 +663,7 @@ export const booksData = [
         subCategory: "Jr.KG",
         price: 150,
         oldPrice: 190,
-        image: "/src/assets/Jr.KG/Term Workbook-3.png",
+        image: "/ravi_publishers/assets/Jr.KG/Term Workbook-3.png",
         rating: 5,
         features: ["Term 3 exercises", "Advanced practice", "Final assessment"]
     },
@@ -677,7 +677,7 @@ export const booksData = [
         subCategory: "Sr.KG",
         price: 225,
         oldPrice: 280,
-        image: "/src/assets/Sr.KG/English.png",
+        image: "/ravi_publishers/assets/Sr.KG/English.png",
         rating: 5,
         features: ["Sentence building", "Vocabulary", "Reading comprehension"]
     },
@@ -689,7 +689,7 @@ export const booksData = [
         subCategory: "Sr.KG",
         price: 170,
         oldPrice: 210,
-        image: "/src/assets/Sr.KG/Hindi Reader.png",
+        image: "/ravi_publishers/assets/Sr.KG/Hindi Reader.png",
         rating: 5,
         features: ["Varnamala", "Pronunciation", "Basic words"]
     },
@@ -701,7 +701,7 @@ export const booksData = [
         subCategory: "Sr.KG",
         price: 250,
         oldPrice: 310,
-        image: "/src/assets/Sr.KG/Maths.png",
+        image: "/ravi_publishers/assets/Sr.KG/Maths.png",
         rating: 5,
         features: ["Numbers 1-100", "Basic operations", "Problem solving"]
     },
@@ -713,7 +713,7 @@ export const booksData = [
         subCategory: "Sr.KG",
         price: 240,
         oldPrice: 300,
-        image: "/src/assets/Sr.KG/EVS.png",
+        image: "/ravi_publishers/assets/Sr.KG/EVS.png",
         rating: 5,
         features: ["Detailed EVS concepts", "Project ideas", "Activity based"]
     },
@@ -725,7 +725,7 @@ export const booksData = [
         subCategory: "Sr.KG",
         price: 180,
         oldPrice: 230,
-        image: "/src/assets/Sr.KG/English Grammar.png",
+        image: "/ravi_publishers/assets/Sr.KG/English Grammar.png",
         rating: 5,
         features: ["Grammar foundations", "Parts of speech", "Basic rules"]
     },
@@ -737,7 +737,7 @@ export const booksData = [
         subCategory: "Sr.KG",
         price: 350,
         oldPrice: 430,
-        image: "/src/assets/Sr.KG/Semester Coursebook-1.png",
+        image: "/ravi_publishers/assets/Sr.KG/Semester Coursebook-1.png",
         rating: 5,
         features: ["All subjects included", "Primary prep", "Structured syllabus"]
     },
@@ -749,7 +749,7 @@ export const booksData = [
         subCategory: "Sr.KG",
         price: 350,
         oldPrice: 430,
-        image: "/src/assets/Sr.KG/Semester Coursebook-2.png",
+        image: "/ravi_publishers/assets/Sr.KG/Semester Coursebook-2.png",
         rating: 5,
         features: ["Continuation of syllabus", "Final term coverage", "Primary readiness"]
     },
@@ -761,7 +761,7 @@ export const booksData = [
         subCategory: "Sr.KG",
         price: 160,
         oldPrice: 200,
-        image: "/src/assets/Sr.KG/Semester Workbook-1.png",
+        image: "/ravi_publishers/assets/Sr.KG/Semester Workbook-1.png",
         rating: 5,
         features: ["Comprehensive exercises", "Skill development", "Concept practice"]
     },
@@ -773,7 +773,7 @@ export const booksData = [
         subCategory: "Sr.KG",
         price: 160,
         oldPrice: 200,
-        image: "/src/assets/Sr.KG/Semester Workbook-2.png",
+        image: "/ravi_publishers/assets/Sr.KG/Semester Workbook-2.png",
         rating: 5,
         features: ["Advanced exercises", "Final assessment", "Primary preparation"]
     },
@@ -785,7 +785,7 @@ export const booksData = [
         subCategory: "Sr.KG",
         price: 250,
         oldPrice: 310,
-        image: "/src/assets/Sr.KG/Term Coursebook-1.png",
+        image: "/ravi_publishers/assets/Sr.KG/Term Coursebook-1.png",
         rating: 5,
         features: ["Term 1 syllabus", "Detailed content", "Primary foundation"]
     },
@@ -797,7 +797,7 @@ export const booksData = [
         subCategory: "Sr.KG",
         price: 250,
         oldPrice: 310,
-        image: "/src/assets/Sr.KG/Term Coursebook-2.png",
+        image: "/ravi_publishers/assets/Sr.KG/Term Coursebook-2.png",
         rating: 5,
         features: ["Term 2 syllabus", "Intermediate concepts", "Skill building"]
     },
@@ -809,7 +809,7 @@ export const booksData = [
         subCategory: "Sr.KG",
         price: 250,
         oldPrice: 310,
-        image: "/src/assets/Sr.KG/Term Coursebook-3.png",
+        image: "/ravi_publishers/assets/Sr.KG/Term Coursebook-3.png",
         rating: 5,
         features: ["Term 3 syllabus", "Advanced content", "Final preparation"]
     },
@@ -821,7 +821,7 @@ export const booksData = [
         subCategory: "Sr.KG",
         price: 160,
         oldPrice: 200,
-        image: "/src/assets/Sr.KG/Term Workbook-1.png",
+        image: "/ravi_publishers/assets/Sr.KG/Term Workbook-1.png",
         rating: 5,
         features: ["Term 1 exercises", "Foundation practice", "Basic skill development"]
     },
@@ -833,7 +833,7 @@ export const booksData = [
         subCategory: "Sr.KG",
         price: 160,
         oldPrice: 200,
-        image: "/src/assets/Sr.KG/Term Workbook-2.png",
+        image: "/ravi_publishers/assets/Sr.KG/Term Workbook-2.png",
         rating: 5,
         features: ["Term 2 exercises", "Intermediate practice", "Concept application"]
     },
@@ -845,7 +845,7 @@ export const booksData = [
         subCategory: "Sr.KG",
         price: 160,
         oldPrice: 200,
-        image: "/src/assets/Sr.KG/Term Workbook-3.png",
+        image: "/ravi_publishers/assets/Sr.KG/Term Workbook-3.png",
         rating: 5,
         features: ["Term 3 exercises", "Advanced practice", "Final assessment"]
     },
@@ -859,7 +859,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 250,
         oldPrice: 310,
-        image: "/src/assets/1st Class/English.png",
+        image: "/ravi_publishers/assets/1st Class/English.png",
         rating: 5,
         features: ["Story based learning", "Comprehension", "Basic grammar"]
     },
@@ -871,7 +871,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 150,
         oldPrice: 190,
-        image: "/src/assets/1st Class/Hindi Reader.png",
+        image: "/ravi_publishers/assets/1st Class/Hindi Reader.png",
         rating: 5,
         features: ["Hindi basics", "Reading practice", "Vocabulary"]
     },
@@ -883,7 +883,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 300,
         oldPrice: 370,
-        image: "/src/assets/1st Class/Maths.png",
+        image: "/ravi_publishers/assets/1st Class/Maths.png",
         rating: 5,
         features: ["Mental maths", "Problem solving", "Basic geometry"]
     },
@@ -895,7 +895,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 300,
         oldPrice: 370,
-        image: "/src/assets/1st Class/EVS.png",
+        image: "/ravi_publishers/assets/1st Class/EVS.png",
         rating: 5,
         features: ["Project work", "Eco-friendly values", "Science basics"]
     },
@@ -907,7 +907,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 180,
         oldPrice: 230,
-        image: "/src/assets/1st Class/English Grammar.png",
+        image: "/ravi_publishers/assets/1st Class/English Grammar.png",
         rating: 5,
         features: ["Basic grammar rules", "Sentence formation", "Practice exercises"]
     },
@@ -919,7 +919,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 525,
         oldPrice: 600,
-        image: "/src/assets/1st Class/Semester Coursebook-1.png",
+        image: "/ravi_publishers/assets/1st Class/Semester Coursebook-1.png",
         rating: 5,
         features: ["Semester Pattern", "Composite Book", "All subjects"]
     },
@@ -931,7 +931,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 525,
         oldPrice: 600,
-        image: "/src/assets/1st Class/Semester Coursebook-2.png",
+        image: "/ravi_publishers/assets/1st Class/Semester Coursebook-2.png",
         rating: 5,
         features: ["Semester Pattern", "Advanced syllabus", "Year-end coverage"]
     },
@@ -943,7 +943,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 210,
         oldPrice: 260,
-        image: "/src/assets/1st Class/Semester Workbook-1.png",
+        image: "/ravi_publishers/assets/1st Class/Semester Workbook-1.png",
         rating: 5,
         features: ["Comprehensive exercises", "Subject-wise practice", "Skill assessment"]
     },
@@ -955,7 +955,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 210,
         oldPrice: 260,
-        image: "/src/assets/1st Class/Semester Workbook-2.png",
+        image: "/ravi_publishers/assets/1st Class/Semester Workbook-2.png",
         rating: 5,
         features: ["Advanced exercises", "Final assessment", "Revision practice"]
     },
@@ -967,7 +967,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 375,
         oldPrice: 450,
-        image: "/src/assets/1st Class/Term Coursebook-1.png",
+        image: "/ravi_publishers/assets/1st Class/Term Coursebook-1.png",
         rating: 5,
         features: ["Term 1 Ready", "CBSE Mapping", "Foundation building"]
     },
@@ -979,7 +979,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 375,
         oldPrice: 450,
-        image: "/src/assets/1st Class/Term Coursebook-2.png",
+        image: "/ravi_publishers/assets/1st Class/Term Coursebook-2.png",
         rating: 5,
         features: ["Term 2 syllabus", "Intermediate concepts", "Progress tracking"]
     },
@@ -991,7 +991,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 375,
         oldPrice: 450,
-        image: "/src/assets/1st Class/Term Coursebook-3.png",
+        image: "/ravi_publishers/assets/1st Class/Term Coursebook-3.png",
         rating: 5,
         features: ["Term 3 syllabus", "Advanced concepts", "Final preparation"]
     },
@@ -1003,7 +1003,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 145,
         oldPrice: 180,
-        image: "/src/assets/1st Class/Term Workbook-1.png",
+        image: "/ravi_publishers/assets/1st Class/Term Workbook-1.png",
         rating: 5,
         features: ["Term 1 exercises", "Basic practice", "Foundation skills"]
     },
@@ -1015,7 +1015,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 145,
         oldPrice: 180,
-        image: "/src/assets/1st Class/Term Workbook-2.png",
+        image: "/ravi_publishers/assets/1st Class/Term Workbook-2.png",
         rating: 5,
         features: ["Term 2 exercises", "Intermediate practice", "Concept application"]
     },
@@ -1027,7 +1027,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 145,
         oldPrice: 180,
-        image: "/src/assets/1st Class/Term Workbook-3.png",
+        image: "/ravi_publishers/assets/1st Class/Term Workbook-3.png",
         rating: 5,
         features: ["Term 3 exercises", "Advanced practice", "Final assessment"]
     },
@@ -1041,7 +1041,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 300,
         oldPrice: 370,
-        image: "/src/assets/2nd Class/English.png",
+        image: "/ravi_publishers/assets/2nd Class/English.png",
         rating: 5,
         features: ["Advanced reading", "Writing skills", "Comprehension"]
     },
@@ -1053,7 +1053,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 150,
         oldPrice: 190,
-        image: "/src/assets/2nd Class/Hindi Reader.png",
+        image: "/ravi_publishers/assets/2nd Class/Hindi Reader.png",
         rating: 5,
         features: ["Hindi reading", "Writing practice", "Vocabulary building"]
     },
@@ -1065,7 +1065,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 300,
         oldPrice: 370,
-        image: "/src/assets/2nd Class/Maths.png",
+        image: "/ravi_publishers/assets/2nd Class/Maths.png",
         rating: 5,
         features: ["Advanced arithmetic", "Problem solving", "Mental maths"]
     },
@@ -1077,7 +1077,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 410,
         oldPrice: 500,
-        image: "/src/assets/2nd Class/EVS.png",
+        image: "/ravi_publishers/assets/2nd Class/EVS.png",
         rating: 5,
         features: ["Detailed concepts", "Project work", "Science experiments"]
     },
@@ -1089,7 +1089,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 210,
         oldPrice: 260,
-        image: "/src/assets/2nd Class/English Grammar.png",
+        image: "/ravi_publishers/assets/2nd Class/English Grammar.png",
         rating: 5,
         features: ["Advanced grammar", "Sentence structure", "Practice exercises"]
     },
@@ -1101,7 +1101,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 575,
         oldPrice: 650,
-        image: "/src/assets/2nd Class/Semester Coursebook-1.png",
+        image: "/ravi_publishers/assets/2nd Class/Semester Coursebook-1.png",
         rating: 5,
         features: ["Comprehensive syllabus", "All subjects", "Structured learning"]
     },
@@ -1113,7 +1113,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 575,
         oldPrice: 650,
-        image: "/src/assets/2nd Class/Semester Coursebook-2.png",
+        image: "/ravi_publishers/assets/2nd Class/Semester Coursebook-2.png",
         rating: 5,
         features: ["Advanced syllabus", "Final term coverage", "Year-end preparation"]
     },
@@ -1125,7 +1125,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 240,
         oldPrice: 290,
-        image: "/src/assets/2nd Class/Semester Workbook-1.png",
+        image: "/ravi_publishers/assets/2nd Class/Semester Workbook-1.png",
         rating: 5,
         features: ["Comprehensive exercises", "Subject practice", "Skill development"]
     },
@@ -1137,7 +1137,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 240,
         oldPrice: 290,
-        image: "/src/assets/2nd Class/Semester Workbook-2.png",
+        image: "/ravi_publishers/assets/2nd Class/Semester Workbook-2.png",
         rating: 5,
         features: ["Advanced exercises", "Final assessment", "Revision practice"]
     },
@@ -1149,7 +1149,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 425,
         oldPrice: 500,
-        image: "/src/assets/2nd Class/Term Coursebook-1.png",
+        image: "/ravi_publishers/assets/2nd Class/Term Coursebook-1.png",
         rating: 5,
         features: ["Term 1 syllabus", "CBSE guidelines", "Interactive content"]
     },
@@ -1161,7 +1161,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 425,
         oldPrice: 500,
-        image: "/src/assets/2nd Class/Term Coursebook-2.png",
+        image: "/ravi_publishers/assets/2nd Class/Term Coursebook-2.png",
         rating: 5,
         features: ["Term 2 syllabus", "Progressive learning", "Skill enhancement"]
     },
@@ -1173,7 +1173,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 425,
         oldPrice: 500,
-        image: "/src/assets/2nd Class/Term Coursebook-3.png",
+        image: "/ravi_publishers/assets/2nd Class/Term Coursebook-3.png",
         rating: 5,
         features: ["Term 3 syllabus", "Advanced concepts", "Final term coverage"]
     },
@@ -1185,7 +1185,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 175,
         oldPrice: 220,
-        image: "/src/assets/2nd Class/Term Workbook-1.png",
+        image: "/ravi_publishers/assets/2nd Class/Term Workbook-1.png",
         rating: 5,
         features: ["Term 1 exercises", "Basic practice", "Foundation building"]
     },
@@ -1197,7 +1197,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 175,
         oldPrice: 220,
-        image: "/src/assets/2nd Class/Term Workbook-2.png",
+        image: "/ravi_publishers/assets/2nd Class/Term Workbook-2.png",
         rating: 5,
         features: ["Term 2 exercises", "Intermediate practice", "Concept application"]
     },
@@ -1209,7 +1209,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 175,
         oldPrice: 220,
-        image: "/src/assets/2nd Class/Term Workbook-3.png",
+        image: "/ravi_publishers/assets/2nd Class/Term Workbook-3.png",
         rating: 5,
         features: ["Term 3 exercises", "Advanced practice", "Final assessment"]
     },
@@ -1223,7 +1223,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 275,
         oldPrice: 350,
-        image: "/src/assets/3rd Class/English.png",
+        image: "/ravi_publishers/assets/3rd Class/English.png",
         rating: 5,
         features: ["Creative writing", "Literature", "Advanced comprehension"]
     },
@@ -1235,7 +1235,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 170,
         oldPrice: 210,
-        image: "/src/assets/3rd Class/Hindi Reader.png",
+        image: "/ravi_publishers/assets/3rd Class/Hindi Reader.png",
         rating: 5,
         features: ["Advanced Hindi", "Comprehension", "Writing skills"]
     },
@@ -1247,7 +1247,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 350,
         oldPrice: 430,
-        image: "/src/assets/3rd Class/Maths.png",
+        image: "/ravi_publishers/assets/3rd Class/Maths.png",
         rating: 5,
         features: ["Multiplication/Division", "Fractions", "Advanced problems"]
     },
@@ -1259,7 +1259,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 525,
         oldPrice: 600,
-        image: "/src/assets/3rd Class/EVS.png",
+        image: "/ravi_publishers/assets/3rd Class/EVS.png",
         rating: 5,
         features: ["Advanced themes", "Activity labs", "Scientific concepts"]
     },
@@ -1271,7 +1271,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 250,
         oldPrice: 310,
-        image: "/src/assets/3rd Class/English Grammar.png",
+        image: "/ravi_publishers/assets/3rd Class/English Grammar.png",
         rating: 5,
         features: ["Advanced grammar", "Tenses", "Parts of speech"]
     },
@@ -1283,7 +1283,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 625,
         oldPrice: 700,
-        image: "/src/assets/3rd Class/Semester Coursebook-1.png",
+        image: "/ravi_publishers/assets/3rd Class/Semester Coursebook-1.png",
         rating: 5,
         features: ["Comprehensive syllabus", "All subjects", "Advanced content"]
     },
@@ -1295,7 +1295,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 625,
         oldPrice: 700,
-        image: "/src/assets/3rd Class/Semester Coursebook-2.png",
+        image: "/ravi_publishers/assets/3rd Class/Semester Coursebook-2.png",
         rating: 5,
         features: ["Advanced syllabus", "Final term coverage", "Year-end preparation"]
     },
@@ -1307,7 +1307,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 260,
         oldPrice: 320,
-        image: "/src/assets/3rd Class/Semester Workbook-1.png",
+        image: "/ravi_publishers/assets/3rd Class/Semester Workbook-1.png",
         rating: 5,
         features: ["Comprehensive exercises", "Subject practice", "Skill development"]
     },
@@ -1319,7 +1319,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 260,
         oldPrice: 320,
-        image: "/src/assets/3rd Class/Semester Workbook-2.png",
+        image: "/ravi_publishers/assets/3rd Class/Semester Workbook-2.png",
         rating: 5,
         features: ["Advanced exercises", "Final assessment", "Revision practice"]
     },
@@ -1331,7 +1331,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 450,
         oldPrice: 550,
-        image: "/src/assets/3rd Class/Term Coursebook-1.png",
+        image: "/ravi_publishers/assets/3rd Class/Term Coursebook-1.png",
         rating: 5,
         features: ["Term 1 syllabus", "CBSE guidelines", "Interactive content"]
     },
@@ -1343,7 +1343,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 450,
         oldPrice: 550,
-        image: "/src/assets/3rd Class/Term Coursebook-2.png",
+        image: "/ravi_publishers/assets/3rd Class/Term Coursebook-2.png",
         rating: 5,
         features: ["Term 2 syllabus", "Progressive learning", "Skill enhancement"]
     },
@@ -1355,7 +1355,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 450,
         oldPrice: 550,
-        image: "/src/assets/3rd Class/Term Coursebook-3.png",
+        image: "/ravi_publishers/assets/3rd Class/Term Coursebook-3.png",
         rating: 5,
         features: ["Term 3 syllabus", "Advanced concepts", "Final term coverage"]
     },
@@ -1367,7 +1367,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 190,
         oldPrice: 240,
-        image: "/src/assets/3rd Class/Term Workbook-1.png",
+        image: "/ravi_publishers/assets/3rd Class/Term Workbook-1.png",
         rating: 5,
         features: ["Term 1 exercises", "Basic practice", "Foundation building"]
     },
@@ -1379,7 +1379,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 190,
         oldPrice: 240,
-        image: "/src/assets/3rd Class/Term Workbook-2.png",
+        image: "/ravi_publishers/assets/3rd Class/Term Workbook-2.png",
         rating: 5,
         features: ["Term 2 exercises", "Intermediate practice", "Concept application"]
     },
@@ -1391,7 +1391,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 190,
         oldPrice: 240,
-        image: "/src/assets/3rd Class/Term Workbook-3.png",
+        image: "/ravi_publishers/assets/3rd Class/Term Workbook-3.png",
         rating: 5,
         features: ["Term 3 exercises", "Advanced practice", "Final assessment"]
     },
@@ -1405,7 +1405,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 300,
         oldPrice: 370,
-        image: "/src/assets/4th Class/English.png",
+        image: "/ravi_publishers/assets/4th Class/English.png",
         rating: 5,
         features: ["Literature appreciation", "Advanced writing", "Critical thinking"]
     },
@@ -1417,7 +1417,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 170,
         oldPrice: 210,
-        image: "/src/assets/4th Class/Hindi Reader.png",
+        image: "/ravi_publishers/assets/4th Class/Hindi Reader.png",
         rating: 5,
         features: ["Advanced Hindi", "Comprehension", "Creative writing"]
     },
@@ -1429,7 +1429,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 410,
         oldPrice: 500,
-        image: "/src/assets/4th Class/Maths.png",
+        image: "/ravi_publishers/assets/4th Class/Maths.png",
         rating: 5,
         features: ["Fractions/Decimals", "Geometry", "Word problems"]
     },
@@ -1441,7 +1441,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 575,
         oldPrice: 650,
-        image: "/src/assets/4th Class/EVS.png",
+        image: "/ravi_publishers/assets/4th Class/EVS.png",
         rating: 5,
         features: ["Science concepts", "Environmental issues", "Experiments"]
     },
@@ -1453,7 +1453,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 250,
         oldPrice: 310,
-        image: "/src/assets/4th Class/English Grammar.png",
+        image: "/ravi_publishers/assets/4th Class/English Grammar.png",
         rating: 5,
         features: ["Complex grammar", "Sentence analysis", "Writing skills"]
     },
@@ -1465,7 +1465,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 725,
         oldPrice: 800,
-        image: "/src/assets/4th Class/Semester Coursebook-1.png",
+        image: "/ravi_publishers/assets/4th Class/Semester Coursebook-1.png",
         rating: 5,
         features: ["Comprehensive syllabus", "All subjects", "Advanced content"]
     },
@@ -1477,7 +1477,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 725,
         oldPrice: 800,
-        image: "/src/assets/4th Class/Semester Coursebook-2.png",
+        image: "/ravi_publishers/assets/4th Class/Semester Coursebook-2.png",
         rating: 5,
         features: ["Advanced syllabus", "Final term coverage", "Year-end preparation"]
     },
@@ -1489,7 +1489,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 280,
         oldPrice: 340,
-        image: "/src/assets/4th Class/Semester Workbook-1.png",
+        image: "/ravi_publishers/assets/4th Class/Semester Workbook-1.png",
         rating: 5,
         features: ["Comprehensive exercises", "Subject practice", "Skill development"]
     },
@@ -1501,7 +1501,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 280,
         oldPrice: 340,
-        image: "/src/assets/4th Class/Semester Workbook-2.png",
+        image: "/ravi_publishers/assets/4th Class/Semester Workbook-2.png",
         rating: 5,
         features: ["Advanced exercises", "Final assessment", "Revision practice"]
     },
@@ -1513,7 +1513,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 500,
         oldPrice: 600,
-        image: "/src/assets/4th Class/Term Coursebook-1.png",
+        image: "/ravi_publishers/assets/4th Class/Term Coursebook-1.png",
         rating: 5,
         features: ["Term 1 syllabus", "CBSE guidelines", "Interactive content"]
     },
@@ -1525,7 +1525,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 500,
         oldPrice: 600,
-        image: "/src/assets/4th Class/Term Coursebook-2.png",
+        image: "/ravi_publishers/assets/4th Class/Term Coursebook-2.png",
         rating: 5,
         features: ["Term 2 syllabus", "Progressive learning", "Skill enhancement"]
     },
@@ -1537,7 +1537,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 500,
         oldPrice: 600,
-        image: "/src/assets/4th Class/Term Coursebook-3.png",
+        image: "/ravi_publishers/assets/4th Class/Term Coursebook-3.png",
         rating: 5,
         features: ["Term 3 syllabus", "Advanced concepts", "Final term coverage"]
     },
@@ -1549,7 +1549,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 220,
         oldPrice: 270,
-        image: "/src/assets/4th Class/Term Workbook-1.png",
+        image: "/ravi_publishers/assets/4th Class/Term Workbook-1.png",
         rating: 5,
         features: ["Term 1 exercises", "Basic practice", "Foundation building"]
     },
@@ -1561,7 +1561,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 220,
         oldPrice: 270,
-        image: "/src/assets/4th Class/Term Workbook-2.png",
+        image: "/ravi_publishers/assets/4th Class/Term Workbook-2.png",
         rating: 5,
         features: ["Term 2 exercises", "Intermediate practice", "Concept application"]
     },
@@ -1573,7 +1573,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 220,
         oldPrice: 270,
-        image: "/src/assets/4th Class/Term Workbook-3.png",
+        image: "/ravi_publishers/assets/4th Class/Term Workbook-3.png",
         rating: 5,
         features: ["Term 3 exercises", "Advanced practice", "Final assessment"]
     },
@@ -1587,7 +1587,7 @@ export const booksData = [
         subCategory: "5th Class",
         price: 330,
         oldPrice: 400,
-        image: "/src/assets/5th Class/English.png",
+        image: "/ravi_publishers/assets/5th Class/English.png",
         rating: 5,
         features: ["Advanced literature", "Essay writing", "Comprehension skills"]
     },
@@ -1599,7 +1599,7 @@ export const booksData = [
         subCategory: "5th Class",
         price: 170,
         oldPrice: 210,
-        image: "/src/assets/5th Class/Hindi Reader.png",
+        image: "/ravi_publishers/assets/5th Class/Hindi Reader.png",
         rating: 5,
         features: ["Advanced Hindi", "Literature", "Writing proficiency"]
     },
@@ -1611,7 +1611,7 @@ export const booksData = [
         subCategory: "5th Class",
         price: 575,
         oldPrice: 650,
-        image: "/src/assets/5th Class/Maths.png",
+        image: "/ravi_publishers/assets/5th Class/Maths.png",
         rating: 5,
         features: ["Advanced arithmetic", "Geometry", "Algebra basics"]
     },
@@ -1623,7 +1623,7 @@ export const booksData = [
         subCategory: "5th Class",
         price: 250,
         oldPrice: 310,
-        image: "/src/assets/5th Class/English Grammar.png",
+        image: "/ravi_publishers/assets/5th Class/English Grammar.png",
         rating: 5,
         features: ["Comprehensive grammar", "Writing techniques", "Advanced exercises"]
     },
@@ -1635,7 +1635,7 @@ export const booksData = [
         subCategory: "5th Class",
         price: 750,
         oldPrice: 850,
-        image: "/src/assets/5th Class/Semester Coursebook-1.png",
+        image: "/ravi_publishers/assets/5th Class/Semester Coursebook-1.png",
         rating: 5,
         features: ["Comprehensive syllabus", "All subjects", "Secondary preparation"]
     },
@@ -1647,7 +1647,7 @@ export const booksData = [
         subCategory: "5th Class",
         price: 750,
         oldPrice: 850,
-        image: "/src/assets/5th Class/Semester Coursebook-2.png",
+        image: "/ravi_publishers/assets/5th Class/Semester Coursebook-2.png",
         rating: 5,
         features: ["Final syllabus", "Secondary school prep", "Comprehensive coverage"]
     },
@@ -1659,7 +1659,7 @@ export const booksData = [
         subCategory: "5th Class",
         price: 330,
         oldPrice: 400,
-        image: "/src/assets/5th Class/Semester Workbook-1.png",
+        image: "/ravi_publishers/assets/5th Class/Semester Workbook-1.png",
         rating: 5,
         features: ["Comprehensive exercises", "Subject practice", "Secondary preparation"]
     },
@@ -1671,7 +1671,7 @@ export const booksData = [
         subCategory: "5th Class",
         price: 330,
         oldPrice: 400,
-        image: "/src/assets/5th Class/Semester Workbook-2.png",
+        image: "/ravi_publishers/assets/5th Class/Semester Workbook-2.png",
         rating: 5,
         features: ["Advanced exercises", "Final assessment", "Revision practice"]
     },
@@ -1683,7 +1683,7 @@ export const booksData = [
         subCategory: "5th Class",
         price: 550,
         oldPrice: 650,
-        image: "/src/assets/5th Class/Term Coursebook-1.png",
+        image: "/ravi_publishers/assets/5th Class/Term Coursebook-1.png",
         rating: 5,
         features: ["Term 1 syllabus", "CBSE guidelines", "Secondary foundation"]
     },
@@ -1695,7 +1695,7 @@ export const booksData = [
         subCategory: "5th Class",
         price: 550,
         oldPrice: 650,
-        image: "/src/assets/5th Class/Term Coursebook-2.png",
+        image: "/ravi_publishers/assets/5th Class/Term Coursebook-2.png",
         rating: 5,
         features: ["Term 2 syllabus", "Progressive learning", "Skill enhancement"]
     },
@@ -1707,7 +1707,7 @@ export const booksData = [
         subCategory: "5th Class",
         price: 550,
         oldPrice: 650,
-        image: "/src/assets/5th Class/Term Coursebook-3.png",
+        image: "/ravi_publishers/assets/5th Class/Term Coursebook-3.png",
         rating: 5,
         features: ["Term 3 syllabus", "Advanced concepts", "Final term coverage"]
     },
@@ -1719,7 +1719,7 @@ export const booksData = [
         subCategory: "5th Class",
         price: 240,
         oldPrice: 300,
-        image: "/src/assets/5th Class/Term Workbook-1.png",
+        image: "/ravi_publishers/assets/5th Class/Term Workbook-1.png",
         rating: 5,
         features: ["Term 1 exercises", "Basic practice", "Foundation building"]
     },
@@ -1731,7 +1731,7 @@ export const booksData = [
         subCategory: "5th Class",
         price: 240,
         oldPrice: 300,
-        image: "/src/assets/5th Class/Term Workbook-2.png",
+        image: "/ravi_publishers/assets/5th Class/Term Workbook-2.png",
         rating: 5,
         features: ["Term 2 exercises", "Intermediate practice", "Concept application"]
     },
@@ -1743,7 +1743,7 @@ export const booksData = [
         subCategory: "5th Class",
         price: 240,
         oldPrice: 300,
-        image: "/src/assets/5th Class/Term Workbook-3.png",
+        image: "/ravi_publishers/assets/5th Class/Term Workbook-3.png",
         rating: 5,
         features: ["Term 3 exercises", "Advanced practice", "Final assessment"]
     },
@@ -1757,7 +1757,7 @@ export const booksData = [
         subCategory: "Sr.KG",
         price: 160,
         oldPrice: 200,
-        image: "/src/assets/Sr.KG/English Workbook.png",
+        image: "/ravi_publishers/assets/Sr.KG/English Workbook.png",
         rating: 5,
         features: ["Independent Practice", "Extra exercises", "Skill development"]
     },
@@ -1769,7 +1769,7 @@ export const booksData = [
         subCategory: "Sr.KG",
         price: 160,
         oldPrice: 200,
-        image: "/src/assets/Sr.KG/Hindi Workbook.png",
+        image: "/ravi_publishers/assets/Sr.KG/Hindi Workbook.png",
         rating: 5,
         features: ["Varnamala Writing", "Hindi practice", "Vocabulary building"]
     },
@@ -1781,7 +1781,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 180,
         oldPrice: 220,
-        image: "/src/assets/1st Class/English Workbook.png",
+        image: "/ravi_publishers/assets/1st Class/English Workbook.png",
         rating: 5,
         features: ["English practice", "Reading exercises", "Writing skills"]
     },
@@ -1793,7 +1793,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 140,
         oldPrice: 180,
-        image: "/src/assets/1st Class/EVS Workbook.png",
+        image: "/ravi_publishers/assets/1st Class/EVS Workbook.png",
         rating: 5,
         features: ["EVS exercises", "Activity based", "Concept reinforcement"]
     },
@@ -1805,7 +1805,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 90,
         oldPrice: 120,
-        image: "/src/assets/1st Class/Hindi Workbook.png",
+        image: "/ravi_publishers/assets/1st Class/Hindi Workbook.png",
         rating: 5,
         features: ["Hindi practice", "Writing exercises", "Vocabulary"]
     },
@@ -1817,7 +1817,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 200,
         oldPrice: 250,
-        image: "/src/assets/2nd Class/English Workbook.png",
+        image: "/ravi_publishers/assets/2nd Class/English Workbook.png",
         rating: 5,
         features: ["Advanced English practice", "Comprehension", "Writing skills"]
     },
@@ -1829,7 +1829,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 140,
         oldPrice: 180,
-        image: "/src/assets/2nd Class/EVS Workbook.png",
+        image: "/ravi_publishers/assets/2nd Class/EVS Workbook.png",
         rating: 5,
         features: ["EVS exercises", "Project work", "Scientific concepts"]
     },
@@ -1841,7 +1841,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 90,
         oldPrice: 120,
-        image: "/src/assets/2nd Class/Hindi Workbook.png",
+        image: "/ravi_publishers/assets/2nd Class/Hindi Workbook.png",
         rating: 5,
         features: ["Hindi practice", "Reading exercises", "Writing practice"]
     },
@@ -1853,7 +1853,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 160,
         oldPrice: 200,
-        image: "/src/assets/3rd Class/English Workbook.png",
+        image: "/ravi_publishers/assets/3rd Class/English Workbook.png",
         rating: 5,
         features: ["English practice", "Grammar exercises", "Writing skills"]
     },
@@ -1865,7 +1865,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 120,
         oldPrice: 150,
-        image: "/src/assets/3rd Class/EVS Workbook.png",
+        image: "/ravi_publishers/assets/3rd Class/EVS Workbook.png",
         rating: 5,
         features: ["EVS exercises", "Activity based", "Concept reinforcement"]
     },
@@ -1877,7 +1877,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 110,
         oldPrice: 140,
-        image: "/src/assets/3rd Class/Hindi Workbook.png",
+        image: "/ravi_publishers/assets/3rd Class/Hindi Workbook.png",
         rating: 5,
         features: ["Hindi practice", "Writing exercises", "Vocabulary"]
     },
@@ -1889,7 +1889,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 200,
         oldPrice: 250,
-        image: "/src/assets/4th Class/English Workbook.png",
+        image: "/ravi_publishers/assets/4th Class/English Workbook.png",
         rating: 5,
         features: ["Advanced English practice", "Comprehension", "Writing skills"]
     },
@@ -1901,7 +1901,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 290,
         oldPrice: 350,
-        image: "/src/assets/4th Class/EVS Workbook.png",
+        image: "/ravi_publishers/assets/4th Class/EVS Workbook.png",
         rating: 5,
         features: ["EVS exercises", "Project work", "Scientific concepts"]
     },
@@ -1913,7 +1913,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 110,
         oldPrice: 140,
-        image: "/src/assets/4th Class/Hindi Workbook.png",
+        image: "/ravi_publishers/assets/4th Class/Hindi Workbook.png",
         rating: 5,
         features: ["Hindi practice", "Reading exercises", "Writing practice"]
     },
@@ -1925,7 +1925,7 @@ export const booksData = [
         subCategory: "5th Class",
         price: 210,
         oldPrice: 260,
-        image: "/src/assets/5th Class/English Workbook.png",
+        image: "/ravi_publishers/assets/5th Class/English Workbook.png",
         rating: 5,
         features: ["Advanced English practice", "Essay writing", "Comprehension"]
     },
@@ -1937,7 +1937,7 @@ export const booksData = [
         subCategory: "5th Class",
         price: 260,
         oldPrice: 320,
-        image: "/src/assets/5th Class/EVS Workbook.png",
+        image: "/ravi_publishers/assets/5th Class/EVS Workbook.png",
         rating: 5,
         features: ["Advanced EVS exercises", "Research work", "Scientific concepts"]
     },
@@ -1949,7 +1949,7 @@ export const booksData = [
         subCategory: "5th Class",
         price: 120,
         oldPrice: 150,
-        image: "/src/assets/5th Class/Hindi Workbook.png",
+        image: "/ravi_publishers/assets/5th Class/Hindi Workbook.png",
         rating: 5,
         features: ["Advanced Hindi practice", "Comprehension", "Writing skills"]
     },
@@ -1962,7 +1962,7 @@ export const booksData = [
         category: "Enlight Kits",
         price: 1065,
         oldPrice: 1300,
-        image: "/src/assets/Pre.KG - KIT/Kit Box.png",
+        image: "/ravi_publishers/assets/Pre.KG - KIT/Kit Box.png",
         rating: 5,
         features: ["Includes 48 Flash Cards", "Free Completion Certificate", "Number Book 1-20", "Alphabet Practice Book", "Colouring Book"]
     },
@@ -1973,7 +1973,7 @@ export const booksData = [
         category: "Enlight Kits",
         price: 1380,
         oldPrice: 1600,
-        image: "/src/assets/Jr.KG - KIT/Kit Box.png",
+        image: "/ravi_publishers/assets/Jr.KG - KIT/Kit Box.png",
         rating: 5,
         features: ["Includes 32 Flash Cards", "Alphabet Capital & Small", "Worksheet Books", "Number Book 1-100", "File for Worksheets"]
     },
@@ -1984,7 +1984,7 @@ export const booksData = [
         category: "Enlight Kits",
         price: 1690,
         oldPrice: 2000,
-        image: "/src/assets/Sr.KG - KIT/Kit Box.png",
+        image: "/ravi_publishers/assets/Sr.KG - KIT/Kit Box.png",
         rating: 5,
         features: ["Hindi Reader-A included", "Number Book 1-1000", "English Practice Book", "Hindi Practice Book", "Worksheet Books"]
     },
@@ -1997,7 +1997,7 @@ export const booksData = [
         category: "Flash Cards",
         price: 240,
         oldPrice: 300,
-        image: "/src/assets/Pre.KG/Flash Cards.png",
+        image: "/ravi_publishers/assets/Pre.KG/Flash Cards.png",
         rating: 5,
         features: ["48 Cards", "Large Size", "Durable Material", "Alphabets & Numbers 1-20"]
     },
@@ -2008,7 +2008,7 @@ export const booksData = [
         category: "Flash Cards",
         price: 160,
         oldPrice: 220,
-        image: "/src/assets/Jr.KG/Flash Cards.png",
+        image: "/ravi_publishers/assets/Jr.KG/Flash Cards.png",
         rating: 5,
         features: ["32 Cards", "Concept focused", "Alphabets Capital & Small", "Numbers 1-100"]
     },
@@ -2022,7 +2022,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 120,
         oldPrice: 150,
-        image: "/src/assets/Kannada/LKG Vachaka.png",
+        image: "/ravi_publishers/assets/Kannada/LKG Vachaka.png",
         rating: 5,
         features: ["Akshara Mala", "Writing Space", "Basic vocabulary"]
     },
@@ -2034,7 +2034,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 130,
         oldPrice: 160,
-        image: "/src/assets/Kannada/UKG Vachaka.png",
+        image: "/ravi_publishers/assets/Kannada/UKG Vachaka.png",
         rating: 5,
         features: ["Advanced vocabulary", "Sentence formation", "Reading practice"]
     },
@@ -2046,7 +2046,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 120,
         oldPrice: 150,
-        image: "/src/assets/Kannada/1st Std Vachaka.png",
+        image: "/ravi_publishers/assets/Kannada/1st Std Vachaka.png",
         rating: 5,
         features: ["Comprehensive Kannada", "Writing skills", "Grammar basics"]
     },
@@ -2058,7 +2058,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 130,
         oldPrice: 160,
-        image: "/src/assets/Kannada/2nd Std Vachaka.png",
+        image: "/ravi_publishers/assets/Kannada/2nd Std Vachaka.png",
         rating: 5,
         features: ["Advanced Kannada", "Comprehension", "Creative writing"]
     },
@@ -2070,7 +2070,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 350,
         oldPrice: 420,
-        image: "/src/assets/Kannada/LKG Semester-1.png",
+        image: "/ravi_publishers/assets/Kannada/LKG Semester-1.png",
         rating: 5,
         features: ["Comprehensive syllabus", "Kannada basics", "Activity based"]
     },
@@ -2082,7 +2082,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 350,
         oldPrice: 420,
-        image: "/src/assets/Kannada/LKG Semester-2.png",
+        image: "/ravi_publishers/assets/Kannada/LKG Semester-2.png",
         rating: 5,
         features: ["Advanced syllabus", "Writing practice", "Vocabulary building"]
     },
@@ -2094,7 +2094,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 400,
         oldPrice: 480,
-        image: "/src/assets/Kannada/UKG Semester-1.png",
+        image: "/ravi_publishers/assets/Kannada/UKG Semester-1.png",
         rating: 5,
         features: ["Comprehensive syllabus", "Kannada grammar", "Reading skills"]
     },
@@ -2106,7 +2106,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 400,
         oldPrice: 480,
-        image: "/src/assets/Kannada/UKG Semester-2.png",
+        image: "/ravi_publishers/assets/Kannada/UKG Semester-2.png",
         rating: 5,
         features: ["Advanced syllabus", "Writing proficiency", "Comprehension"]
     },
@@ -2118,7 +2118,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 290,
         oldPrice: 350,
-        image: "/src/assets/Kannada/1st Std Semester-1.png",
+        image: "/ravi_publishers/assets/Kannada/1st Std Semester-1.png",
         rating: 5,
         features: ["Comprehensive syllabus", "Kannada basics", "Activity based"]
     },
@@ -2130,7 +2130,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 290,
         oldPrice: 350,
-        image: "/src/assets/Kannada/1st Std Semester-2.png",
+        image: "/ravi_publishers/assets/Kannada/1st Std Semester-2.png",
         rating: 5,
         features: ["Advanced syllabus", "Writing practice", "Vocabulary building"]
     },
@@ -2142,7 +2142,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 340,
         oldPrice: 410,
-        image: "/src/assets/Kannada/2nd Std Semester-1.png",
+        image: "/ravi_publishers/assets/Kannada/2nd Std Semester-1.png",
         rating: 5,
         features: ["Comprehensive syllabus", "Kannada grammar", "Reading skills"]
     },
@@ -2154,7 +2154,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 340,
         oldPrice: 410,
-        image: "/src/assets/Kannada/2nd Std Semester-2.png",
+        image: "/ravi_publishers/assets/Kannada/2nd Std Semester-2.png",
         rating: 5,
         features: ["Advanced syllabus", "Writing proficiency", "Comprehension"]
     },
@@ -2166,7 +2166,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 125,
         oldPrice: 150,
-        image: "/src/assets/Kannada/Akshara Mala.png",
+        image: "/ravi_publishers/assets/Kannada/Akshara Mala.png",
         rating: 5,
         features: ["Alphabet learning", "Kaguninthalu", "Writing practice"]
     },
@@ -2178,7 +2178,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 90,
         oldPrice: 120,
-        image: "/src/assets/Kannada/UKG Maths.png",
+        image: "/ravi_publishers/assets/Kannada/UKG Maths.png",
         rating: 5,
         features: ["Kannada medium", "Basic mathematics", "Number concepts"]
     },
@@ -2192,7 +2192,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 120,
         oldPrice: 150,
-        image: "/src/assets/Tamil/LKG Malar.png",
+        image: "/ravi_publishers/assets/Tamil/LKG Malar.png",
         rating: 5,
         features: ["Tamil basics", "Alphabet learning", "Writing practice"]
     },
@@ -2204,7 +2204,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 140,
         oldPrice: 170,
-        image: "/src/assets/Tamil/UKG Malar.png",
+        image: "/ravi_publishers/assets/Tamil/UKG Malar.png",
         rating: 5,
         features: ["Advanced Tamil", "Vocabulary building", "Reading skills"]
     },
@@ -2216,7 +2216,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 120,
         oldPrice: 150,
-        image: "/src/assets/Tamil/Practice Book.png",
+        image: "/ravi_publishers/assets/Tamil/Practice Book.png",
         rating: 5,
         features: ["Writing practice", "Exercises", "Skill development"]
     },
@@ -2228,7 +2228,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 220,
         oldPrice: 270,
-        image: "/src/assets/Tamil/1st Std Term-1.png",
+        image: "/ravi_publishers/assets/Tamil/1st Std Term-1.png",
         rating: 5,
         features: ["Term 1 syllabus", "Tamil basics", "Activity based"]
     },
@@ -2240,7 +2240,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 220,
         oldPrice: 270,
-        image: "/src/assets/Tamil/1st Std Term-2.png",
+        image: "/ravi_publishers/assets/Tamil/1st Std Term-2.png",
         rating: 5,
         features: ["Term 2 syllabus", "Advanced Tamil", "Writing practice"]
     },
@@ -2252,7 +2252,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 220,
         oldPrice: 270,
-        image: "/src/assets/Tamil/1st Std Term-3.png",
+        image: "/ravi_publishers/assets/Tamil/1st Std Term-3.png",
         rating: 5,
         features: ["Term 3 syllabus", "Comprehensive Tamil", "Final assessment"]
     },
@@ -2264,7 +2264,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 270,
         oldPrice: 320,
-        image: "/src/assets/Tamil/2nd Std Term-1.png",
+        image: "/ravi_publishers/assets/Tamil/2nd Std Term-1.png",
         rating: 5,
         features: ["Term 1 syllabus", "Tamil grammar", "Reading skills"]
     },
@@ -2276,7 +2276,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 270,
         oldPrice: 320,
-        image: "/src/assets/Tamil/2nd Std Term-2.png",
+        image: "/ravi_publishers/assets/Tamil/2nd Std Term-2.png",
         rating: 5,
         features: ["Term 2 syllabus", "Advanced grammar", "Writing proficiency"]
     },
@@ -2288,7 +2288,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 270,
         oldPrice: 320,
-        image: "/src/assets/Tamil/2nd Std Term-3.png",
+        image: "/ravi_publishers/assets/Tamil/2nd Std Term-3.png",
         rating: 5,
         features: ["Term 3 syllabus", "Comprehensive Tamil", "Final assessment"]
     },
@@ -2303,7 +2303,7 @@ export const booksData = [
         subCategory: "LKG",
         price: 130,
         oldPrice: 160,
-        image: "/src/assets/Joyway/LKG/Telugu.png",
+        image: "/ravi_publishers/assets/Joyway/LKG/Telugu.png",
         rating: 5,
         features: ["State Board aligned", "Telugu basics", "Writing practice"]
     },
@@ -2315,7 +2315,7 @@ export const booksData = [
         subCategory: "LKG",
         price: 175,
         oldPrice: 210,
-        image: "/src/assets/Joyway/LKG/English.png",
+        image: "/ravi_publishers/assets/Joyway/LKG/English.png",
         rating: 5,
         features: ["State Board aligned", "English basics", "Phonics"]
     },
@@ -2327,7 +2327,7 @@ export const booksData = [
         subCategory: "LKG",
         price: 170,
         oldPrice: 210,
-        image: "/src/assets/Joyway/LKG/Maths.png",
+        image: "/ravi_publishers/assets/Joyway/LKG/Maths.png",
         rating: 5,
         features: ["State Board aligned", "Number concepts", "Basic counting"]
     },
@@ -2339,7 +2339,7 @@ export const booksData = [
         subCategory: "LKG",
         price: 120,
         oldPrice: 150,
-        image: "/src/assets/Joyway/LKG/EVS.png",
+        image: "/ravi_publishers/assets/Joyway/LKG/EVS.png",
         rating: 5,
         features: ["State Board aligned", "Environmental awareness", "Basic concepts"]
     },
@@ -2351,7 +2351,7 @@ export const booksData = [
         subCategory: "LKG",
         price: 130,
         oldPrice: 160,
-        image: "/src/assets/Joyway/LKG/Rhymes.png",
+        image: "/ravi_publishers/assets/Joyway/LKG/Rhymes.png",
         rating: 5,
         features: ["State Board aligned", "Rhymes collection", "Audio content"]
     },
@@ -2363,7 +2363,7 @@ export const booksData = [
         subCategory: "LKG",
         price: 190,
         oldPrice: 230,
-        image: "/src/assets/Joyway/LKG/Activity Book.png",
+        image: "/ravi_publishers/assets/Joyway/LKG/Activity Book.png",
         rating: 5,
         features: ["State Board aligned", "Interactive activities", "Skill development"]
     },
@@ -2375,7 +2375,7 @@ export const booksData = [
         subCategory: "LKG",
         price: 210,
         oldPrice: 250,
-        image: "/src/assets/Joyway/LKG/Workbook.png",
+        image: "/ravi_publishers/assets/Joyway/LKG/Workbook.png",
         rating: 5,
         features: ["State Board aligned", "All subjects", "Practice exercises"]
     },
@@ -2389,7 +2389,7 @@ export const booksData = [
         subCategory: "UKG",
         price: 150,
         oldPrice: 180,
-        image: "/src/assets/Joyway/UKG/Telugu.png",
+        image: "/ravi_publishers/assets/Joyway/UKG/Telugu.png",
         rating: 5,
         features: ["State Board aligned", "Advanced Telugu", "Writing skills"]
     },
@@ -2401,7 +2401,7 @@ export const booksData = [
         subCategory: "UKG",
         price: 175,
         oldPrice: 210,
-        image: "/src/assets/Joyway/UKG/English.png",
+        image: "/ravi_publishers/assets/Joyway/UKG/English.png",
         rating: 5,
         features: ["State Board aligned", "Advanced English", "Reading comprehension"]
     },
@@ -2413,7 +2413,7 @@ export const booksData = [
         subCategory: "UKG",
         price: 140,
         oldPrice: 170,
-        image: "/src/assets/Joyway/UKG/Hindi-English Primer.png",
+        image: "/ravi_publishers/assets/Joyway/UKG/Hindi-English Primer.png",
         rating: 5,
         features: ["Bilingual learning", "Hindi basics", "English support"]
     },
@@ -2425,7 +2425,7 @@ export const booksData = [
         subCategory: "UKG",
         price: 170,
         oldPrice: 210,
-        image: "/src/assets/Joyway/UKG/Maths.png",
+        image: "/ravi_publishers/assets/Joyway/UKG/Maths.png",
         rating: 5,
         features: ["State Board aligned", "Number operations", "Problem solving"]
     },
@@ -2437,7 +2437,7 @@ export const booksData = [
         subCategory: "UKG",
         price: 190,
         oldPrice: 230,
-        image: "/src/assets/Joyway/UKG/EVS.png",
+        image: "/ravi_publishers/assets/Joyway/UKG/EVS.png",
         rating: 5,
         features: ["State Board aligned", "Detailed EVS", "Scientific concepts"]
     },
@@ -2449,7 +2449,7 @@ export const booksData = [
         subCategory: "UKG",
         price: 130,
         oldPrice: 160,
-        image: "/src/assets/Joyway/UKG/Rhymes.png",
+        image: "/ravi_publishers/assets/Joyway/UKG/Rhymes.png",
         rating: 5,
         features: ["State Board aligned", "Advanced rhymes", "Cultural content"]
     },
@@ -2461,7 +2461,7 @@ export const booksData = [
         subCategory: "UKG",
         price: 190,
         oldPrice: 230,
-        image: "/src/assets/Joyway/UKG/Activity Book.png",
+        image: "/ravi_publishers/assets/Joyway/UKG/Activity Book.png",
         rating: 5,
         features: ["State Board aligned", "Advanced activities", "Skill enhancement"]
     },
@@ -2473,7 +2473,7 @@ export const booksData = [
         subCategory: "UKG",
         price: 210,
         oldPrice: 250,
-        image: "/src/assets/Joyway/UKG/Workbook.png",
+        image: "/ravi_publishers/assets/Joyway/UKG/Workbook.png",
         rating: 5,
         features: ["State Board aligned", "All subjects", "Advanced exercises"]
     },
@@ -2487,7 +2487,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 180,
         oldPrice: 220,
-        image: "/src/assets/Joyway/1st Class/AP Telugu.png",
+        image: "/ravi_publishers/assets/Joyway/1st Class/AP Telugu.png",
         rating: 5,
         features: ["AP State Board", "Telugu language", "Comprehensive syllabus"]
     },
@@ -2499,7 +2499,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 180,
         oldPrice: 220,
-        image: "/src/assets/Joyway/1st Class/TG Telugu.png",
+        image: "/ravi_publishers/assets/Joyway/1st Class/TG Telugu.png",
         rating: 5,
         features: ["TG State Board", "Telugu language", "Comprehensive syllabus"]
     },
@@ -2511,7 +2511,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 190,
         oldPrice: 230,
-        image: "/src/assets/Joyway/1st Class/English.png",
+        image: "/ravi_publishers/assets/Joyway/1st Class/English.png",
         rating: 5,
         features: ["State Board aligned", "English language", "Reading skills"]
     },
@@ -2523,7 +2523,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 125,
         oldPrice: 150,
-        image: "/src/assets/Joyway/1st Class/Hindi-English Primer.png",
+        image: "/ravi_publishers/assets/Joyway/1st Class/Hindi-English Primer.png",
         rating: 5,
         features: ["Bilingual learning", "Hindi basics", "English support"]
     },
@@ -2535,7 +2535,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 175,
         oldPrice: 210,
-        image: "/src/assets/Joyway/1st Class/Maths.png",
+        image: "/ravi_publishers/assets/Joyway/1st Class/Maths.png",
         rating: 5,
         features: ["State Board aligned", "Mathematics", "Problem solving"]
     },
@@ -2547,7 +2547,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 210,
         oldPrice: 250,
-        image: "/src/assets/Joyway/1st Class/EVS.png",
+        image: "/ravi_publishers/assets/Joyway/1st Class/EVS.png",
         rating: 5,
         features: ["State Board aligned", "Environmental Science", "Scientific concepts"]
     },
@@ -2559,7 +2559,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 170,
         oldPrice: 210,
-        image: "/src/assets/Joyway/1st Class/General Science.png",
+        image: "/ravi_publishers/assets/Joyway/1st Class/General Science.png",
         rating: 5,
         features: ["Science basics", "Experiments", "Practical knowledge"]
     },
@@ -2571,7 +2571,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 170,
         oldPrice: 210,
-        image: "/src/assets/Joyway/1st Class/Social Studies.png",
+        image: "/ravi_publishers/assets/Joyway/1st Class/Social Studies.png",
         rating: 5,
         features: ["Social science", "History", "Geography basics"]
     },
@@ -2585,7 +2585,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 150,
         oldPrice: 180,
-        image: "/src/assets/Joyway/1st Class/Telugu Workbook.png",
+        image: "/ravi_publishers/assets/Joyway/1st Class/Telugu Workbook.png",
         rating: 5,
         features: ["Telugu practice", "Writing exercises", "Vocabulary"]
     },
@@ -2597,7 +2597,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 120,
         oldPrice: 150,
-        image: "/src/assets/Joyway/1st Class/English Workbook.png",
+        image: "/ravi_publishers/assets/Joyway/1st Class/English Workbook.png",
         rating: 5,
         features: ["English practice", "Grammar exercises", "Writing skills"]
     },
@@ -2609,7 +2609,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 90,
         oldPrice: 120,
-        image: "/src/assets/Joyway/1st Class/Hindi Workbook.png",
+        image: "/ravi_publishers/assets/Joyway/1st Class/Hindi Workbook.png",
         rating: 5,
         features: ["Hindi practice", "Writing exercises", "Vocabulary"]
     },
@@ -2621,7 +2621,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 120,
         oldPrice: 150,
-        image: "/src/assets/Joyway/1st Class/Maths Workbook.png",
+        image: "/ravi_publishers/assets/Joyway/1st Class/Maths Workbook.png",
         rating: 5,
         features: ["Mathematics practice", "Problem solving", "Calculations"]
     },
@@ -2633,7 +2633,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 120,
         oldPrice: 150,
-        image: "/src/assets/Joyway/1st Class/EVS Workbook.png",
+        image: "/ravi_publishers/assets/Joyway/1st Class/EVS Workbook.png",
         rating: 5,
         features: ["EVS practice", "Scientific concepts", "Activities"]
     },
@@ -2645,7 +2645,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 90,
         oldPrice: 120,
-        image: "/src/assets/Joyway/1st Class/General Science Workbook.png",
+        image: "/ravi_publishers/assets/Joyway/1st Class/General Science Workbook.png",
         rating: 5,
         features: ["Science practice", "Experiments", "Practical knowledge"]
     },
@@ -2657,7 +2657,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 90,
         oldPrice: 120,
-        image: "/src/assets/Joyway/1st Class/Social Studies Workbook.png",
+        image: "/ravi_publishers/assets/Joyway/1st Class/Social Studies Workbook.png",
         rating: 5,
         features: ["Social studies practice", "History", "Geography"]
     },
@@ -2674,7 +2674,7 @@ export const booksData = [
         subCategory: "Pre-KG",
         price: 190,
         oldPrice: 230,
-        image: "/src/assets/Joyway/Pre-KG/Semester-1.png",
+        image: "/ravi_publishers/assets/Joyway/Pre-KG/Semester-1.png",
         rating: 5,
         features: ["State Board aligned", "All subjects", "Comprehensive syllabus"]
     },
@@ -2686,7 +2686,7 @@ export const booksData = [
         subCategory: "Pre-KG",
         price: 190,
         oldPrice: 230,
-        image: "/src/assets/Joyway/Pre-KG/Semester-2.png",
+        image: "/ravi_publishers/assets/Joyway/Pre-KG/Semester-2.png",
         rating: 5,
         features: ["State Board aligned", "All subjects", "Advanced syllabus"]
     },
@@ -2700,7 +2700,7 @@ export const booksData = [
         subCategory: "Pre-KG",
         price: 130,
         oldPrice: 160,
-        image: "/src/assets/Joyway/Pre-KG/Term-1.png",
+        image: "/ravi_publishers/assets/Joyway/Pre-KG/Term-1.png",
         rating: 5,
         features: ["State Board aligned", "Term 1 syllabus", "Basic concepts"]
     },
@@ -2712,7 +2712,7 @@ export const booksData = [
         subCategory: "Pre-KG",
         price: 130,
         oldPrice: 160,
-        image: "/src/assets/Joyway/Pre-KG/Term-2.png",
+        image: "/ravi_publishers/assets/Joyway/Pre-KG/Term-2.png",
         rating: 5,
         features: ["State Board aligned", "Term 2 syllabus", "Intermediate concepts"]
     },
@@ -2724,7 +2724,7 @@ export const booksData = [
         subCategory: "Pre-KG",
         price: 130,
         oldPrice: 160,
-        image: "/src/assets/Joyway/Pre-KG/Term-3.png",
+        image: "/ravi_publishers/assets/Joyway/Pre-KG/Term-3.png",
         rating: 5,
         features: ["State Board aligned", "Term 3 syllabus", "Advanced concepts"]
     },
@@ -2738,7 +2738,7 @@ export const booksData = [
         subCategory: "GK",
         price: 130,
         oldPrice: 160,
-        image: "/src/assets/Special Books/GK-0.png",
+        image: "/ravi_publishers/assets/Special Books/GK-0.png",
         rating: 5,
         features: ["Basic GK", "Current affairs", "General awareness"]
     },
@@ -2750,7 +2750,7 @@ export const booksData = [
         subCategory: "Computer",
         price: 130,
         oldPrice: 160,
-        image: "/src/assets/Special Books/Computer-B.png",
+        image: "/ravi_publishers/assets/Special Books/Computer-B.png",
         rating: 5,
         features: ["Computer basics", "Digital literacy", "Practical exercises"]
     },
@@ -2762,7 +2762,7 @@ export const booksData = [
         subCategory: "Grammar",
         price: 160,
         oldPrice: 200,
-        image: "/src/assets/Special Books/Grammar-B.png",
+        image: "/ravi_publishers/assets/Special Books/Grammar-B.png",
         rating: 5,
         features: ["English grammar", "Rules & exercises", "Practice worksheets"]
     },
@@ -2774,7 +2774,7 @@ export const booksData = [
         subCategory: "Drawing",
         price: 90,
         oldPrice: 120,
-        image: "/src/assets/Special Books/Drawing-24.png",
+        image: "/ravi_publishers/assets/Special Books/Drawing-24.png",
         rating: 5,
         features: ["Drawing practice", "Creative exercises", "Art skills"]
     },
@@ -2786,7 +2786,7 @@ export const booksData = [
         subCategory: "Colouring",
         price: 100,
         oldPrice: 130,
-        image: "/src/assets/Special Books/Colouring-32.png",
+        image: "/ravi_publishers/assets/Special Books/Colouring-32.png",
         rating: 5,
         features: ["Colouring activities", "Creative expression", "Fine motor skills"]
     },
@@ -2800,7 +2800,7 @@ export const booksData = [
         subCategory: "Telugu",
         price: 125,
         oldPrice: 150,
-        image: "/src/assets/Practice Books/Telugu Alphabet.png",
+        image: "/ravi_publishers/assets/Practice Books/Telugu Alphabet.png",
         rating: 5,
         features: ["Telugu alphabets", "Writing practice", "Stroke guidance"]
     },
@@ -2812,7 +2812,7 @@ export const booksData = [
         subCategory: "English",
         price: 100,
         oldPrice: 130,
-        image: "/src/assets/Practice Books/English Capital.png",
+        image: "/ravi_publishers/assets/Practice Books/English Capital.png",
         rating: 5,
         features: ["Capital letters", "Writing practice", "Stroke guidance"]
     },
@@ -2824,7 +2824,7 @@ export const booksData = [
         subCategory: "English",
         price: 100,
         oldPrice: 130,
-        image: "/src/assets/Practice Books/English Small.png",
+        image: "/ravi_publishers/assets/Practice Books/English Small.png",
         rating: 5,
         features: ["Small letters", "Writing practice", "Stroke guidance"]
     },
@@ -2836,7 +2836,7 @@ export const booksData = [
         subCategory: "English",
         price: 140,
         oldPrice: 170,
-        image: "/src/assets/Practice Books/English Capital-Small.png",
+        image: "/ravi_publishers/assets/Practice Books/English Capital-Small.png",
         rating: 5,
         features: ["Both letter types", "Writing practice", "Complete alphabet"]
     },
@@ -2848,7 +2848,7 @@ export const booksData = [
         subCategory: "English",
         price: 160,
         oldPrice: 200,
-        image: "/src/assets/Practice Books/Cursive Writing.png",
+        image: "/ravi_publishers/assets/Practice Books/Cursive Writing.png",
         rating: 5,
         features: ["Cursive writing", "Handwriting improvement", "Practice exercises"]
     },
@@ -2860,7 +2860,7 @@ export const booksData = [
         subCategory: "English",
         price: 125,
         oldPrice: 150,
-        image: "/src/assets/Practice Books/Pre-KG Handwriting.png",
+        image: "/ravi_publishers/assets/Practice Books/Pre-KG Handwriting.png",
         rating: 5,
         features: ["Basic handwriting", "Stroke practice", "Letter formation"]
     },
@@ -2872,7 +2872,7 @@ export const booksData = [
         subCategory: "Mathematics",
         price: 120,
         oldPrice: 150,
-        image: "/src/assets/Practice Books/Number-1-20.png",
+        image: "/ravi_publishers/assets/Practice Books/Number-1-20.png",
         rating: 5,
         features: ["Numbers 1-20", "Writing practice", "Counting exercises"]
     },
@@ -2884,7 +2884,7 @@ export const booksData = [
         subCategory: "Mathematics",
         price: 120,
         oldPrice: 150,
-        image: "/src/assets/Practice Books/Number-1-50.png",
+        image: "/ravi_publishers/assets/Practice Books/Number-1-50.png",
         rating: 5,
         features: ["Numbers 1-50", "Writing practice", "Counting exercises"]
     },
@@ -2896,7 +2896,7 @@ export const booksData = [
         subCategory: "Mathematics",
         price: 120,
         oldPrice: 150,
-        image: "/src/assets/Practice Books/Number-1-100.png",
+        image: "/ravi_publishers/assets/Practice Books/Number-1-100.png",
         rating: 5,
         features: ["Numbers 1-100", "Writing practice", "Counting exercises"]
     },
@@ -2908,7 +2908,7 @@ export const booksData = [
         subCategory: "Hindi",
         price: 125,
         oldPrice: 150,
-        image: "/src/assets/Practice Books/Hindi Barahkhadi.png",
+        image: "/ravi_publishers/assets/Practice Books/Hindi Barahkhadi.png",
         rating: 5,
         features: ["Hindi Barahkhadi", "Writing practice", "Pronunciation guide"]
     },
@@ -2922,7 +2922,7 @@ export const booksData = [
         subCategory: "Lucida",
         price: 120,
         oldPrice: 150,
-        image: "/src/assets/Handwriting/Lucida-0.png",
+        image: "/ravi_publishers/assets/Handwriting/Lucida-0.png",
         rating: 5,
         features: ["Lucida font", "Handwriting practice", "64 pages"]
     },
@@ -2934,7 +2934,7 @@ export const booksData = [
         subCategory: "Cursive",
         price: 120,
         oldPrice: 150,
-        image: "/src/assets/Handwriting/Cursive-0.png",
+        image: "/ravi_publishers/assets/Handwriting/Cursive-0.png",
         rating: 5,
         features: ["Cursive writing", "Handwriting practice", "Skill development"]
     },
@@ -2948,7 +2948,7 @@ export const booksData = [
         subCategory: "English",
         price: 120,
         oldPrice: 150,
-        image: "/src/assets/Copy Books/English-0.png",
+        image: "/ravi_publishers/assets/Copy Books/English-0.png",
         rating: 5,
         features: ["Writing practice", "Line guidance", "Quality paper"]
     },
@@ -2960,7 +2960,7 @@ export const booksData = [
         subCategory: "Hindi",
         price: 120,
         oldPrice: 150,
-        image: "/src/assets/Copy Books/Hindi-0.png",
+        image: "/ravi_publishers/assets/Copy Books/Hindi-0.png",
         rating: 5,
         features: ["Hindi writing", "Practice exercises", "Quality paper"]
     },
@@ -2972,7 +2972,7 @@ export const booksData = [
         subCategory: "Telugu",
         price: 120,
         oldPrice: 150,
-        image: "/src/assets/Copy Books/Telugu-0.png",
+        image: "/ravi_publishers/assets/Copy Books/Telugu-0.png",
         rating: 5,
         features: ["Telugu writing", "Practice exercises", "Quality paper"]
     },
@@ -2986,7 +2986,7 @@ export const booksData = [
         subCategory: "ABC",
         price: 60,
         oldPrice: 80,
-        image: "/src/assets/Other Books/ABC-Small.png",
+        image: "/ravi_publishers/assets/Other Books/ABC-Small.png",
         rating: 5,
         features: ["Alphabet learning", "Pictures", "Basic words"]
     },
@@ -2998,7 +2998,7 @@ export const booksData = [
         subCategory: "ABC",
         price: 110,
         oldPrice: 140,
-        image: "/src/assets/Other Books/ABC-Big.png",
+        image: "/ravi_publishers/assets/Other Books/ABC-Big.png",
         rating: 5,
         features: ["Alphabet learning", "Large pictures", "Detailed content"]
     },
@@ -3010,7 +3010,7 @@ export const booksData = [
         subCategory: "Mathematics",
         price: 50,
         oldPrice: 70,
-        image: "/src/assets/Other Books/Table Book.png",
+        image: "/ravi_publishers/assets/Other Books/Table Book.png",
         rating: 5,
         features: ["Mathematical tables", "Practice exercises", "Quick reference"]
     },
@@ -3022,7 +3022,7 @@ export const booksData = [
         subCategory: "Home Task",
         price: 125,
         oldPrice: 150,
-        image: "/src/assets/Other Books/Home Task-4 Color.png",
+        image: "/ravi_publishers/assets/Other Books/Home Task-4 Color.png",
         rating: 5,
         features: ["Home assignments", "4-color printing", "Organized tasks"]
     },
@@ -3034,7 +3034,7 @@ export const booksData = [
         subCategory: "Home Task",
         price: 100,
         oldPrice: 130,
-        image: "/src/assets/Other Books/Home Task-2 Color.png",
+        image: "/ravi_publishers/assets/Other Books/Home Task-2 Color.png",
         rating: 5,
         features: ["Home assignments", "2-color printing", "Organized tasks"]
     },
@@ -3046,7 +3046,7 @@ export const booksData = [
         subCategory: "Telugu",
         price: 25,
         oldPrice: 35,
-        image: "/src/assets/Other Books/Telugu Ekkalu.png",
+        image: "/ravi_publishers/assets/Other Books/Telugu Ekkalu.png",
         rating: 5,
         features: ["Telugu writing", "Line practice", "Basic strokes"]
     },
@@ -3058,7 +3058,7 @@ export const booksData = [
         subCategory: "Reports",
         price: 30,
         oldPrice: 40,
-        image: "/src/assets/Other Books/Progress Report.png",
+        image: "/ravi_publishers/assets/Other Books/Progress Report.png",
         rating: 5,
         features: ["Progress tracking", "Assessment records", "Teacher comments"]
     }
