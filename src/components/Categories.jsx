@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const categories = [
-    { name: "Enlight Series", id: "enlight course books", icon: "fa-book-open-reader", desc: "NCERT/CBSE Based", color: "bg-[#2E3092]" },
+    { name: "Enlight Series", id: "enlight_course_books", icon: "fa-book-open-reader", desc: "NCERT/CBSE Based", color: "bg-[#2E3092]" },
     { name: "Joyway Series", id: "joyway", icon: "fa-child-reaching", desc: "State Board Based", color: "bg-[#01A651]" },
-    { name: "Semester Kits", id: "enlight kits", icon: "fa-box-archive", desc: "All-in-One Packs", color: "bg-[#FFF200]", darkIcon: true },
-    { name: "Work Books", id: "enlight semester books", icon: "fa-pen-clip", desc: "Guided Practice", color: "bg-[#EC1C24]" },
-    { name: "Languages", id: "language books", icon: "fa-language", desc: "Region Specific", color: "bg-[#f06d06]" },
-    { name: "Flash Cards", id: "flash cards", icon: "fa-palette", desc: "Visual Learning", color: "bg-[#231F20]" },
+    { name: "Semester Kits", id: "enlight_kits", icon: "fa-box-archive", desc: "All-in-One Packs", color: "bg-[#FFF200]", darkIcon: true },
+    { name: "Work Books", id: "enlight_semester_books", icon: "fa-pen-clip", desc: "Guided Practice", color: "bg-[#EC1C24]" },
+    { name: "Languages", id: "language_books", icon: "fa-language", desc: "Region Specific", color: "bg-[#f06d06]" },
+    { name: "Flash Cards", id: "flash_cards", icon: "fa-palette", desc: "Visual Learning", color: "bg-[#231F20]" },
 ];
 
 const Categories = () => {
