@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+  <!-- Outer Green Shape -->
+  <rect x="10" y="10" width="180" height="80" rx="40" fill="#01A651" stroke="rgba(255,255,255,0.2)" stroke-width="4"/>
+  
+  <!-- Inner Yellow Shape -->
+  <rect x="25" y="25" width="150" height="50" rx="25" fill="#FFF200" stroke="rgba(1,166,81,0.2)" stroke-width="2"/>
+  
+  <!-- "Ravi" Text -->
+  <text x="75" y="60" font-family="Arial, sans-serif" font-weight="900" font-style="italic" font-size="40" fill="#EC1C24" text-anchor="middle">Ravi</text>
+  
+  <!-- Star Icon -->
+  <path transform="translate(135, 35) scale(1.2)" fill="#2E3092" d="M12 2L14.39 8.26L21 9.27L16.27 13.87L17.38 20.46L12 17.38L6.62 20.46L7.73 13.87L3 9.27L9.61 8.26L12 2Z" />
+  
+  <!-- "Since 1988" Text (Optional, might be too small for favicon but good for logo) -->
+  <text x="100" y="82" font-family="Arial, sans-serif" font-weight="900" font-size="10" fill="white" letter-spacing="2" text-anchor="middle">SINCE 1988</text>
+</svg>
