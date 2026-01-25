@@ -288,6 +288,44 @@ export const booksData = [
         image: "/src/assets/Sr.KG/Hindi Workbook.png",
         rating: 5,
         features: ["Varnamala Writing"]
+    },
+
+    // --- TERM BOOKS (Added for Completeness) ---
+    {
+        id: 6001,
+        name: "Enlight Term Coursebook 1 - Class 1",
+        description: "Curriculum for Term 1 as per board guidelines.",
+        category: "Enlight Term Books",
+        subCategory: "1st Class",
+        price: 375,
+        oldPrice: 450,
+        image: "/src/assets/1st Class/Term Coursebook-1.png",
+        rating: 5,
+        features: ["Term 1 Ready", "CBSE Mapping"]
+    },
+    {
+        id: 6002,
+        name: "Enlight Term Coursebook 1 - Class 2",
+        description: "Curriculum for Term 1 for Class 2 students.",
+        category: "Enlight Term Books",
+        subCategory: "2nd Class",
+        price: 425,
+        oldPrice: 500,
+        image: "/src/assets/2nd Class/English-2.png",
+        rating: 5,
+        features: ["Term 1 Ready", "Activity Based"]
+    },
+    {
+        id: 7001,
+        name: "Enlight Semester Coursebook 1 - Class 1",
+        description: "Semester 1 main coursebook.",
+        category: "Enlight Semester Books",
+        subCategory: "1st Class",
+        price: 525,
+        oldPrice: 600,
+        image: "/src/assets/1st Class/Semester Coursebook-1.png",
+        rating: 5,
+        features: ["Semester Pattern", "Composite Book"]
     }
 ];
 

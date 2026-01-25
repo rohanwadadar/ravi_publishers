@@ -24,19 +24,28 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [searchStr, setSearchStr] = useState('');
     const [searchCategory, setSearchCategory] = useState('Catalogue Library');
-    const [liveResults, setLiveResults] = useState([]);
+    const [liveResults, setLiveResults] = useState({ books: [], categories: [] });
     const location = useLocation();
 
     const handleSearchInput = (val) => {
         setSearchStr(val);
         if (val.trim().length > 1) {
-            const filtered = booksData.filter(b =>
-                b.name.toLowerCase().includes(val.toLowerCase()) ||
-                b.category.toLowerCase().includes(val.toLowerCase())
-            ).slice(0, 5);
-            setLiveResults(filtered);
+            const v = val.toLowerCase();
+            const filteredBooks = booksData.filter(b =>
+                b.name.toLowerCase().includes(v) ||
+                b.category.toLowerCase().includes(v)
+            ).slice(0, 4);
+
+            const filteredCats = Object.keys(navCategories).filter(key =>
+                key.replace('_', ' ').toLowerCase().includes(v)
+            ).map(key => ({
+                label: key.replace('_', ' '),
+                id: key
+            })).slice(0, 3);
+
+            setLiveResults({ books: filteredBooks, categories: filteredCats });
         } else {
-            setLiveResults([]);
+            setLiveResults({ books: [], categories: [] });
         }
     };
 
@@ -46,8 +55,9 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
         const cat = searchCategory === 'Catalogue Library' ? '' : searchCategory;
         onSearch(query, cat);
         setMobileMenuOpen(false);
-        setLiveResults([]);
+        setLiveResults({ books: [], categories: [] });
     };
+
     const isHomePage = location.pathname === '/';
 
     useEffect(() => {
@@ -103,15 +113,11 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
                     <span className="flex items-center gap-2 hidden lg:flex"><i className="fas fa-phone text-[#01A651]"></i> +91 98491 00063</span>
                     <span className="flex items-center gap-2 text-[#FFF200] animate-pulse"><i className="fas fa-file-invoice"></i> ORDER FORM 2026 ACTIVE</span>
                 </div>
-                <button className="bg-[#EC1C24] hover:bg-white hover:text-[#EC1C24] text-white px-5 py-2 transition-all rounded-sm text-[8px] font-black tracking-widest">
-                    PORTAL LOGIN
-                </button>
             </div>
 
             {/* Main Branding Bar */}
             <nav className={`py-3 px-4 md:px-20 flex items-center justify-between gap-4 md:gap-10 transition-all duration-500 ${useSolidStyle ? 'bg-white border-b border-gray-100' : 'bg-[#01A651] text-white shadow-lg'}`}>
-                <div className="flex items-center gap-4">
-                    {/* Mobile Menu Toggle */}
+                <div className="flex items-center gap-4 text-left">
                     <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="md:hidden text-xl focus:outline-none">
                         <i className={`fas ${mobileMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
                     </button>
@@ -120,7 +126,6 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
                     </Link>
                 </div>
 
-                {/* Global Search Interface - Tablet & Desktop */}
                 <form onSubmit={handleSearchSubmit} className={`flex-1 hidden sm:flex max-w-2xl rounded-[16px] overflow-hidden border transition-all items-center shadow-sm ${useSolidStyle ? 'bg-gray-100 border-gray-200 focus-within:bg-white focus-within:ring-4 focus-within:ring-[#EC1C24]/5' : 'bg-white/20 border-white/20 backdrop-blur-md'}`}>
                     <div className="relative h-full group hidden lg:block">
                         <select
@@ -144,37 +149,51 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
                             onChange={(e) => handleSearchInput(e.target.value)}
                             className={`w-full px-4 md:px-6 py-3 bg-transparent outline-none text-xs md:text-sm font-bold placeholder:opacity-50 ${useSolidStyle ? 'text-[#231F20]' : 'text-white placeholder:text-white'}`}
                         />
-                        
-                        {/* Instant Search Dropdown */}
-                        {liveResults.length > 0 && (
+
+                        {(liveResults.books.length > 0 || liveResults.categories.length > 0) && (
                             <div className="absolute top-[120%] left-0 w-full bg-white rounded-3xl shadow-[0_30px_60px_rgba(0,0,0,0.15)] border border-gray-50 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-300 z-[100]">
                                 <div className="p-4 bg-gray-50/50 border-b border-gray-100 flex justify-between items-center">
                                     <span className="text-[8px] font-black uppercase text-gray-400 tracking-widest">Instant Results</span>
                                     <i className="fas fa-bolt text-[#FFF200] text-[10px] animate-pulse"></i>
                                 </div>
-                                <div className="max-h-[350px] overflow-y-auto">
-                                    {liveResults.map((book) => (
-                                        <Link 
-                                            key={book.id} 
+                                <div className="max-h-[450px] overflow-y-auto">
+                                    {liveResults.categories.length > 0 && (
+                                        <div className="p-2 border-b border-gray-50">
+                                            <div className="px-4 py-2 text-[7px] font-black uppercase text-gray-300 tracking-[0.2em] text-left">Sectors & Categories</div>
+                                            {liveResults.categories.map(cat => (
+                                                <Link
+                                                    key={cat.id}
+                                                    to={`/category/${cat.id}`}
+                                                    onClick={() => setLiveResults({ books: [], categories: [] })}
+                                                    className="block px-4 py-3 hover:bg-gray-50 text-left rounded-xl transition-all group/cat"
+                                                >
+                                                    <span className="text-[10px] font-black uppercase tracking-tighter text-[#231F20] group-hover/cat:text-[#EC1C24]">{cat.label}</span>
+                                                </Link>
+                                            ))}
+                                        </div>
+                                    )}
+                                    {liveResults.books.map((book) => (
+                                        <Link
+                                            key={book.id}
                                             to={`/book/${book.id}`}
-                                            onClick={() => setLiveResults([])}
-                                            className="flex items-center gap-5 p-5 hover:bg-gray-50 transition-colors border-b border-gray-50 group/res"
+                                            onClick={() => setLiveResults({ books: [], categories: [] })}
+                                            className="flex items-center gap-5 p-5 hover:bg-gray-50 transition-colors border-b border-gray-50 group/res text-left"
                                         >
                                             <div className="w-10 h-14 bg-gray-100 rounded-lg overflow-hidden flex-shrink-0 flex items-center justify-center p-2 group-hover/res:bg-white shadow-sm transition-colors">
                                                 <img src={book.image} alt="" className="max-h-full object-contain" />
                                             </div>
-                                            <div className="flex-1 text-left">
+                                            <div className="flex-1">
                                                 <h4 className="text-[11px] font-black uppercase text-[#231F20] leading-tight mb-1 group-hover/res:text-[#EC1C24] transition-colors">{book.name}</h4>
                                                 <span className="text-[8px] font-black text-[#01A651] uppercase tracking-widest opacity-60">{book.category}</span>
                                             </div>
                                             <i className="fas fa-arrow-right text-[10px] text-gray-200 group-hover/res:text-[#EC1C24] group-hover/res:translate-x-1 transition-all"></i>
                                         </Link>
                                     ))}
-                                    <button 
+                                    <button
                                         onClick={handleSearchSubmit}
                                         className="w-full py-4 bg-gray-50 text-center text-[9px] font-black uppercase tracking-widest text-gray-400 hover:text-black transition-colors"
                                     >
-                                        View All Matching Titles
+                                        Expore Full Catalogue Results
                                     </button>
                                 </div>
                             </div>
@@ -185,15 +204,14 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
                     </button>
                 </form>
 
-                {/* Admin & Bag */}
-                <div className="flex items-center gap-2 md:gap-8">
+                <div className="flex items-center gap-2 md:gap-8 text-left">
                     <div className="relative">
                         <button
                             onClick={() => setShowProfileEdit(!showProfileEdit)}
                             className={`flex items-center gap-3 transition-colors ${useSolidStyle ? 'text-[#231F20]' : 'text-white'}`}
                         >
-                            <div className={`w-10 h-10 md:w-11 md:h-11 rounded-2xl flex items-center justify-center transition-all border ${useSolidStyle ? 'bg-gray-50 border-gray-200 text-[#EC1C24]' : 'bg-white/10 border-white/20 text-white'}`}>
-                                <i className="fas fa-shield-user text-lg md:text-xl"></i>
+                            <div className={`w-10 h-10 md:w-11 md:h-11 rounded-full flex items-center justify-center transition-all border-4 overflow-hidden ${useSolidStyle ? 'bg-gray-50 border-white' : 'bg-white/10 border-white/20'}`}>
+                                <img src="https://ui-avatars.com/api/?name=Ravi+Admin&background=EC1C24&color=fff&size=128" alt="Profile" className="w-full h-full object-cover" />
                             </div>
                             <div className="hidden lg:block text-left leading-tight">
                                 <div className={`text-[8px] font-black uppercase tracking-widest opacity-60 mb-0.5`}>Identity</div>
@@ -209,11 +227,11 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
                                 </div>
                                 <form onSubmit={saveProfile} className="space-y-5">
                                     <div className="space-y-2">
-                                        <label className="text-[9px] font-black text-gray-300 uppercase tracking-widest ml-1">Entity Name</label>
+                                        <label className="text-[9px] font-black text-gray-300 uppercase tracking-widest ml-1 text-left block">Entity Name</label>
                                         <input name="name" defaultValue={profile.name} className="w-full bg-gray-50 border-none rounded-xl px-5 py-3.5 outline-none focus:ring-2 focus:ring-[#EC1C24] font-bold text-xs" />
                                     </div>
                                     <div className="space-y-2">
-                                        <label className="text-[9px] font-black text-gray-300 uppercase tracking-widest ml-1">Location / Branch</label>
+                                        <label className="text-[9px] font-black text-gray-300 uppercase tracking-widest ml-1 text-left block">Location / Branch</label>
                                         <input name="location" defaultValue={profile.location} className="w-full bg-gray-50 border-none rounded-xl px-5 py-3.5 outline-none focus:ring-2 focus:ring-[#EC1C24] font-bold text-xs" />
                                     </div>
                                     <button type="submit" className="w-full bg-black text-white py-4 rounded-xl font-black text-[10px] uppercase tracking-widest transition-all hover:bg-[#EC1C24] shadow-xl shadow-black/10 mt-4">
@@ -235,14 +253,14 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
                 </div>
             </nav>
 
-            {/* Navigation Sub-Bar - Desktop Only */}
             <div className={`transition-all duration-500 hidden md:block ${useSolidStyle ? 'bg-white border-b border-gray-100 py-1' : 'bg-[#2E3092] text-white'}`}>
                 <ul className="max-w-7xl mx-auto px-10 lg:px-20 flex gap-6 lg:gap-12 text-[10px] font-black uppercase tracking-[0.1em] lg:tracking-[0.25em] py-4 relative scrollbar-hide overflow-x-auto whitespace-nowrap">
                     {navItems.map((cat) => (
                         <li
                             key={cat.label}
-                            className={`hover:text-[#FFF200] cursor-pointer transition-all border-b-2 border-transparent hover:border-[#FFF200] pb-1 flex-shrink-0 ${!isScrolled && isHomePage ? 'text-white' : 'text-gray-600'}`}
+                            className={`hover:text-[#FFF200] cursor-pointer transition-all border-b-2 border-transparent pb-1 flex-shrink-0 ${!isScrolled && isHomePage ? 'text-white' : 'text-gray-600'}`}
                             onMouseEnter={() => cat.id && !['about_nav', 'price_list_nav'].includes(cat.id) ? setActiveDropdown(cat.id) : setActiveDropdown(null)}
+                            onClick={() => setActiveDropdown(null)}
                         >
                             <Link to={cat.label === 'Official Home' ? '/' : (cat.label === 'About' ? '/about' : (cat.label === 'Price List' ? '/price-list' : `/category/${cat.id}`))}>{cat.label}</Link>
                         </li>
@@ -250,7 +268,6 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
                 </ul>
             </div>
 
-            {/* Mobile Drawer Navigation */}
             <div className={`fixed inset-0 bg-[#231F20] z-[60] transform transition-transform duration-500 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} md:hidden overflow-y-auto`}>
                 <div className="p-8">
                     <div className="flex justify-between items-center mb-16">
@@ -273,42 +290,29 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
                             </li>
                         ))}
                     </ul>
-
-                    <div className="mt-20 pt-10 border-t border-white/10 space-y-6">
-                        <div className="flex items-center gap-4 text-white/40 font-black text-xs uppercase tracking-widest">
-                            <i className="fas fa-phone text-[#FFF200]"></i> 98491 00063
-                        </div>
-                        <div className="flex items-center gap-4 text-white/40 font-black text-xs uppercase tracking-widest">
-                            <i className="fas fa-envelope text-[#EC1C24]"></i> info@ravipublishers.com
-                        </div>
-                        <button className="w-full bg-[#EC1C24] text-white py-5 rounded-2xl font-black uppercase tracking-[0.3em] text-xs">
-                            PORTAL LOGIN
-                        </button>
-                    </div>
                 </div>
             </div>
 
-            {/* Desktop Mega Menu Dropdown */}
             {activeDropdown && !mobileMenuOpen && (
                 <div className="absolute top-[100%] left-0 w-full bg-white shadow-[0_40px_100px_rgba(0,0,0,0.2)] border-t border-gray-100 p-12 hidden md:flex gap-20 animate-in slide-in-from-top-4 duration-500 z-40 rounded-b-[60px]">
                     <div className="w-1/4">
-                        <h4 className="text-[#EC1C24] text-xs font-black mb-8 border-b pb-4 uppercase tracking-[0.3em]">{activeDropdown.replace('_', ' ')} Directory</h4>
+                        <h4 className="text-[#EC1C24] text-xs font-black mb-8 border-b pb-4 uppercase tracking-[0.3em] text-left">{activeDropdown.replace('_', ' ')} Directory</h4>
                         <ul className="grid grid-cols-1 gap-4">
                             {navCategories[activeDropdown]?.map((item, i) => (
                                 <li key={i} className="text-gray-400 hover:text-black hover:translate-x-3 transition-all cursor-pointer font-bold text-[11px] uppercase flex items-center gap-3 group/nav">
                                     <div className="w-1.5 h-1.5 bg-gray-100 rounded-full group-hover/nav:bg-[#EC1C24] transition-colors"></div>
-                                    <Link to={`/category/${activeDropdown}`}>{item}</Link>
+                                    <Link to={`/category/${activeDropdown}`} onClick={() => setActiveDropdown(null)}>{item}</Link>
                                 </li>
                             ))}
                         </ul>
                     </div>
-                    <div className="flex-1 bg-gray-50 rounded-[48px] p-16 flex items-center justify-between border border-gray-100 relative overflow-hidden group/mega shadow-inner">
+                    <div className="flex-1 bg-gray-50 rounded-[48px] p-16 flex items-center justify-between border border-gray-100 relative overflow-hidden group/mega shadow-inner text-left">
                         <div className="absolute -top-20 -right-20 w-80 h-80 bg-[#EC1C24]/5 rounded-full blur-3xl"></div>
                         <div className="max-w-sm text-left relative z-10">
                             <span className="bg-[#01A651] text-white px-5 py-2 rounded-full text-[9px] font-black uppercase mb-8 inline-block tracking-widest shadow-lg">Authorized Publication</span>
                             <h3 className="text-5xl font-black text-[#231F20] mt-2 leading-[1] uppercase tracking-tighter">Catalogue <br />Sector 2026</h3>
                             <p className="text-gray-400 text-xs mt-8 font-bold uppercase leading-relaxed tracking-widest opacity-80">Full curriculum mapping for NCERT, CBSE and State boards.</p>
-                            <Link to={`/category/${activeDropdown}`} className="inline-block mt-12 bg-[#231F20] text-white px-12 py-5 rounded-[20px] font-black text-[10px] uppercase tracking-[0.3em] hover:bg-[#EC1C24] transition-all transform hover:-translate-y-1 shadow-2xl shadow-black/20">Explorer Collection</Link>
+                            <Link to={`/category/${activeDropdown}`} onClick={() => setActiveDropdown(null)} className="inline-block mt-12 bg-[#231F20] text-white px-12 py-5 rounded-[20px] font-black text-[10px] uppercase tracking-[0.3em] hover:bg-[#EC1C24] transition-all transform hover:-translate-y-1 shadow-2xl shadow-black/20">Explorer Collection</Link>
                         </div>
                         <div className="w-64 h-80 bg-white rounded-[32px] shadow-2xl flex items-center justify-center p-12 transform group-hover/mega:rotate-0 transition-all duration-1000 rotate-12 border-8 border-gray-50 relative overflow-hidden">
                             <div className="absolute inset-0 bg-gradient-to-tr from-gray-50 to-white opacity-50"></div>
