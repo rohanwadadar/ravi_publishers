@@ -7,10 +7,11 @@ const LanguagesPage = ({ onAddToCart }) => {
         const cat = book.category?.toLowerCase() || '';
         const subCat = book.subCategory?.toLowerCase() || '';
         const name = book.name?.toLowerCase() || '';
-        return cat.includes('language') ||
-            subCat.includes('kannada') ||
-            subCat.includes('tamil') ||
-            subCat.includes('telugu') ||
+        // Match Language Books category or books with language keywords
+        return cat === 'language books' ||
+            subCat === 'kannada' ||
+            subCat === 'tamil' ||
+            subCat === 'telugu' ||
             name.includes('kannada') ||
             name.includes('tamil') ||
             name.includes('telugu');

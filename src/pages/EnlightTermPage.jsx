@@ -5,7 +5,8 @@ const EnlightTermPage = ({ onAddToCart }) => {
     // Filter function for Enlight Term Books
     const filterFn = (book) => {
         const cat = book.category?.toLowerCase() || '';
-        return cat.includes('term');
+        return cat === 'enlight term books' ||
+            cat === 'joyway term books';
     };
 
     const filterOptions = ['Pre-KG', 'Jr.KG', 'Sr.KG', '1st Class', '2nd Class', '3rd Class', '4th Class', '5th Class'];

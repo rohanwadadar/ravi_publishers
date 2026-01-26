@@ -6,9 +6,10 @@ const KitsFlashPage = ({ onAddToCart }) => {
     const filterFn = (book) => {
         const cat = book.category?.toLowerCase() || '';
         const name = book.name?.toLowerCase() || '';
-        return cat.includes('kit') ||
-            cat.includes('flash') ||
-            name.includes('kit') ||
+        // Match Enlight Kits and Flash Cards
+        return cat === 'enlight kits' ||
+            cat === 'flash cards' ||
+            cat.includes('kit') && !cat.includes('workbook') ||
             name.includes('flash card');
     };
 
