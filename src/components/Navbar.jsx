@@ -969,6 +969,19 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
 
     const useSolidStyle = isScrolled || !isHomePage;
 
+    const getPath = (id) => {
+        if (!id) return '/';
+        if (id === 'about_nav') return '/about';
+        if (id === 'price_list_nav') return '/price-list';
+        if (id === 'enlight_course') return '/enlight-course';
+        if (id === 'enlight_semester') return '/enlight-semester';
+        if (id === 'enlight_term') return '/enlight-term';
+        if (id === 'kits_flash') return '/kits-flash';
+        if (id === 'workbooks') return '/workbooks';
+        if (id === 'languages') return '/languages';
+        return `/category/${id}`;
+    };
+
     const navItems = [
         { label: 'Official Home', id: '' },
         { label: 'About', id: 'about_nav' },
@@ -1037,7 +1050,7 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
                                         liveResults.categories.map(cat => (
                                             <Link
                                                 key={cat.id}
-                                                to={`/category/${cat.id}`}
+                                                to={getPath(cat.id)}
                                                 onClick={() => setLiveResults({ books: [], categories: [] })}
                                                 className="block px-4 py-3 hover:bg-white text-left rounded-xl transition-all group/cat"
                                             >
@@ -1136,16 +1149,18 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
             {/* Bottom Category Bar with Red Border Accent */}
             <div className={`transition-all duration-500 hidden md:block border-b-4 border-[#EC1C24] ${useSolidStyle ? 'bg-white' : 'bg-[#2E3092] text-white'}`}>
                 <ul className="max-w-7xl mx-auto px-10 lg:px-20 flex gap-6 lg:gap-12 text-[10px] font-black uppercase tracking-[0.1em] lg:tracking-[0.25em] py-4 relative scrollbar-hide overflow-x-auto whitespace-nowrap no-scrollbar" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-                    {navItems.map((cat) => (
-                        <li
-                            key={cat.label}
-                            className={`hover:text-[#EC1C24] cursor-pointer transition-all border-b-2 border-transparent pb-1 flex-shrink-0 ${!isScrolled && isHomePage ? 'text-white' : 'text-gray-600'}`}
-                            onMouseEnter={() => cat.id && !['about_nav', 'price_list_nav'].includes(cat.id) ? setActiveDropdown(cat.id) : setActiveDropdown(null)}
-                            onClick={() => setActiveDropdown(null)}
-                        >
-                            <Link to={cat.label === 'Official Home' ? '/' : (cat.label === 'About' ? '/about' : (cat.label === 'Price List' ? '/price-list' : `/category/${cat.id}`))}>{cat.label}</Link>
-                        </li>
-                    ))}
+                    {navItems.map((cat) => {
+
+                        return (
+                            <li
+                                key={cat.label}
+                                className={`hover:text-[#EC1C24] cursor-pointer transition-all border-b-2 border-transparent pb-1 flex-shrink-0 ${!isScrolled && isHomePage ? 'text-white' : 'text-gray-600'}`}
+                                onMouseEnter={() => cat.id && !['about_nav', 'price_list_nav'].includes(cat.id) ? setActiveDropdown(cat.id) : setActiveDropdown(null)}
+                            >
+                                <Link to={getPath(cat.id)}>{cat.label}</Link>
+                            </li>
+                        );
+                    })}
                 </ul>
             </div>
 
@@ -1163,7 +1178,7 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
                         {navItems.map((cat) => (
                             <li key={cat.label} onClick={() => setMobileMenuOpen(false)}>
                                 <Link
-                                    to={cat.label === 'Official Home' ? '/' : (cat.label === 'About' ? '/about' : (cat.label === 'Price List' ? '/price-list' : `/category/${cat.id}`))}
+                                    to={getPath(cat.id)}
                                     className="text-white text-2xl font-black uppercase tracking-tighter flex items-center justify-between group"
                                 >
                                     {cat.label}
@@ -1184,7 +1199,7 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
                             {navCategories[activeDropdown]?.map((item, i) => (
                                 <li key={i} className="text-gray-400 hover:text-black hover:translate-x-3 transition-all cursor-pointer font-bold text-[11px] uppercase flex items-center gap-3 group/nav">
                                     <div className="w-1.5 h-1.5 bg-gray-100 rounded-full group-hover/nav:bg-[#EC1C24] transition-colors"></div>
-                                    <Link to={`/category/${activeDropdown}`} onClick={() => setActiveDropdown(null)}>{item}</Link>
+                                    <Link to={getPath(activeDropdown)} onClick={() => setActiveDropdown(null)}>{item}</Link>
                                 </li>
                             ))}
                         </ul>
@@ -1193,7 +1208,7 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
                         <div className="max-w-sm text-left relative z-10">
                             <span className="bg-[#01A651] text-white px-5 py-2 rounded-full text-[9px] font-black uppercase mb-8 inline-block tracking-widest shadow-lg">Authorized Publication</span>
                             <h3 className="text-5xl font-black text-[#231F20] mt-2 leading-[1] uppercase tracking-tighter">Catalogue <br />Sector 2026</h3>
-                            <Link to={`/category/${activeDropdown}`} onClick={() => setActiveDropdown(null)} className="inline-block mt-12 bg-[#231F20] text-white px-12 py-5 rounded-[20px] font-black text-[10px] uppercase tracking-[0.3em] hover:bg-[#EC1C24] transition-all transform hover:-translate-y-1 shadow-2xl shadow-black/20">Explorer Collection</Link>
+                            <Link to={getPath(activeDropdown)} onClick={() => setActiveDropdown(null)} className="inline-block mt-12 bg-[#231F20] text-white px-12 py-5 rounded-[20px] font-black text-[10px] uppercase tracking-[0.3em] hover:bg-[#EC1C24] transition-all transform hover:-translate-y-1 shadow-2xl shadow-black/20">Explorer Collection</Link>
                         </div>
                         <div className="w-64 h-80 bg-white rounded-[32px] shadow-2xl flex items-center justify-center p-12 transform group-hover/mega:rotate-0 transition-all duration-1000 rotate-12 border-8 border-gray-50 relative overflow-hidden">
                             <img src="https://placehold.co/200x280/EC1C24/FFFFFF?text=2026+Catalogue" alt="Feature" className="h-full shadow-2xl relative z-10 rounded-sm" />
