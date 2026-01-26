@@ -136,7 +136,7 @@
 //         subCategory: "1st Class",
 //         price: 250,
 //         oldPrice: 310,
-//         image: "https://ik.imagekit.io/rohanwadadar/assets/1st_Class/English.png",
+//         image: "https://ik.imagekit.io/rohanwadadar/assets/1st_Class/English-1.png",
 //         rating: 5,
 //         features: ["Story based learning", "Comprehension"]
 //     },
@@ -160,7 +160,7 @@
 //         subCategory: "1st Class",
 //         price: 240,
 //         oldPrice: 300,
-//         image: "https://ik.imagekit.io/rohanwadadar/assets/1st_Class/EVS.png",
+//         image: "https://ik.imagekit.io/rohanwadadar/assets/1st_Class/EVS-1.png",
 //         rating: 5,
 //         features: ["Project work", "Eco-friendly values"]
 //     },
@@ -174,7 +174,7 @@
 //         subCategory: "3rd Class",
 //         price: 275,
 //         oldPrice: 350,
-//         image: "https://ik.imagekit.io/rohanwadadar/assets/3rd_Class/English.png",
+//         image: "https://ik.imagekit.io/rohanwadadar/assets/3rd_Class/English-3.png",
 //         rating: 5,
 //         features: ["Creative writing", "Literature"]
 //     },
@@ -186,7 +186,7 @@
 //         subCategory: "3rd Class",
 //         price: 410,
 //         oldPrice: 500,
-//         image: "https://ik.imagekit.io/rohanwadadar/assets/3rd_Class/EVS.png",
+//         image: "https://ik.imagekit.io/rohanwadadar/assets/3rd_Class/EVS-3.png",
 //         rating: 5,
 //         features: ["Advanced themes", "Activity labs"]
 //     },
@@ -859,7 +859,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 250,
         oldPrice: 310,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/1st_Class/English.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/1st_Class/English-1.png",
         rating: 5,
         features: ["Story based learning", "Comprehension", "Basic grammar"]
     },
@@ -871,7 +871,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 150,
         oldPrice: 190,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/1st_Class/Hindi_Reader.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/1st_Class/Hindi_Reader-1.png",
         rating: 5,
         features: ["Hindi basics", "Reading practice", "Vocabulary"]
     },
@@ -883,7 +883,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 300,
         oldPrice: 370,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/1st_Class/Maths.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/1st_Class/Maths-1.png",
         rating: 5,
         features: ["Mental maths", "Problem solving", "Basic geometry"]
     },
@@ -895,7 +895,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 300,
         oldPrice: 370,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/1st_Class/EVS.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/1st_Class/EVS-1.png",
         rating: 5,
         features: ["Project work", "Eco-friendly values", "Science basics"]
     },
@@ -907,7 +907,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 180,
         oldPrice: 230,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/1st_Class/English_Grammar.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/1st_Class/English_Grammar-1.png",
         rating: 5,
         features: ["Basic grammar rules", "Sentence formation", "Practice exercises"]
     },
@@ -1041,7 +1041,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 300,
         oldPrice: 370,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/2nd_Class/English.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/2nd_Class/English-2.png",
         rating: 5,
         features: ["Advanced reading", "Writing skills", "Comprehension"]
     },
@@ -1053,7 +1053,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 150,
         oldPrice: 190,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/2nd_Class/Hindi_Reader.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/2nd_Class/Hindi_Reader-2.png",
         rating: 5,
         features: ["Hindi reading", "Writing practice", "Vocabulary building"]
     },
@@ -1065,7 +1065,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 300,
         oldPrice: 370,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/2nd_Class/Maths.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/2nd_Class/Maths-2.png",
         rating: 5,
         features: ["Advanced arithmetic", "Problem solving", "Mental maths"]
     },
@@ -1077,7 +1077,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 410,
         oldPrice: 500,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/2nd_Class/EVS.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/2nd_Class/EVS-2.png",
         rating: 5,
         features: ["Detailed concepts", "Project work", "Science experiments"]
     },
@@ -1089,7 +1089,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 210,
         oldPrice: 260,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/2nd_Class/English_Grammar.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/2nd_Class/English_Grammar-2.png",
         rating: 5,
         features: ["Advanced grammar", "Sentence structure", "Practice exercises"]
     },
@@ -1223,7 +1223,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 275,
         oldPrice: 350,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/3rd_Class/English.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/3rd_Class/English-3.png",
         rating: 5,
         features: ["Creative writing", "Literature", "Advanced comprehension"]
     },
@@ -1235,7 +1235,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 170,
         oldPrice: 210,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/3rd_Class/Hindi_Reader.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/3rd_Class/Hindi_Reader-3.png",
         rating: 5,
         features: ["Advanced Hindi", "Comprehension", "Writing skills"]
     },
@@ -1247,7 +1247,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 350,
         oldPrice: 430,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/3rd_Class/Maths.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/3rd_Class/Maths-3.png",
         rating: 5,
         features: ["Multiplication/Division", "Fractions", "Advanced problems"]
     },
@@ -1259,7 +1259,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 525,
         oldPrice: 600,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/3rd_Class/EVS.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/3rd_Class/EVS-3.png",
         rating: 5,
         features: ["Advanced themes", "Activity labs", "Scientific concepts"]
     },
@@ -1271,7 +1271,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 250,
         oldPrice: 310,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/3rd_Class/English_Grammar.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/3rd_Class/English_Grammar-3.png",
         rating: 5,
         features: ["Advanced grammar", "Tenses", "Parts of speech"]
     },
@@ -1405,7 +1405,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 300,
         oldPrice: 370,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/4th_Class/English.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/4th_Class/English-4.png",
         rating: 5,
         features: ["Literature appreciation", "Advanced writing", "Critical thinking"]
     },
@@ -1417,7 +1417,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 170,
         oldPrice: 210,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/4th_Class/Hindi_Reader.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/4th_Class/Hindi_Reader-4.png",
         rating: 5,
         features: ["Advanced Hindi", "Comprehension", "Creative writing"]
     },
@@ -1429,7 +1429,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 410,
         oldPrice: 500,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/4th_Class/Maths.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/4th_Class/Maths-4.png",
         rating: 5,
         features: ["Fractions/Decimals", "Geometry", "Word problems"]
     },
@@ -1441,7 +1441,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 575,
         oldPrice: 650,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/4th_Class/EVS.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/4th_Class/EVS-4.png",
         rating: 5,
         features: ["Science concepts", "Environmental issues", "Experiments"]
     },
@@ -1453,7 +1453,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 250,
         oldPrice: 310,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/4th_Class/English_Grammar.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/4th_Class/English_Grammar-4.png",
         rating: 5,
         features: ["Complex grammar", "Sentence analysis", "Writing skills"]
     },
@@ -1587,7 +1587,7 @@ export const booksData = [
         subCategory: "5th Class",
         price: 330,
         oldPrice: 400,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/5th_Class/English.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/5th_Class/English-5.png",
         rating: 5,
         features: ["Advanced literature", "Essay writing", "Comprehension skills"]
     },
@@ -1599,7 +1599,7 @@ export const booksData = [
         subCategory: "5th Class",
         price: 170,
         oldPrice: 210,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/5th_Class/Hindi_Reader.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/5th_Class/Hindi_Reader-5.png",
         rating: 5,
         features: ["Advanced Hindi", "Literature", "Writing proficiency"]
     },
@@ -1611,7 +1611,7 @@ export const booksData = [
         subCategory: "5th Class",
         price: 575,
         oldPrice: 650,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/5th_Class/Maths.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/5th_Class/Maths-5.png",
         rating: 5,
         features: ["Advanced arithmetic", "Geometry", "Algebra basics"]
     },
@@ -1623,7 +1623,7 @@ export const booksData = [
         subCategory: "5th Class",
         price: 250,
         oldPrice: 310,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/5th_Class/English_Grammar.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/5th_Class/English_Grammar-5.png",
         rating: 5,
         features: ["Comprehensive grammar", "Writing techniques", "Advanced exercises"]
     },
@@ -2511,7 +2511,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 190,
         oldPrice: 230,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Joyway/1st_Class/English.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/Joyway/1st_Class/English-1.png",
         rating: 5,
         features: ["State Board aligned", "English language", "Reading skills"]
     },
@@ -2535,7 +2535,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 175,
         oldPrice: 210,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Joyway/1st_Class/Maths.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/Joyway/1st_Class/Maths-1.png",
         rating: 5,
         features: ["State Board aligned", "Mathematics", "Problem solving"]
     },
@@ -2547,7 +2547,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 210,
         oldPrice: 250,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Joyway/1st_Class/EVS.png",
+        image: "https://ik.imagekit.io/rohanwadadar/assets/Joyway/1st_Class/EVS-1.png",
         rating: 5,
         features: ["State Board aligned", "Environmental Science", "Scientific concepts"]
     },
