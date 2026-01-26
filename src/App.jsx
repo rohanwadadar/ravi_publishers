@@ -10,6 +10,12 @@ import BookDetailPage from './pages/BookDetailPage';
 import AboutPage from './pages/AboutPage';
 import PriceListPage from './pages/PriceListPage';
 import CheckoutPage from './pages/CheckoutPage';
+import WorkbooksPage from './pages/WorkbooksPage';
+import KitsFlashPage from './pages/KitsFlashPage';
+import LanguagesPage from './pages/LanguagesPage';
+import EnlightCoursePage from './pages/EnlightCoursePage';
+import EnlightSemesterPage from './pages/EnlightSemesterPage';
+import EnlightTermPage from './pages/EnlightTermPage';
 import ScrollToTop from './components/ScrollToTop';
 import { booksData } from './data';
 
@@ -212,6 +218,12 @@ const AppContent = () => {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/price-list" element={<PriceListPage />} />
         <Route path="/checkout" element={<CheckoutPage cart={cart} cartTotal={cartTotal} />} />
+        <Route path="/workbooks" element={<WorkbooksPage onAddToCart={handleAddToCart} />} />
+        <Route path="/kits-flash" element={<KitsFlashPage onAddToCart={handleAddToCart} />} />
+        <Route path="/languages" element={<LanguagesPage onAddToCart={handleAddToCart} />} />
+        <Route path="/enlight-course" element={<EnlightCoursePage onAddToCart={handleAddToCart} />} />
+        <Route path="/enlight-semester" element={<EnlightSemesterPage onAddToCart={handleAddToCart} />} />
+        <Route path="/enlight-term" element={<EnlightTermPage onAddToCart={handleAddToCart} />} />
       </Routes>
 
       <Footer />

@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const categories = [
-    { name: "Enlight Series", id: "enlight_course_books", icon: "fa-book-open-reader", desc: "NCERT/CBSE Based", color: "bg-[#2E3092]" },
-    { name: "Joyway Series", id: "joyway", icon: "fa-child-reaching", desc: "State Board Based", color: "bg-[#01A651]" },
-    { name: "Semester Kits", id: "enlight_kits", icon: "fa-box-archive", desc: "All-in-One Packs", color: "bg-[#FFF200]", darkIcon: true },
-    { name: "Work Books", id: "enlight_semester_books", icon: "fa-pen-clip", desc: "Guided Practice", color: "bg-[#EC1C24]" },
-    { name: "Languages", id: "language_books", icon: "fa-language", desc: "Region Specific", color: "bg-[#f06d06]" },
-    { name: "Flash Cards", id: "flash_cards", icon: "fa-palette", desc: "Visual Learning", color: "bg-[#231F20]" },
+    { name: "Enlight Core", id: "enlight-course", icon: "fa-book-open-reader", desc: "NCERT/CBSE Based", color: "bg-[#EC1C24]" },
+    { name: "Semester Series", id: "enlight-semester", icon: "fa-calendar-days", desc: "Full Semester", color: "bg-[#9C27B0]" },
+    { name: "Term Series", id: "enlight-term", icon: "fa-calendar-week", desc: "Term Based", color: "bg-[#00BCD4]" },
+    { name: "Work Books", id: "workbooks", icon: "fa-pen-clip", desc: "Practice Books", color: "bg-[#2E3092]" },
+    { name: "Kits & Flash", id: "kits-flash", icon: "fa-box-archive", desc: "Complete Kits", color: "bg-[#FFA500]" },
+    { name: "Languages", id: "languages", icon: "fa-language", desc: "Regional Books", color: "bg-[#01A651]" },
 ];
 
 const Categories = () => {
@@ -26,7 +26,7 @@ const Categories = () => {
 
             <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6 md:gap-10">
                 {categories.map((cat, idx) => (
-                    <Link to={`/category/${cat.id}`} key={idx} className="group flex flex-col items-center">
+                    <Link to={`/${cat.id}`} key={idx} className="group flex flex-col items-center">
                         <div className={`w-full aspect-[4/5] sm:w-32 sm:h-40 ${cat.color} rounded-[32px] md:rounded-[48px] flex items-center justify-center mb-4 md:mb-8 transform group-hover:scale-105 transition-all duration-500 shadow-xl border-2 md:border-4 border-white overflow-hidden relative`}>
                             <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_#fff_1px,_transparent_1px)] bg-[size:8px_8px] md:bg-[size:10px_10px]"></div>
                             <i className={`fas ${cat.icon} text-3xl md:text-4xl ${cat.darkIcon ? 'text-[#231F20]' : 'text-white'} relative z-10`}></i>
