@@ -3118,7 +3118,6 @@ export const booksData = [
         subCategory: "Pre-KG",
         price: 180,
         oldPrice: 220,
-        // Mapped to Number_Book-0 based on description content in asset list
         image: "https://ik.imagekit.io/rohanwadadar/assets/Pre.KG/Number_Book-0.png?updatedAt=1769419713607",
         rating: 5,
         features: ["Number recognition 1-20", "Counting activities", "Basic shapes"]
@@ -3131,7 +3130,6 @@ export const booksData = [
         subCategory: "Pre-KG",
         price: 150,
         oldPrice: 190,
-        // Note: EVS specific file not found in Pre-KG asset list, kept original path or use placeholder
         image: "https://ik.imagekit.io/rohanwadadar/assets/Pre.KG/EVS.png",
         rating: 5,
         features: ["Nature awareness", "Basic concepts", "Interactive learning"]
@@ -3144,7 +3142,6 @@ export const booksData = [
         subCategory: "Pre-KG",
         price: 210,
         oldPrice: 260,
-        // Fixed: Asset uses 'Semester_Course_Book' (with underscores)
         image: "https://ik.imagekit.io/rohanwadadar/assets/Pre.KG/Semester_Course_Book-1.png?updatedAt=1769419703547",
         rating: 5,
         features: ["Semester Pattern", "All-in-One", "Includes English, Numbers, EVS, Rhymes"]
@@ -3157,7 +3154,6 @@ export const booksData = [
         subCategory: "Pre-KG",
         price: 210,
         oldPrice: 260,
-        // Fixed: Asset uses 'Semester_Course_Book'
         image: "https://ik.imagekit.io/rohanwadadar/assets/Pre.KG/Semester_Course_Book-2.png?updatedAt=1769419704678",
         rating: 5,
         features: ["Semester Pattern", "All-in-One", "Continuing curriculum"]
@@ -3304,7 +3300,6 @@ export const booksData = [
         subCategory: "Jr.KG",
         price: 300,
         oldPrice: 370,
-        // Fixed: Asset uses 'Semester_Course_Book'
         image: "https://ik.imagekit.io/rohanwadadar/assets/Jr.KG/Semester_Course_Book-1.png?updatedAt=1769419745032",
         rating: 5,
         features: ["All subjects combined", "Structured learning", "CBSE aligned"]
@@ -3317,7 +3312,6 @@ export const booksData = [
         subCategory: "Jr.KG",
         price: 300,
         oldPrice: 370,
-        // Fixed: Asset uses 'Semester_Course_Book'
         image: "https://ik.imagekit.io/rohanwadadar/assets/Jr.KG/Semester_Course_Book-2.png?updatedAt=1769419745099",
         rating: 5,
         features: ["Continuation of syllabus", "Advanced concepts", "Year-round coverage"]
@@ -3330,7 +3324,6 @@ export const booksData = [
         subCategory: "Jr.KG",
         price: 150,
         oldPrice: 190,
-        // Fixed: Asset uses 'Semester_WorkBook' (capital B)
         image: "https://ik.imagekit.io/rohanwadadar/assets/Jr.KG/Semester_WorkBook-1.png?updatedAt=1769419750513",
         rating: 5,
         features: ["Practice exercises", "Skill development", "Concept reinforcement"]
@@ -3343,7 +3336,6 @@ export const booksData = [
         subCategory: "Jr.KG",
         price: 150,
         oldPrice: 190,
-        // Fixed: Asset uses 'Semester_WorkBook' (capital B)
         image: "https://ik.imagekit.io/rohanwadadar/assets/Jr.KG/Semester_WorkBook-2.png?updatedAt=1769419751758",
         rating: 5,
         features: ["Advanced practice", "Progress tracking", "Final assessment"]
@@ -3478,7 +3470,6 @@ export const booksData = [
         subCategory: "Sr.KG",
         price: 180,
         oldPrice: 230,
-        // English Grammar not found in Sr.KG asset list, keeping placeholder or original path
         image: "https://ik.imagekit.io/rohanwadadar/assets/Sr.KG/English_Grammar.png",
         rating: 5,
         features: ["Grammar foundations", "Parts of speech", "Basic rules"]
@@ -3653,19 +3644,19 @@ export const booksData = [
         rating: 5,
         features: ["Project work", "Eco-friendly values", "Science basics"]
     },
-    {
-        id: 1305,
-        name: "Enlight English Grammar - 1st Std",
-        description: "English grammar for 1st Standard students.",
-        category: "Enlight Course Books",
-        subCategory: "1st Class",
-        price: 180,
-        oldPrice: 230,
-        // File extension in asset list was .psd, not suitable for web. Using placeholder or original
-        image: "https://ik.imagekit.io/rohanwadadar/assets/1st_Class/English_Grammar-1.png",
-        rating: 5,
-        features: ["Basic grammar rules", "Sentence formation", "Practice exercises"]
-    },
+    // {
+    //     id: 1305,
+    //     name: "Enlight English Grammar - 1st Std",
+    //     description: "English grammar for 1st Standard students.",
+    //     category: "Enlight Course Books",
+    //     subCategory: "1st Class",
+    //     price: 180,
+    //     oldPrice: 230,
+    //     // File extension in asset list was .psd, not suitable for web. Using placeholder or original
+    //     image: "https://ik.imagekit.io/rohanwadadar/assets/1st_Class/English_Grammar-1.png",
+    //     rating: 5,
+    //     features: ["Basic grammar rules", "Sentence formation", "Practice exercises"]
+    // },
     {
         id: 1306,
         name: "Enlight Semester Coursebook 1 - 1st Std",

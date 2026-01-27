@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <footer className="bg-[#231F20] text-white pt-16 md:pt-24 pb-12">
-            <div className="max-w-7xl mx-auto px-6 md:px-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16 mb-16 md:mb-20">
+            {/* Reduced mb-16 to mb-8 to move the bottom section upward */}
+            <div className="max-w-7xl mx-auto px-6 md:px-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16 mb-8 md:mb-10">
                 <div className="text-left">
                     <div className="flex flex-col mb-8">
                         <span className="text-[#EC1C24] font-black italic text-4xl tracking-tighter leading-none">Ravi</span>
@@ -49,10 +50,11 @@ const Footer = () => {
                         <button className="bg-[#EC1C24] hover:bg-[#bd0021] text-white font-black py-3 md:py-4 rounded-xl text-[9px] md:text-[10px] transition-all uppercase tracking-[0.2em] shadow-xl shadow-[#EC1C24]/10">Subscribe Now</button>
                     </div>
                     <div className="mt-8 pt-6 border-t border-white/5 space-y-3">
-                        <div className="flex items-center gap-3 text-gray-400 text-[9px] md:text-[10px] font-black uppercase">
+                        {/* Email changed to lowercase and made into a mailto link */}
+                        <a href="mailto:info@ravipublishers.com" className="flex items-center gap-3 text-gray-400 text-[9px] md:text-[10px] font-black lowercase hover:text-[#EC1C24] transition-colors">
                             <i className="fas fa-envelope text-[#EC1C24] w-4"></i>
                             info@ravipublishers.com
-                        </div>
+                        </a>
                         <div className="flex items-center gap-3 text-gray-400 text-[9px] md:text-[10px] font-black uppercase">
                             <i className="fas fa-phone text-[#EC1C24] w-4"></i>
                             +91 98491 00063
@@ -61,9 +63,13 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="max-w-7xl mx-auto px-6 md:px-20 border-t border-white/5 pt-10 md:pt-12 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8">
+            {/* Reduced pt-10 to pt-6 to move this segment upward */}
+            <div className="max-w-7xl mx-auto px-6 md:px-20 border-t border-white/5 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8">
                 <div className="text-gray-500 text-[8px] md:text-[10px] font-black tracking-[0.2em] md:tracking-[0.3em] uppercase text-center md:text-left">
                     &copy; 2026 RAVI PUBLISHERS. ESTD 1988. <br className="md:hidden" /> ALL RIGHTS RESERVED.
+                    <div className="mt-1 normal-case tracking-normal font-medium text-gray-600">
+                        Developed by <a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-[#EC1C24] transition-colors">@rohan.wadadar</a>
+                    </div>
                 </div>
                 <div className="flex gap-4 md:gap-6 opacity-30 grayscale hover:grayscale-0 transition-all">
                     <i className="fab fa-cc-visa text-2xl md:text-3xl"></i>
