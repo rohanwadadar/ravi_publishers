@@ -364,7 +364,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 120,
         oldPrice: 150,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/LKG_Vachaka.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Basic vocabulary", "Letter recognition", "Foundation building"]
     },
@@ -376,7 +376,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 130,
         oldPrice: 160,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/UKG_Vachaka.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Advanced vocabulary", "Sentence formation", "Reading practice"]
     },
@@ -388,7 +388,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 350,
         oldPrice: 400,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/LKG_Semester1.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Comprehensive curriculum", "Term-wise learning", "Activity based"]
     },
@@ -400,7 +400,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 350,
         oldPrice: 400,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/LKG_Semester2.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Comprehensive curriculum", "Term-wise learning", "Activity based"]
     },
@@ -412,7 +412,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 140,
         oldPrice: 170,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Akshara_Mala.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Letter recognition", "Writing practice", "Pronunciation guide"]
     },
@@ -424,7 +424,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 125,
         oldPrice: 155,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Kaguninthalu.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Vowel combinations", "Consonant practice", "Word formation"]
     },
@@ -433,12 +433,13 @@ export const booksData = [
     {
         id: 4007,
         name: "Kannada Vachaka - LKG (Joyway)",
+
         description: "Kannada language textbook for LKG students from Joyway Learning Series.",
         category: "Language Books",
         subCategory: "Kannada",
         price: 120,
         oldPrice: 150,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Joyway_LKG_Vachaka.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Basic vocabulary", "Letter recognition", "Foundation building"]
     },
@@ -450,7 +451,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 130,
         oldPrice: 160,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Joyway_UKG_Vachaka.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Advanced vocabulary", "Sentence formation", "Reading practice"]
     },
@@ -462,7 +463,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 290,
         oldPrice: 340,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Joyway_LKG_Semester1.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Comprehensive curriculum", "Term-wise learning", "Activity based"]
     },
@@ -474,7 +475,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 290,
         oldPrice: 340,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Joyway_LKG_Semester2.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Comprehensive curriculum", "Term-wise learning", "Activity based"]
     },
@@ -486,7 +487,7 @@ export const booksData = [
         subCategory: "Kannada Medium",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Joyway_UKG_Maths.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Number recognition", "Basic operations", "Problem solving"]
     },
@@ -500,7 +501,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 120,
         oldPrice: 140,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Mega_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Large size", "Quality paper", "Ruled format"]
     },
@@ -512,7 +513,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 120,
         oldPrice: 140,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Mega_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Large size", "Quality paper", "Ruled format"]
     },
@@ -524,7 +525,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 120,
         oldPrice: 140,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Mega_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Large size", "Quality paper", "Ruled format"]
     },
@@ -536,7 +537,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 120,
         oldPrice: 140,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Mega_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Large size", "Quality paper", "Ruled format"]
     },
@@ -548,7 +549,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 120,
         oldPrice: 140,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Mega_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Large size", "Quality paper", "Ruled format"]
     },
@@ -560,7 +561,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 120,
         oldPrice: 140,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Mega_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Large size", "Quality paper", "Ruled format"]
     },
@@ -572,7 +573,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 120,
         oldPrice: 140,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Mega_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Large size", "Quality paper", "Ruled format"]
     },
@@ -584,7 +585,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 120,
         oldPrice: 140,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Mega_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Large size", "Quality paper", "Ruled format"]
     },
@@ -596,7 +597,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 120,
         oldPrice: 140,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Mega_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Large size", "Quality paper", "Ruled format"]
     },
@@ -610,7 +611,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Ideal_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Medium size", "Good paper", "Ruled format"]
     },
@@ -622,7 +623,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Ideal_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Medium size", "Good paper", "Ruled format"]
     },
@@ -634,7 +635,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Ideal_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Medium size", "Good paper", "Ruled format"]
     },
@@ -646,7 +647,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Ideal_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Medium size", "Good paper", "Ruled format"]
     },
@@ -658,7 +659,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Ideal_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Medium size", "Good paper", "Ruled format"]
     },
@@ -670,7 +671,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Ideal_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Medium size", "Good paper", "Ruled format"]
     },
@@ -682,7 +683,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Ideal_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Medium size", "Good paper", "Ruled format"]
     },
@@ -694,7 +695,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Ideal_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Medium size", "Good paper", "Ruled format"]
     },
@@ -706,7 +707,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Ideal_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Medium size", "Good paper", "Ruled format"]
     },
@@ -720,7 +721,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 55,
         oldPrice: 70,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Big_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Compact size", "Basic paper", "Ruled format"]
     },
@@ -732,7 +733,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 55,
         oldPrice: 70,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Big_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Compact size", "Basic paper", "Ruled format"]
     },
@@ -744,7 +745,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 55,
         oldPrice: 70,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Big_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Compact size", "Basic paper", "Ruled format"]
     },
@@ -756,7 +757,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 55,
         oldPrice: 70,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Big_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Compact size", "Basic paper", "Ruled format"]
     },
@@ -768,7 +769,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 55,
         oldPrice: 70,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Big_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Compact size", "Basic paper", "Ruled format"]
     },
@@ -780,7 +781,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 55,
         oldPrice: 70,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Big_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Compact size", "Basic paper", "Ruled format"]
     },
@@ -792,7 +793,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 55,
         oldPrice: 70,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Big_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Compact size", "Basic paper", "Ruled format"]
     },
@@ -804,7 +805,7 @@ export const booksData = [
         subCategory: "Kannada",
         price: 55,
         oldPrice: 70,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Kannada/Big_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Compact size", "Basic paper", "Ruled format"]
     },
@@ -818,7 +819,7 @@ export const booksData = [
         subCategory: "Telugu",
         price: 100,
         oldPrice: 130,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Telugu/UKG_Stuvar.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Bilingual learning", "Basic vocabulary", "Reading practice"]
     },
@@ -830,7 +831,7 @@ export const booksData = [
         subCategory: "Telugu",
         price: 100,
         oldPrice: 130,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Telugu/1st_Stuvar.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Bilingual learning", "Vocabulary building", "Grammar basics"]
     },
@@ -842,7 +843,7 @@ export const booksData = [
         subCategory: "Telugu",
         price: 130,
         oldPrice: 160,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Telugu/2nd_Stuvar.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Advanced vocabulary", "Sentence formation", "Comprehension"]
     },
@@ -854,7 +855,7 @@ export const booksData = [
         subCategory: "Telugu",
         price: 150,
         oldPrice: 180,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Telugu/3rd_Stuvar.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Complex vocabulary", "Grammar rules", "Essay writing"]
     },
@@ -866,7 +867,7 @@ export const booksData = [
         subCategory: "Telugu",
         price: 150,
         oldPrice: 180,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Telugu/4th_Stuvar.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Advanced grammar", "Literature", "Creative writing"]
     },
@@ -878,7 +879,7 @@ export const booksData = [
         subCategory: "Telugu",
         price: 150,
         oldPrice: 180,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Telugu/5th_Stuvar.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Advanced grammar", "Literature analysis", "Composition"]
     },
@@ -890,7 +891,7 @@ export const booksData = [
         subCategory: "Telugu",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Telugu/UKG_Vyandh.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Writing practice", "Letter recognition", "Basic grammar"]
     },
@@ -902,7 +903,7 @@ export const booksData = [
         subCategory: "Telugu",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Telugu/1st_Vyandh.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Writing practice", "Vocabulary", "Grammar exercises"]
     },
@@ -914,7 +915,7 @@ export const booksData = [
         subCategory: "Telugu",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Telugu/2nd_Vyandh.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Writing practice", "Comprehension", "Grammar"]
     },
@@ -926,7 +927,7 @@ export const booksData = [
         subCategory: "Telugu",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Telugu/3rd_Vyandh.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Writing practice", "Essay writing", "Advanced grammar"]
     },
@@ -938,7 +939,7 @@ export const booksData = [
         subCategory: "Telugu",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Telugu/4th_Vyandh.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Creative writing", "Literature", "Grammar mastery"]
     },
@@ -950,7 +951,7 @@ export const booksData = [
         subCategory: "Telugu",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Telugu/5th_Vyandh.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Advanced writing", "Literature analysis", "Composition"]
     },
@@ -962,7 +963,7 @@ export const booksData = [
         subCategory: "Telugu Medium",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Telugu/UKG_Maths.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Number recognition", "Basic counting", "Shapes"]
     },
@@ -974,7 +975,7 @@ export const booksData = [
         subCategory: "Telugu Medium",
         price: 100,
         oldPrice: 130,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Telugu/1st_Maths.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Addition", "Subtraction", "Number concepts"]
     },
@@ -986,7 +987,7 @@ export const booksData = [
         subCategory: "Telugu Medium",
         price: 120,
         oldPrice: 150,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Telugu/2nd_Maths.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Multiplication", "Division", "Word problems"]
     },
@@ -998,7 +999,7 @@ export const booksData = [
         subCategory: "Telugu",
         price: 100,
         oldPrice: 130,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Telugu/1st_Vachanala.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Reading practice", "Comprehension", "Story telling"]
     },
@@ -1010,7 +1011,7 @@ export const booksData = [
         subCategory: "Telugu",
         price: 120,
         oldPrice: 150,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Telugu/2nd_Vachanala.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Advanced reading", "Story analysis", "Comprehension"]
     },
@@ -1022,7 +1023,7 @@ export const booksData = [
         subCategory: "Telugu",
         price: 140,
         oldPrice: 170,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Telugu/3rd_Vachanala.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Literary texts", "Critical reading", "Analysis"]
     },
@@ -1036,7 +1037,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 120,
         oldPrice: 150,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/LKG_Malar.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Basic vocabulary", "Letter recognition", "Foundation building"]
     },
@@ -1048,7 +1049,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 140,
         oldPrice: 170,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/UKG_Malar.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Advanced vocabulary", "Sentence formation", "Reading practice"]
     },
@@ -1060,7 +1061,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 120,
         oldPrice: 150,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/LKG_Practice.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Writing practice", "Letter tracing", "Basic exercises"]
     },
@@ -1072,7 +1073,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 220,
         oldPrice: 270,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/LKG_Term1.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Complete curriculum", "Activity based", "Term assessment"]
     },
@@ -1084,7 +1085,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 270,
         oldPrice: 320,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/UKG_Term1.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Complete curriculum", "Activity based", "Term assessment"]
     },
@@ -1096,7 +1097,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 220,
         oldPrice: 270,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/LKG_Term2.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Complete curriculum", "Activity based", "Term assessment"]
     },
@@ -1108,7 +1109,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 270,
         oldPrice: 320,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/UKG_Term2.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Complete curriculum", "Activity based", "Term assessment"]
     },
@@ -1120,7 +1121,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 220,
         oldPrice: 270,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/LKG_Term3.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Complete curriculum", "Activity based", "Term assessment"]
     },
@@ -1132,7 +1133,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 270,
         oldPrice: 320,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/UKG_Term3.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Complete curriculum", "Activity based", "Term assessment"]
     },
@@ -1146,7 +1147,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 120,
         oldPrice: 140,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Mega_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Large size", "Quality paper", "Tamil ruled format"]
     },
@@ -1158,7 +1159,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 120,
         oldPrice: 140,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Mega_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Large size", "Quality paper", "Tamil ruled format"]
     },
@@ -1170,7 +1171,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 120,
         oldPrice: 140,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Mega_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Large size", "Quality paper", "Tamil ruled format"]
     },
@@ -1182,7 +1183,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 120,
         oldPrice: 140,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Mega_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Large size", "Quality paper", "Tamil ruled format"]
     },
@@ -1194,7 +1195,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 120,
         oldPrice: 140,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Mega_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Large size", "Quality paper", "Tamil ruled format"]
     },
@@ -1206,7 +1207,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 120,
         oldPrice: 140,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Mega_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Large size", "Quality paper", "Tamil ruled format"]
     },
@@ -1218,7 +1219,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 120,
         oldPrice: 140,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Mega_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Large size", "Quality paper", "Tamil ruled format"]
     },
@@ -1230,7 +1231,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 120,
         oldPrice: 140,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Mega_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Large size", "Quality paper", "Tamil ruled format"]
     },
@@ -1242,7 +1243,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 120,
         oldPrice: 140,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Mega_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Large size", "Quality paper", "Tamil ruled format"]
     },
@@ -1256,7 +1257,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Ideal_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Medium size", "Good paper", "Tamil ruled format"]
     },
@@ -1268,7 +1269,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Ideal_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Medium size", "Good paper", "Tamil ruled format"]
     },
@@ -1280,7 +1281,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Ideal_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Medium size", "Good paper", "Tamil ruled format"]
     },
@@ -1292,7 +1293,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Ideal_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Medium size", "Good paper", "Tamil ruled format"]
     },
@@ -1304,7 +1305,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Ideal_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Medium size", "Good paper", "Tamil ruled format"]
     },
@@ -1316,7 +1317,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Ideal_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Medium size", "Good paper", "Tamil ruled format"]
     },
@@ -1328,7 +1329,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Ideal_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Medium size", "Good paper", "Tamil ruled format"]
     },
@@ -1340,7 +1341,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Ideal_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Medium size", "Good paper", "Tamil ruled format"]
     },
@@ -1352,7 +1353,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 90,
         oldPrice: 110,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Ideal_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Medium size", "Good paper", "Tamil ruled format"]
     },
@@ -1366,7 +1367,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 55,
         oldPrice: 70,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Big_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Compact size", "Basic paper", "Tamil ruled format"]
     },
@@ -1378,7 +1379,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 55,
         oldPrice: 70,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Big_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Compact size", "Basic paper", "Tamil ruled format"]
     },
@@ -1390,7 +1391,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 55,
         oldPrice: 70,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Big_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Compact size", "Basic paper", "Tamil ruled format"]
     },
@@ -1402,7 +1403,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 55,
         oldPrice: 70,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Big_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Compact size", "Basic paper", "Tamil ruled format"]
     },
@@ -1414,7 +1415,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 55,
         oldPrice: 70,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Big_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Compact size", "Basic paper", "Tamil ruled format"]
     },
@@ -1426,7 +1427,7 @@ export const booksData = [
         subCategory: "Tamil",
         price: 55,
         oldPrice: 70,
-        image: "https://ik.imagekit.io/rohanwadadar/assets/Tamil/Big_Copy.png",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 4,
         features: ["Compact size", "Basic paper", "Tamil ruled format"]
     },
@@ -3585,7 +3586,7 @@ export const booksData = [
         subCategory: "Telugu",
         price: 25,
         oldPrice: 35,
-        image: "https://placehold.co/200x280/FFF200/231F20?text=Ekkalu",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Telugu Alphabets", "Basic Learning", "Compact"]
     },
@@ -3615,7 +3616,7 @@ export const booksData = [
         subCategory: "LKG",
         price: 120,
         oldPrice: 140,
-        image: "https://placehold.co/200x280/01A651/FFFFFF?text=Kannada+LKG",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Kannada Varnamala", "Writing Practice", "Basic Words"]
     },
@@ -3628,7 +3629,7 @@ export const booksData = [
         subCategory: "UKG",
         price: 150,
         oldPrice: 170,
-        image: "https://placehold.co/200x280/01A651/FFFFFF?text=Kannada+UKG",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Advanced Kannada", "Reading Skills", "Writing Practice"]
     },
@@ -3641,7 +3642,7 @@ export const booksData = [
         subCategory: "LKG",
         price: 350,
         oldPrice: 400,
-        image: "https://placehold.co/200x280/01A651/FFFFFF?text=Kannada+Sem1",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Semester Pattern", "Comprehensive", "All Topics"]
     },
@@ -3654,7 +3655,7 @@ export const booksData = [
         subCategory: "LKG",
         price: 350,
         oldPrice: 400,
-        image: "https://placehold.co/200x280/01A651/FFFFFF?text=Kannada+Sem2",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Semester 2", "Advanced Topics", "Year Coverage"]
     },
@@ -3667,7 +3668,7 @@ export const booksData = [
         subCategory: "Practice",
         price: 140,
         oldPrice: 160,
-        image: "https://placehold.co/200x280/01A651/FFFFFF?text=Akshara+Mala",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Alphabet Learning", "Writing Practice", "Foundation"]
     },
@@ -3680,7 +3681,7 @@ export const booksData = [
         subCategory: "Practice",
         price: 125,
         oldPrice: 145,
-        image: "https://placehold.co/200x280/01A651/FFFFFF?text=Guninthalu",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Guninthalu Practice", "Writing Skills", "Language Foundation"]
     },
@@ -3695,7 +3696,7 @@ export const booksData = [
         subCategory: "Copy Books",
         price: 120,
         oldPrice: 140,
-        image: "https://placehold.co/200x280/01A651/FFFFFF?text=Mega+Copy",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["80 Pages", "2 Color", "Large Size", "Kannada Lines"]
     },
@@ -3708,7 +3709,7 @@ export const booksData = [
         subCategory: "Copy Books",
         price: 90,
         oldPrice: 110,
-        image: "https://placehold.co/200x280/01A651/FFFFFF?text=Ideal+Copy",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["48 Pages", "2 Color", "Medium Size"]
     },
@@ -3721,7 +3722,7 @@ export const booksData = [
         subCategory: "Copy Books",
         price: 55,
         oldPrice: 70,
-        image: "https://placehold.co/200x280/01A651/FFFFFF?text=Big+Copy",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["32 Pages", "2 Color", "Standard Size"]
     },
@@ -3736,7 +3737,7 @@ export const booksData = [
         subCategory: "LKG",
         price: 120,
         oldPrice: 140,
-        image: "https://placehold.co/200x280/FFF200/231F20?text=Kannada+LKG",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Joyway Series", "Kannada Varnamala", "Interactive Learning"]
     },
@@ -3749,7 +3750,7 @@ export const booksData = [
         subCategory: "UKG",
         price: 130,
         oldPrice: 150,
-        image: "https://placehold.co/200x280/FFF200/231F20?text=Kannada+UKG",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Joyway Series", "Advanced Kannada", "Reading Practice"]
     },
@@ -3762,7 +3763,7 @@ export const booksData = [
         subCategory: "LKG",
         price: 290,
         oldPrice: 340,
-        image: "https://placehold.co/200x280/FFF200/231F20?text=Sem1+LKG",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Semester Pattern", "Joyway Quality", "Comprehensive"]
     },
@@ -3775,7 +3776,7 @@ export const booksData = [
         subCategory: "LKG",
         price: 290,
         oldPrice: 340,
-        image: "https://placehold.co/200x280/FFF200/231F20?text=Sem2+LKG",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Semester 2", "Year Coverage", "Advanced Topics"]
     },
@@ -3788,7 +3789,7 @@ export const booksData = [
         subCategory: "UKG",
         price: 90,
         oldPrice: 110,
-        image: "https://placehold.co/200x280/FFF200/231F20?text=Maths+UKG",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Kannada Medium", "Mathematics", "UKG Level"]
     },
@@ -3803,7 +3804,7 @@ export const booksData = [
         subCategory: "Copy Books",
         price: 120,
         oldPrice: 140,
-        image: "https://placehold.co/200x280/FFF200/231F20?text=Mega+Copy",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["80 Pages", "2 Color", "Joyway Quality"]
     },
@@ -3816,7 +3817,7 @@ export const booksData = [
         subCategory: "Copy Books",
         price: 90,
         oldPrice: 110,
-        image: "https://placehold.co/200x280/FFF200/231F20?text=Ideal+Copy",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["48 Pages", "2 Color", "Medium Size"]
     },
@@ -3829,7 +3830,7 @@ export const booksData = [
         subCategory: "Copy Books",
         price: 55,
         oldPrice: 70,
-        image: "https://placehold.co/200x280/FFF200/231F20?text=Big+Copy",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["32 Pages", "2 Color", "Compact"]
     },
@@ -3844,7 +3845,7 @@ export const booksData = [
         subCategory: "LKG",
         price: 120,
         oldPrice: 140,
-        image: "https://placehold.co/200x280/01A651/FFFFFF?text=Tamil+LKG",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Tamil Alphabets", "Writing Practice", "Basic Words"]
     },
@@ -3857,7 +3858,7 @@ export const booksData = [
         subCategory: "UKG",
         price: 140,
         oldPrice: 160,
-        image: "https://placehold.co/200x280/01A651/FFFFFF?text=Tamil+UKG",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Advanced Tamil", "Reading Skills", "Comprehension"]
     },
@@ -3870,7 +3871,7 @@ export const booksData = [
         subCategory: "Practice",
         price: 120,
         oldPrice: 140,
-        image: "https://placehold.co/200x280/01A651/FFFFFF?text=Tamil+Practice",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Writing Practice", "Alphabet Tracing", "Skill Building"]
     },
@@ -3885,7 +3886,7 @@ export const booksData = [
         subCategory: "UKG",
         price: 220,
         oldPrice: 270,
-        image: "https://placehold.co/200x280/01A651/FFFFFF?text=Term1+UKG",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Term Pattern", "Comprehensive", "UKG Level"]
     },
@@ -3898,7 +3899,7 @@ export const booksData = [
         subCategory: "UKG",
         price: 220,
         oldPrice: 270,
-        image: "https://placehold.co/200x280/01A651/FFFFFF?text=Term2+UKG",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Term 2", "Advanced Topics", "Year Coverage"]
     },
@@ -3911,7 +3912,7 @@ export const booksData = [
         subCategory: "UKG",
         price: 220,
         oldPrice: 270,
-        image: "https://placehold.co/200x280/01A651/FFFFFF?text=Term3+UKG",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Term 3", "Final Term", "Complete Syllabus"]
     },
@@ -3926,7 +3927,7 @@ export const booksData = [
         subCategory: "Copy Books",
         price: 120,
         oldPrice: 140,
-        image: "https://placehold.co/200x280/01A651/FFFFFF?text=Mega+Tamil",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["80 Pages", "2 Color", "Large Format"]
     },
@@ -3939,7 +3940,7 @@ export const booksData = [
         subCategory: "Copy Books",
         price: 90,
         oldPrice: 110,
-        image: "https://placehold.co/200x280/01A651/FFFFFF?text=Ideal+Tamil",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["48 Pages", "2 Color", "Medium Size"]
     },
@@ -3952,7 +3953,7 @@ export const booksData = [
         subCategory: "Copy Books",
         price: 65,
         oldPrice: 80,
-        image: "https://placehold.co/200x280/01A651/FFFFFF?text=Big+Tamil",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["32 Pages", "2 Color", "Standard Size"]
     },
@@ -3967,7 +3968,7 @@ export const booksData = [
         subCategory: "UKG",
         price: 100,
         oldPrice: 120,
-        image: "https://placehold.co/200x280/EC1C24/FFFFFF?text=Telugu+UKG",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["AP & TG Boards", "Telugu Medium", "Government Approved"]
     },
@@ -3980,7 +3981,7 @@ export const booksData = [
         subCategory: "1st Class",
         price: 100,
         oldPrice: 120,
-        image: "https://placehold.co/200x280/EC1C24/FFFFFF?text=Telugu+1st",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Grade 1", "State Board", "Telugu Medium"]
     },
@@ -3993,7 +3994,7 @@ export const booksData = [
         subCategory: "2nd Class",
         price: 130,
         oldPrice: 150,
-        image: "https://placehold.co/200x280/EC1C24/FFFFFF?text=Telugu+2nd",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Grade 2", "State Curriculum", "Telugu Language"]
     },
@@ -4006,7 +4007,7 @@ export const booksData = [
         subCategory: "3rd Class",
         price: 150,
         oldPrice: 170,
-        image: "https://placehold.co/200x280/EC1C24/FFFFFF?text=Telugu+3rd",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Grade 3", "Advanced Telugu", "State Board"]
     },
@@ -4019,7 +4020,7 @@ export const booksData = [
         subCategory: "4th Class",
         price: 150,
         oldPrice: 170,
-        image: "https://placehold.co/200x280/EC1C24/FFFFFF?text=Telugu+4th",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Grade 4", "Literature", "Grammar"]
     },
@@ -4032,7 +4033,7 @@ export const booksData = [
         subCategory: "5th Class",
         price: 150,
         oldPrice: 170,
-        image: "https://placehold.co/200x280/EC1C24/FFFFFF?text=Telugu+5th",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Grade 5", "Advanced Level", "State Board"]
     },
@@ -4047,7 +4048,7 @@ export const booksData = [
         subCategory: "Practice",
         price: 90,
         oldPrice: 110,
-        image: "https://placehold.co/200x280/EC1C24/FFFFFF?text=Guninthalu",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Guninthalu Practice", "Writing Skills", "Foundation"]
     },
@@ -4060,7 +4061,7 @@ export const booksData = [
         subCategory: "Practice",
         price: 100,
         oldPrice: 120,
-        image: "https://placehold.co/200x280/EC1C24/FFFFFF?text=Gantalu",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Number Writing", "Telugu Numbers", "Practice Exercises"]
     },
@@ -4073,7 +4074,7 @@ export const booksData = [
         subCategory: "Practice",
         price: 100,
         oldPrice: 120,
-        image: "https://placehold.co/200x280/EC1C24/FFFFFF?text=Varnamala",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Alphabet Learning", "Writing Practice", "Basic Telugu"]
     },
@@ -4086,7 +4087,7 @@ export const booksData = [
         subCategory: "Practice",
         price: 100,
         oldPrice: 120,
-        image: "https://placehold.co/200x280/EC1C24/FFFFFF?text=Aksharabhyasam",
+        image: "https://ik.imagekit.io/rohanwadadar/ravi.png",
         rating: 5,
         features: ["Letter Practice", "Writing Skills", "Telugu Language"]
     }

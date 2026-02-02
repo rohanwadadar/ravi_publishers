@@ -195,9 +195,14 @@ const PriceListPage = () => {
                         <h3 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-[#231F20]">Download PDF List</h3>
                         <p className="text-gray-400 mt-2 font-bold uppercase text-[9px] md:text-[10px] tracking-[0.4em]">Print-ready catalogue for institutions</p>
                     </div>
-                    <button className="w-full md:w-auto bg-[#EC1C24] hover:bg-black text-white px-8 md:px-14 py-4 md:py-6 rounded-2xl md:rounded-[24px] font-black text-[10px] md:text-[11px] uppercase tracking-[0.2em] transition-all flex items-center justify-center gap-4 md:gap-6 shadow-2xl active:scale-95 group">
+                    <a
+                        href="https://ik.imagekit.io/rohanwadadar/assets/Catalogue-2026%20Final%20(3)_compressed%20(1).pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full md:w-auto bg-[#EC1C24] hover:bg-black text-white px-8 md:px-14 py-4 md:py-6 rounded-2xl md:rounded-[24px] font-black text-[10px] md:text-[11px] uppercase tracking-[0.2em] transition-all flex items-center justify-center gap-4 md:gap-6 shadow-2xl active:scale-95 group"
+                    >
                         Secure Download <i className="fas fa-file-pdf text-lg group-hover:scale-110 transition-transform"></i>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

@@ -37,7 +37,7 @@ const categories = [
         badge: "Popular"
     },
     {
-        name: "Kits & Flash",
+        name: "Kits",
         path: "/kits-flash",
         icon: "fa-box-archive",
         desc: "Complete Kits",

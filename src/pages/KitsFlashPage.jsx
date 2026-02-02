@@ -22,11 +22,11 @@ const KitsFlashPage = ({ onAddToCart }) => {
     return (
         <ShelfPage
             onAddToCart={onAddToCart}
-            shelfTitle="Kits & Flash"
-            shelfSubtitle="Cards"
+            shelfTitle="Study"
+            shelfSubtitle="Kits"
             filterFn={filterFn}
             accentColor="#FFA500"
-            filterOptions={filterOptions}
+            filterOptions={['Enlight Kits']}
         />
     );
 };

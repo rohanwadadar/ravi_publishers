@@ -8,7 +8,7 @@ const Logo = React.memo(() => (
         <div className="bg-[#01A651] px-4 py-1 rounded-full flex flex-col items-center shadow-lg border-2 border-white/20 transition-transform duration-300 hover:scale-105 active:scale-95">
             <div className="bg-[#FFF200] px-3 py-0.5 rounded-full flex items-center gap-2 border border-[#01A651]/20">
                 <span className="text-[#EC1C24] font-black italic text-xl md:text-2xl tracking-tighter drop-shadow-sm leading-none">Ravi</span>
-                <div className="w-3 h-3 text-[#2E3092]">
+                <div className="w-3 h-3 text-white">
                     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L14.39 8.26L21 9.27L16.27 13.87L17.38 20.46L12 17.38L6.62 20.46L7.73 13.87L3 9.27L9.61 8.26L12 2Z" /></svg>
                 </div>
             </div>
@@ -69,7 +69,7 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
                 }
             ]
         },
-        { label: 'KITS & FLASH', id: 'kits-flash', type: 'link' },
+        { label: 'KITS', id: 'kits-flash', type: 'link' },
         { label: 'PRICE LIST', id: 'price-list', type: 'link' },
         { label: 'ABOUT', id: 'about', type: 'link' }
     ], []);
@@ -312,12 +312,12 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
             </nav>
 
             {/* Bottom Category Bar - Slim & Professional */}
-            <div className={`transition-all duration-500 hidden md:block border-b-4 border-[#EC1C24] ${useSolidStyle ? 'bg-white' : 'bg-[#2E3092] text-white shadow-lg'}`}>
+            <div className={`transition-all duration-500 hidden md:block border-b-4 border-[#EC1C24] ${useSolidStyle ? 'bg-white' : 'bg-white/95 backdrop-blur-md text-[#231F20] shadow-lg'}`}>
                 <ul className="max-w-[1400px] mx-auto px-10 lg:px-24 flex gap-12 lg:gap-24 text-[11px] font-black uppercase tracking-[0.25em] lg:tracking-[0.4em] py-2 md:py-3 relative scrollbar-hide overflow-x-auto whitespace-nowrap no-scrollbar" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
                     {navStructure.map((cat) => (
                         <li
                             key={cat.id}
-                            className={`hover:text-[#FFF200] cursor-pointer transition-all border-b-2 border-transparent pb-1 flex-shrink-0 ${useSolidStyle ? 'text-gray-600' : 'text-white opacity-90 hover:opacity-100'}`}
+                            className={`hover:text-[#EC1C24] cursor-pointer transition-all border-b-2 border-transparent pb-1 flex-shrink-0 ${useSolidStyle ? 'text-gray-600' : 'text-[#231F20] opacity-90 hover:opacity-100'}`}
                             onMouseEnter={() => cat.type === 'dropdown' ? setActiveDropdown(cat.id) : setActiveDropdown(null)}
                         >
                             <Link to={getPath(cat.id)} className="block py-1 hover:scale-110 transition-transform transform-gpu">{cat.label}</Link>
@@ -398,59 +398,61 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
             </div>
 
             {/* Mega Menu Dropdown */}
-            {activeDropdown && navStructure.find(n => n.type === 'dropdown' && n.id === activeDropdown) && !mobileMenuOpen && (
-                <div
-                    className="absolute top-[100%] left-1/2 -translate-x-1/2 w-[70%] max-w-5xl bg-white shadow-[0_40px_100px_rgba(0,0,0,0.3)] border-t border-gray-100 p-8 hidden md:flex gap-12 animate-in slide-in-from-top-4 duration-500 z-40 rounded-b-3xl"
-                    onMouseEnter={() => setActiveDropdown(activeDropdown)}
-                >
-                    <div className="w-1/3">
-                        <h4 className="text-[#EC1C24] text-[10px] font-black mb-6 border-b pb-3 uppercase tracking-[0.3em] text-left">{activeDropdown}</h4>
-                        <ul className="grid grid-cols-1 gap-3">
-                            {(() => {
-                                const activeItem = navStructure.find(n => n.id === activeDropdown);
-                                return activeItem?.items.map((item, i) => {
-                                    if (item.type === 'sub-structure') {
+            {
+                activeDropdown && navStructure.find(n => n.type === 'dropdown' && n.id === activeDropdown) && !mobileMenuOpen && (
+                    <div
+                        className="absolute top-[100%] left-1/2 -translate-x-1/2 w-[70%] max-w-5xl bg-white shadow-[0_40px_100px_rgba(0,0,0,0.3)] border-t border-gray-100 p-8 hidden md:flex gap-12 animate-in slide-in-from-top-4 duration-500 z-40 rounded-b-3xl"
+                        onMouseEnter={() => setActiveDropdown(activeDropdown)}
+                    >
+                        <div className="w-1/3">
+                            <h4 className="text-[#EC1C24] text-[10px] font-black mb-6 border-b pb-3 uppercase tracking-[0.3em] text-left">{activeDropdown}</h4>
+                            <ul className="grid grid-cols-1 gap-3">
+                                {(() => {
+                                    const activeItem = navStructure.find(n => n.id === activeDropdown);
+                                    return activeItem?.items.map((item, i) => {
+                                        if (item.type === 'sub-structure') {
+                                            return (
+                                                <div key={i} className="space-y-2 mt-2 first:mt-0">
+                                                    <div className="text-gray-300 text-[8px] font-black uppercase tracking-widest mb-1">{item.label}</div>
+                                                    {item.items.map((nested, j) => (
+                                                        <li key={j} className="text-gray-400 hover:text-black hover:translate-x-2 transition-all cursor-pointer font-bold text-[10px] uppercase flex items-center gap-2 group/nav">
+                                                            <div className="w-1 h-1 bg-gray-200 rounded-full group-hover/nav:bg-[#EC1C24]"></div>
+                                                            <Link to={nested.path} onClick={() => setActiveDropdown(null)}>{nested.label}</Link>
+                                                        </li>
+                                                    ))}
+                                                </div>
+                                            );
+                                        }
                                         return (
-                                            <div key={i} className="space-y-2 mt-2 first:mt-0">
-                                                <div className="text-gray-300 text-[8px] font-black uppercase tracking-widest mb-1">{item.label}</div>
-                                                {item.items.map((nested, j) => (
-                                                    <li key={j} className="text-gray-400 hover:text-black hover:translate-x-2 transition-all cursor-pointer font-bold text-[10px] uppercase flex items-center gap-2 group/nav">
-                                                        <div className="w-1 h-1 bg-gray-200 rounded-full group-hover/nav:bg-[#EC1C24]"></div>
-                                                        <Link to={nested.path} onClick={() => setActiveDropdown(null)}>{nested.label}</Link>
-                                                    </li>
-                                                ))}
-                                            </div>
+                                            <li key={i} className="text-gray-400 hover:text-black hover:translate-x-2 transition-all cursor-pointer font-bold text-[10px] uppercase flex items-center gap-2 group/nav">
+                                                <div className="w-1 h-1 bg-gray-200 rounded-full group-hover/nav:bg-[#EC1C24]"></div>
+                                                <Link to={item.path} onClick={() => setActiveDropdown(null)}>{item.label}</Link>
+                                            </li>
                                         );
-                                    }
-                                    return (
-                                        <li key={i} className="text-gray-400 hover:text-black hover:translate-x-2 transition-all cursor-pointer font-bold text-[10px] uppercase flex items-center gap-2 group/nav">
-                                            <div className="w-1 h-1 bg-gray-200 rounded-full group-hover/nav:bg-[#EC1C24]"></div>
-                                            <Link to={item.path} onClick={() => setActiveDropdown(null)}>{item.label}</Link>
-                                        </li>
-                                    );
-                                });
-                            })()}
-                        </ul>
-                    </div>
-                    <div className="flex-1 bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-10 flex items-center justify-between border border-gray-200 relative overflow-hidden group/mega text-left">
-                        <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#EC1C24]/5 rounded-full blur-3xl"></div>
-                        <div className="max-w-xs relative z-10">
-                            <span className="bg-[#01A651] text-white px-4 py-1.5 rounded-full text-[8px] font-black uppercase mb-4 inline-block tracking-widest shadow-lg">2026 Collection</span>
-                            <h3 className="text-3xl font-black text-[#231F20] leading-none uppercase tracking-tighter mt-2">Academic <br /> Excellence</h3>
-                            <Link to={getPath(activeDropdown)} onClick={() => setActiveDropdown(null)} className="inline-block mt-8 bg-[#231F20] text-white px-8 py-3 rounded-xl font-black text-[9px] uppercase tracking-[0.2em] hover:bg-[#EC1C24] transition-all shadow-xl active:scale-95">Explore Full Series</Link>
+                                    });
+                                })()}
+                            </ul>
                         </div>
-                        <div className="w-32 h-44 bg-white rounded-2xl shadow-2xl flex items-center justify-center p-6 rotate-6 group-hover/mega:rotate-0 transition-all duration-700 border-4 border-white">
-                            <img src="https://placehold.co/150x200/EC1C24/FFFFFF?text=Books" alt="Feature" className="h-full shadow-lg rounded" loading="lazy" />
+                        <div className="flex-1 bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-10 flex items-center justify-between border border-gray-200 relative overflow-hidden group/mega text-left">
+                            <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#EC1C24]/5 rounded-full blur-3xl"></div>
+                            <div className="max-w-xs relative z-10">
+                                <span className="bg-[#01A651] text-white px-4 py-1.5 rounded-full text-[8px] font-black uppercase mb-4 inline-block tracking-widest shadow-lg">2026 Collection</span>
+                                <h3 className="text-3xl font-black text-[#231F20] leading-none uppercase tracking-tighter mt-2">Academic <br /> Excellence</h3>
+                                <Link to={getPath(activeDropdown)} onClick={() => setActiveDropdown(null)} className="inline-block mt-8 bg-[#231F20] text-white px-8 py-3 rounded-xl font-black text-[9px] uppercase tracking-[0.2em] hover:bg-[#EC1C24] transition-all shadow-xl active:scale-95">Explore Full Series</Link>
+                            </div>
+                            <div className="w-32 h-44 bg-white rounded-2xl shadow-2xl flex items-center justify-center p-6 rotate-6 group-hover/mega:rotate-0 transition-all duration-700 border-4 border-white">
+                                <img src="https://placehold.co/150x200/EC1C24/FFFFFF?text=Books" alt="Feature" className="h-full shadow-lg rounded" loading="lazy" />
+                            </div>
                         </div>
                     </div>
-                </div>
-            )}
+                )
+            }
             <style dangerouslySetInnerHTML={{
                 __html: `
                 .no-scrollbar::-webkit-scrollbar { display: none; }
                 .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
             `}} />
-        </div>
+        </div >
     );
 };
 

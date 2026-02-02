@@ -66,13 +66,13 @@ const Hero = () => {
                     <div className="relative z-10 max-w-5xl px-6 flex flex-col items-center justify-center h-full">
                         <div
                             style={{ backgroundColor: slide.accent }}
-                            className="inline-block text-white text-[8px] md:text-[9px] font-black px-4 md:px-6 py-2 rounded-lg uppercase tracking-[0.3em] md:tracking-[0.4em] mb-6 md:mb-8 shadow-2xl animate-in slide-in-from-top-4 duration-700"
+                            className={`inline-block ${slide.accent === '#FFF200' ? 'text-black' : 'text-white'} text-[8px] md:text-[9px] font-black px-4 md:px-6 py-2 rounded-lg uppercase tracking-[0.3em] md:tracking-[0.4em] mb-6 md:mb-8 shadow-2xl animate-in slide-in-from-top-4 duration-700`}
                         >
                             {slide.tag}
                         </div>
                         <h1 className="text-4xl md:text-8xl font-black text-white mb-4 md:mb-6 tracking-tighter leading-[0.9] uppercase">
                             {slide.title} <br />
-                            <span style={{ color: slide.accent }} className="transition-colors duration-500 italic block mt-2">
+                            <span style={{ color: slide.accent }} className={`transition-colors duration-500 italic block mt-2 ${slide.accent === '#FFF200' ? 'drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)]' : ''}`}>
                                 {slide.highlight}
                             </span>
                         </h1>
@@ -83,7 +83,7 @@ const Hero = () => {
                             <button
                                 onClick={() => handleAccess(slide.series)}
                                 style={{ backgroundColor: slide.accent }}
-                                className="w-full sm:w-auto hover:scale-105 hover:brightness-110 text-white px-8 md:px-12 py-4 md:py-5 rounded-2xl font-black text-[9px] md:text-[10px] uppercase tracking-widest transition-all shadow-2xl shadow-black/40 active:scale-95"
+                                className={`w-full sm:w-auto hover:scale-105 hover:brightness-110 ${slide.accent === '#FFF200' ? 'text-black' : 'text-white'} px-8 md:px-12 py-4 md:py-5 rounded-2xl font-black text-[9px] md:text-[10px] uppercase tracking-widest transition-all shadow-2xl shadow-black/40 active:scale-95`}
                             >
                                 Access Store
                             </button>
@@ -103,7 +103,7 @@ const Hero = () => {
                 {[
                     { icon: 'fa-truck-bolt', text: 'Rapid Dispatch', color: '#FFF200' },
                     { icon: 'fa-box-check', text: 'Estd. 1988', color: '#01A651' },
-                    { icon: 'fa-award-simple', text: 'Enlight Quality', color: '#2E3092', hideMobile: true },
+                    { icon: 'fa-award-simple', text: 'Enlight Quality', color: '#FFFFFF', hideMobile: true },
                     { icon: 'fa-user-headset', text: 'Govt. Approved', color: '#EC1C24' }
                 ].map((badge, i) => (
                     <div key={i} className={`flex items-center gap-2 md:gap-3 text-white/50 text-[8px] md:text-[10px] font-black uppercase tracking-widest ${badge.hideMobile ? 'hidden md:flex' : 'flex'}`}>

@@ -18,7 +18,7 @@ const CheckoutPage = ({ cart, cartTotal }) => {
         e.preventDefault();
 
         // Constructing WhatsApp Message
-        const whatsappNumber = "7595921010";
+        const whatsappNumber = "9849100063";
         let message = `*NEW ORDER - RAVI PUBLISHERS*\n\n`;
         message += `*Customer Details:*\n`;
         message += `Name: ${formData.name}\n`;

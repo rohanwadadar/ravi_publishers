@@ -179,12 +179,12 @@ const SeriesPage = ({ onAddToCart, initialType, initialLanguage, initialRegion }
                     <div className="flex flex-col md:flex-row items-center justify-between gap-12">
                         <div className="flex-1 text-left">
                             <div
-                                className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[10px] font-black uppercase tracking-[0.3em] mb-8 animate-in slide-in-from-left-10 duration-700"
-                                style={{ color: series.accentColor }}
+                                className={`inline-flex items-center gap-3 px-4 py-2 rounded-full ${series.id === 'joyway' ? 'bg-black/10 border-black/10' : 'bg-white/10 border-white/20'} backdrop-blur-md text-[10px] font-black uppercase tracking-[0.3em] mb-8 animate-in slide-in-from-left-10 duration-700`}
+                                style={{ color: series.id === 'joyway' ? '#231F20' : series.accentColor }}
                             >
                                 <span className="relative flex h-2 w-2">
-                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75" style={{ backgroundColor: series.accentColor }}></span>
-                                    <span className="relative inline-flex rounded-full h-2 w-2" style={{ backgroundColor: series.accentColor }}></span>
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75" style={{ backgroundColor: series.id === 'joyway' ? '#231F20' : series.accentColor }}></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2" style={{ backgroundColor: series.id === 'joyway' ? '#231F20' : series.accentColor }}></span>
                                 </span>
                                 {series.tag}
                             </div>
@@ -193,12 +193,19 @@ const SeriesPage = ({ onAddToCart, initialType, initialLanguage, initialRegion }
                                 className="text-6xl md:text-9xl font-black uppercase tracking-tighter leading-[0.85] mb-8 animate-in slide-in-from-left-10 duration-700 delay-100 italic"
                                 style={{ color: series.textColor }}
                             >
-                                {series.name.slice(0, 2)}<span style={{ color: series.accentColor }}>{series.name.slice(2)}</span><br />
+                                {series.id === 'ravi' ? series.name : (
+                                    <>
+                                        {series.id === 'joyway' ? series.name.slice(0, 3) : series.name.slice(0, 2)}
+                                        <span style={{ color: series.accentColor }}>
+                                            {series.id === 'joyway' ? series.name.slice(3) : series.name.slice(2)}
+                                        </span>
+                                    </>
+                                )}<br />
                                 <span className="text-4xl md:text-5xl not-italic tracking-normal opacity-90">{series.suffix}</span>
                             </h1>
 
-                            <div className="max-w-xl p-8 rounded-[32px] bg-black/20 backdrop-blur-xl border-l-8 animate-in slide-in-from-left-10 duration-700 delay-200" style={{ borderColor: series.accentColor }}>
-                                <p className="text-sm md:text-lg font-medium leading-relaxed uppercase tracking-tight text-white/90">
+                            <div className={`max-w-xl p-8 rounded-[32px] ${series.id === 'joyway' ? 'bg-white/30 border-black/5' : 'bg-black/20'} backdrop-blur-xl border-l-8 animate-in slide-in-from-left-10 duration-700 delay-200`} style={{ borderColor: series.id === 'joyway' ? '#EC1C24' : series.accentColor }}>
+                                <p className={`text-sm md:text-lg font-black leading-relaxed uppercase tracking-tight ${series.id === 'joyway' ? 'text-black' : 'text-white/90'}`}>
                                     {series.description}
                                 </p>
                             </div>

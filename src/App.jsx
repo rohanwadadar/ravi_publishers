@@ -29,8 +29,8 @@ const HomePage = React.memo(({ onAddToCart }) => {
         {/* JOYWAY SECTION */}
         <div onClick={() => navigate('/series/joyway')} className="group relative h-[450px] md:h-[600px] overflow-hidden cursor-pointer border-b md:border-b-0 md:border-r border-white/10">
           <div className="absolute inset-0 bg-black z-0"></div>
-          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80" className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-110 opacity-60 group-hover:opacity-40" alt="Joyway" loading="lazy" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/20" />
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80" className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-110 opacity-30 group-hover:opacity-20" alt="Joyway" loading="lazy" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-black/40" />
 
           <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-20 relative z-10 transition-all duration-500 group-hover:translate-y-[-10px]">
             <div className="flex items-center gap-4 mb-4 md:mb-6 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">
@@ -38,7 +38,7 @@ const HomePage = React.memo(({ onAddToCart }) => {
               <span className="text-[#FFF200] font-black uppercase tracking-[0.2em] md:tracking-[0.3em] text-[8px] md:text-[10px]">Early Learning Series</span>
             </div>
 
-            <h2 className="text-4xl md:text-7xl font-black text-white uppercase tracking-tighter mb-4 md:mb-6 leading-none group-hover:text-[#FFF200] transition-colors duration-300">
+            <h2 className="text-4xl md:text-7xl font-black text-white uppercase tracking-tighter mb-4 md:mb-6 leading-none group-hover:text-black transition-colors duration-300">
               Joyway
             </h2>
 
@@ -55,7 +55,7 @@ const HomePage = React.memo(({ onAddToCart }) => {
                 <span
                   key={i}
                   onClick={(e) => { e.stopPropagation(); navigate(tag.path); }}
-                  className="px-4 py-2 rounded-full border border-white/20 bg-white/5 backdrop-blur-md text-white text-[8px] md:text-[10px] font-black uppercase tracking-widest hover:bg-[#FFF200] hover:text-black hover:border-[#FFF200] transition-all duration-300"
+                  className="px-4 py-2 rounded-full border border-white/40 bg-white/10 backdrop-blur-md text-white text-[8px] md:text-[10px] font-black uppercase tracking-widest hover:bg-[#FFF200] hover:text-black hover:border-[#FFF200] transition-all duration-300"
                 >
                   {tag.label}
                 </span>
@@ -71,7 +71,7 @@ const HomePage = React.memo(({ onAddToCart }) => {
         {/* ENLIGHT SECTION */}
         <div onClick={() => navigate('/series/enlight')} className="group relative h-[450px] md:h-[600px] overflow-hidden cursor-pointer">
           <div className="absolute inset-0 bg-black z-0"></div>
-          <img src="https://images.unsplash.com/photo-1491843351663-8c4362820a4b?auto=format&fit=crop&w=1200&q=80" className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-110 opacity-60 group-hover:opacity-40" alt="Enlight" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?auto=format&fit=crop&w=1200&q=80" className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-110 opacity-50 group-hover:opacity-30" alt="Enlight" loading="lazy" />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/20" />
 
           <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-20 relative z-10 transition-all duration-500 group-hover:translate-y-[-10px]">

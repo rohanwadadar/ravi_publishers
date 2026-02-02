@@ -50,7 +50,14 @@ const FeaturedProducts = ({ onAddToCart }) => {
                             <h3 className="text-white text-4xl md:text-8xl font-black tracking-tighter leading-[0.9] uppercase mb-6 md:mb-8">Management <br /> <span className="text-[#01A651]">Selection</span></h3>
                             <p className="text-white/60 text-lg md:text-xl font-medium leading-relaxed uppercase tracking-tighter mb-8 md:mb-12">"Blending quality print materials with advanced digital content. Providing a strong base for Early Childhood Care and Education."</p>
                             <div className="flex flex-col sm:flex-row gap-4 md:gap-8">
-                                <button className="bg-[#EC1C24] text-white px-10 md:px-12 py-5 md:py-6 rounded-xl md:rounded-[24px] font-black text-[10px] md:text-[11px] uppercase tracking-[0.3em] md:tracking-[0.4em] hover:bg-white hover:text-[#231F20] transition-all shadow-2xl active:scale-95">Download Price List</button>
+                                <a
+                                    href="https://ik.imagekit.io/rohanwadadar/assets/Catalogue-2026%20Final%20(3)_compressed%20(1).pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-[#EC1C24] text-white px-10 md:px-12 py-5 md:py-6 rounded-xl md:rounded-[24px] font-black text-[10px] md:text-[11px] uppercase tracking-[0.3em] md:tracking-[0.4em] hover:bg-white hover:text-[#231F20] transition-all shadow-2xl active:scale-95 inline-block"
+                                >
+                                    Download Price List
+                                </a>
                                 <button className="bg-white/10 border border-white/20 text-white px-10 md:px-12 py-5 md:py-6 rounded-xl md:rounded-[24px] font-black text-[10px] md:text-[11px] uppercase tracking-[0.3em] md:tracking-[0.4em] hover:bg-[#FFF200] hover:text-[#231F20] transition-all active:scale-95">Bulk Enquiry</button>
                             </div>
                         </div>
@@ -71,7 +78,7 @@ const FeaturedProducts = ({ onAddToCart }) => {
                             <h2 className="text-4xl md:text-8xl font-black tracking-tighter text-[#231F20] leading-[0.9] uppercase mb-2">
                                 Premier <br /> <span className="text-[#EC1C24]">Study Kits</span>
                             </h2>
-                            <p className="text-gray-400 font-bold text-[9px] md:text-[10px] tracking-widest mt-4 md:mt-6 uppercase">Includes Flash Cards & Certificates</p>
+                            <p className="text-gray-400 font-bold text-[9px] md:text-[10px] tracking-widest mt-4 md:mt-6 uppercase">Includes Practice Books & Certificates</p>
                         </div>
                         <Link to="/kits-flash" className="group flex items-center gap-4 border-4 border-[#231F20] text-[#231F20] px-8 md:px-10 py-4 md:py-5 rounded-xl md:rounded-[20px] font-black text-[10px] md:text-[11px] uppercase tracking-[0.2em] md:tracking-[0.3em] hover:bg-[#231F20] hover:text-white transition-all transform hover:-translate-y-1 active:scale-95">
                             View All Kits <i className="fas fa-boxes-stacked group-hover:scale-110 transition-transform ml-2"></i>
