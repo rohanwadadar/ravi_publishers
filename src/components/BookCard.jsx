@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const BookCard = ({ book, onAddToCart }) => {
+const BookCard = React.memo(({ book, onAddToCart }) => {
     return (
         <div className="group bg-white rounded-[24px] md:rounded-[32px] border border-gray-100 hover:border-[#EC1C24]/20 transition-all duration-700 flex flex-col h-full overflow-hidden hover:shadow-[0_30px_60px_rgba(236,28,36,0.12)]">
             {/* Dynamic Image Container */}
@@ -12,6 +12,7 @@ const BookCard = ({ book, onAddToCart }) => {
                 <img
                     src={book.image}
                     alt={book.name}
+                    loading="lazy"
                     className="max-h-full max-w-[85%] md:max-w-full object-contain transform group-hover:scale-105 md:group-hover:scale-110 transition-transform duration-700 shadow-[0_15px_30px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] rounded-sm"
                 />
 
@@ -76,6 +77,6 @@ const BookCard = ({ book, onAddToCart }) => {
             </div>
         </div>
     );
-};
+});
 
 export default BookCard;

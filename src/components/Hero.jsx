@@ -1,34 +1,39 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const slides = [
     {
-        tag: "Established Since 1988",
-        title: "South India's",
-        highlight: "Educational Core",
-        desc: "Empowering millions with NCERT, CBSE and State Board curriculum solutions. Trusted by thousands of schools across Karnataka, Kerala & Telangana.",
-        bg: "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1920&q=80",
-        accent: "#EC1C24"
+        tag: "Joyway e-Learning Series",
+        title: "Interactive",
+        highlight: "Joyway Learning",
+        desc: "Engaging and interactive learning materials designed for early childhood education. Complete ECCE solution from Pre-KG to 5th Standard.",
+        bg: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1920&q=80",
+        accent: "#FFF200",
+        series: "Joyway"
     },
     {
-        tag: "Enlight e-Learning",
-        title: "Next Generation",
-        highlight: "Digital Ready",
-        desc: "Blending premium print books with advanced Pen Drive software. The complete ECCE solution for Pre-KG to Primary levels.",
+        tag: "Enlight e-Learning Series",
+        title: "Digital Ready",
+        highlight: "Enlight Education",
+        desc: "Next generation digital-ready curriculum solutions. Blending premium print books with advanced learning software for comprehensive education.",
         bg: "https://images.unsplash.com/photo-1491843351663-8c4362820a4b?auto=format&fit=crop&w=1920&q=80",
-        accent: "#01A651"
+        accent: "#01A651",
+        series: "Enlight"
     },
     {
-        tag: "Catalogue 2026",
-        title: "Authorized 2026",
-        highlight: "Order Portals",
-        desc: "Seamless institutional procurement with official 2026 pricing. Access 600+ titles in English, Telugu, Kannada and Tamil.",
+        tag: "RAVI Publishers - Govt & Regional",
+        title: "Authorized",
+        highlight: "State Board Solutions",
+        desc: "Specialized government publications for AP & Telangana State Boards. Complete Telugu, Kannada, and Tamil language solutions.",
         bg: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&w=1920&q=80",
-        accent: "#2E3092"
+        accent: "#EC1C24",
+        series: "RAVI"
     }
 ];
 
 const Hero = () => {
     const [current, setCurrent] = useState(0);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -36,6 +41,11 @@ const Hero = () => {
         }, 6000);
         return () => clearInterval(timer);
     }, []);
+
+    const handleAccess = (series) => {
+        const path = series.toLowerCase() === 'ravi' ? '/series/ravi' : `/series/${series.toLowerCase()}`;
+        navigate(path);
+    };
 
     return (
         <section className="relative h-[85vh] md:h-[95vh] min-h-[600px] md:min-h-[750px] flex items-center justify-center text-center overflow-hidden bg-[#231F20] mt-20 md:mt-40">
@@ -71,12 +81,16 @@ const Hero = () => {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center w-full sm:w-auto px-10 sm:px-0">
                             <button
+                                onClick={() => handleAccess(slide.series)}
                                 style={{ backgroundColor: slide.accent }}
-                                className="w-full sm:w-auto hover:scale-105 hover:brightness-110 text-white px-8 md:px-12 py-4 md:py-5 rounded-2xl font-black text-[9px] md:text-[10px] uppercase tracking-widest transition-all shadow-2xl shadow-black/40"
+                                className="w-full sm:w-auto hover:scale-105 hover:brightness-110 text-white px-8 md:px-12 py-4 md:py-5 rounded-2xl font-black text-[9px] md:text-[10px] uppercase tracking-widest transition-all shadow-2xl shadow-black/40 active:scale-95"
                             >
                                 Access Store
                             </button>
-                            <button className="w-full sm:w-auto bg-white/5 backdrop-blur-3xl hover:bg-white text-white hover:text-black px-8 md:px-12 py-4 md:py-5 rounded-2xl font-black text-[9px] md:text-[10px] uppercase tracking-widest transition-all border border-white/10">
+                            <button
+                                onClick={() => navigate('/price-list')}
+                                className="w-full sm:w-auto bg-white/5 backdrop-blur-3xl hover:bg-white text-white hover:text-black px-8 md:px-12 py-4 md:py-5 rounded-2xl font-black text-[9px] md:text-[10px] uppercase tracking-widest transition-all border border-white/10 active:scale-95"
+                            >
                                 Official Catalog
                             </button>
                         </div>

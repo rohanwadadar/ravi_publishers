@@ -13,48 +13,137 @@ import CheckoutPage from './pages/CheckoutPage';
 import WorkbooksPage from './pages/WorkbooksPage';
 import KitsFlashPage from './pages/KitsFlashPage';
 import LanguagesPage from './pages/LanguagesPage';
-import EnlightCoursePage from './pages/EnlightCoursePage';
-import EnlightSemesterPage from './pages/EnlightSemesterPage';
-import EnlightTermPage from './pages/EnlightTermPage';
+import SeriesPage from './pages/SeriesPage';
 import ScrollToTop from './components/ScrollToTop';
 import { booksData } from './data';
 
 // Home Component
-const HomePage = ({ onAddToCart }) => (
-  <div className="animate-in fade-in duration-1000">
-    <Hero />
-    <Categories />
-    <FeaturedProducts onAddToCart={onAddToCart} />
+const HomePage = React.memo(({ onAddToCart }) => {
+  const navigate = useNavigate();
+  return (
+    <div className="animate-in fade-in duration-700">
+      <Hero />
 
-    {/* Additional Content: Value Props */}
-    <section className="py-24 bg-[#f8f9fb] relative overflow-hidden">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
-      <div className="max-w-7xl mx-auto px-4 md:px-20 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div className="flex flex-col items-center text-center p-12 rounded-[40px] bg-white shadow-xl hover:shadow-[0_40px_80px_rgba(0,0,0,0.05)] transition-all group border border-gray-50 luxury-shadow">
-          <div className="w-20 h-20 bg-[#EC1C24]/5 rounded-[24px] flex items-center justify-center mb-8 text-[#EC1C24] group-hover:bg-[#EC1C24] group-hover:text-white transition-all transform group-hover:scale-110 duration-500">
-            <i className="fas fa-truck-fast text-2xl"></i>
+      {/* SECTORS OVERVIEW (JOYWAY & ENLIGHT) */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-0 relative z-10">
+        {/* JOYWAY SECTION */}
+        <div onClick={() => navigate('/series/joyway')} className="group relative h-[450px] md:h-[600px] overflow-hidden cursor-pointer border-b md:border-b-0 md:border-r border-white/10">
+          <div className="absolute inset-0 bg-black z-0"></div>
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80" className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-110 opacity-60 group-hover:opacity-40" alt="Joyway" loading="lazy" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/20" />
+
+          <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-20 relative z-10 transition-all duration-500 group-hover:translate-y-[-10px]">
+            <div className="flex items-center gap-4 mb-4 md:mb-6 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">
+              <div className="bg-[#FFF200] w-8 md:w-12 h-1 mb-0.5"></div>
+              <span className="text-[#FFF200] font-black uppercase tracking-[0.2em] md:tracking-[0.3em] text-[8px] md:text-[10px]">Early Learning Series</span>
+            </div>
+
+            <h2 className="text-4xl md:text-7xl font-black text-white uppercase tracking-tighter mb-4 md:mb-6 leading-none group-hover:text-[#FFF200] transition-colors duration-300">
+              Joyway
+            </h2>
+
+            <p className="text-gray-300 text-[12px] md:text-sm font-medium leading-relaxed max-w-sm border-l-2 border-[#FFF200] pl-4 md:pl-6 mb-8 md:mb-10 opacity-80 group-hover:opacity-100 transition-opacity">
+              A complete interactive curriculum designed to spark curiosity in early learners. From Pre-Primary to Class 5.
+            </p>
+
+            <div className="flex flex-wrap gap-2 md:gap-3">
+              {[
+                { label: 'Term Books', path: '/category/joyway-term' },
+                { label: 'Workbooks', path: '/category/joyway-workbook' },
+                { label: 'Coursebooks', path: '/category/joyway-coursebooks' }
+              ].map((tag, i) => (
+                <span
+                  key={i}
+                  onClick={(e) => { e.stopPropagation(); navigate(tag.path); }}
+                  className="px-4 py-2 rounded-full border border-white/20 bg-white/5 backdrop-blur-md text-white text-[8px] md:text-[10px] font-black uppercase tracking-widest hover:bg-[#FFF200] hover:text-black hover:border-[#FFF200] transition-all duration-300"
+                >
+                  {tag.label}
+                </span>
+              ))}
+            </div>
+
+            <div className="absolute top-6 right-6 md:top-10 md:right-10 w-12 h-12 md:w-16 md:h-16 rounded-full border border-white/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 hover:scale-110 hover:bg-[#FFF200] hover:border-[#FFF200] group/icon">
+              <i className="fas fa-arrow-right text-white text-lg md:text-xl group-hover/icon:text-black -rotate-45 group-hover/icon:rotate-0 transition-all duration-300"></i>
+            </div>
           </div>
-          <h3 className="text-xl font-black mb-4 uppercase tracking-tighter">Blitz Delivery</h3>
-          <p className="text-gray-400 text-xs font-medium leading-relaxed uppercase tracking-tighter">Authorized logistics for AP & Telangana. Guaranteed 48-hour dispatch for all Govt. workbooks.</p>
         </div>
-        <div className="flex flex-col items-center text-center p-12 rounded-[40px] bg-white shadow-xl hover:shadow-[0_40px_80px_rgba(0,0,0,0.05)] transition-all group border border-gray-50 luxury-shadow">
-          <div className="w-20 h-20 bg-[#01A651]/5 rounded-[24px] flex items-center justify-center mb-8 text-[#01A651] group-hover:bg-[#01A651] group-hover:text-white transition-all transform group-hover:scale-110 duration-500">
-            <i className="fas fa-file-invoice text-2xl"></i>
+
+        {/* ENLIGHT SECTION */}
+        <div onClick={() => navigate('/series/enlight')} className="group relative h-[450px] md:h-[600px] overflow-hidden cursor-pointer">
+          <div className="absolute inset-0 bg-black z-0"></div>
+          <img src="https://images.unsplash.com/photo-1491843351663-8c4362820a4b?auto=format&fit=crop&w=1200&q=80" className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-110 opacity-60 group-hover:opacity-40" alt="Enlight" loading="lazy" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/20" />
+
+          <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-20 relative z-10 transition-all duration-500 group-hover:translate-y-[-10px]">
+            <div className="flex items-center gap-4 mb-4 md:mb-6 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">
+              <div className="bg-[#01A651] w-8 md:w-12 h-1 mb-0.5"></div>
+              <span className="text-[#01A651] font-black uppercase tracking-[0.2em] md:tracking-[0.3em] text-[8px] md:text-[10px]">Academic Excellence</span>
+            </div>
+
+            <h2 className="text-4xl md:text-7xl font-black text-white uppercase tracking-tighter mb-4 md:mb-6 leading-none group-hover:text-[#01A651] transition-colors duration-300">
+              Enlight
+            </h2>
+
+            <p className="text-gray-300 text-[12px] md:text-sm font-medium leading-relaxed max-w-sm border-l-2 border-[#01A651] pl-4 md:pl-6 mb-8 md:mb-10 opacity-80 group-hover:opacity-100 transition-opacity">
+              Digital-ready semester and term solutions engineered for the modern classroom. Class 1 to Class 10.
+            </p>
+
+            <div className="flex flex-wrap gap-2 md:gap-3">
+              {[
+                { label: 'Semester Guide', path: '/series/enlight' },
+                { label: 'Term Series', path: '/series/enlight' },
+                { label: 'Workbooks', path: '/series/enlight' }
+              ].map((tag, i) => (
+                <span
+                  key={i}
+                  onClick={(e) => { e.stopPropagation(); navigate(tag.path); }}
+                  className="px-4 py-2 rounded-full border border-white/20 bg-white/5 backdrop-blur-md text-white text-[8px] md:text-[10px] font-black uppercase tracking-widest hover:bg-[#01A651] hover:text-white hover:border-[#01A651] transition-all duration-300"
+                >
+                  {tag.label}
+                </span>
+              ))}
+            </div>
+
+            <div className="absolute top-6 right-6 md:top-10 md:right-10 w-12 h-12 md:w-16 md:h-16 rounded-full border border-white/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 hover:scale-110 hover:bg-[#01A651] hover:border-[#01A651] group/icon">
+              <i className="fas fa-arrow-right text-white text-lg md:text-xl -rotate-45 group-hover/icon:rotate-0 transition-all duration-300"></i>
+            </div>
           </div>
-          <h3 className="text-xl font-black mb-4 uppercase tracking-tighter">Order Form 2026</h3>
-          <p className="text-gray-400 text-xs font-medium leading-relaxed uppercase tracking-tighter">Streamlined procurement for educational institutions. Accurate 2026 academic pricing.</p>
-        </div>
-        <div className="flex flex-col items-center text-center p-12 rounded-[40px] bg-white shadow-xl hover:shadow-[0_40px_80px_rgba(0,0,0,0.05)] transition-all group border border-gray-50 luxury-shadow">
-          <div className="w-20 h-20 bg-[#2E3092]/5 rounded-[24px] flex items-center justify-center mb-8 text-[#2E3092] group-hover:bg-[#2E3092] group-hover:text-white transition-all transform group-hover:scale-110 duration-500">
-            <i className="fas fa-graduation-cap text-2xl"></i>
-          </div>
-          <h3 className="text-xl font-black mb-4 uppercase tracking-tighter">Authorized Content</h3>
-          <p className="text-gray-400 text-xs font-medium leading-relaxed uppercase tracking-tighter">Standardized curriculum solutions since 1988. Verified by board subject experts.</p>
         </div>
       </div>
-    </section>
-  </div>
-);
+
+      <Categories />
+      <FeaturedProducts onAddToCart={onAddToCart} />
+
+      {/* Additional Content: Value Props */}
+      <section className="py-24 bg-[#f8f9fb] relative overflow-hidden">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
+        <div className="max-w-7xl mx-auto px-4 md:px-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="flex flex-col items-center text-center p-12 rounded-[40px] bg-white shadow-xl hover:shadow-[0_40px_80px_rgba(0,0,0,0.05)] transition-all group border border-gray-50 luxury-shadow">
+            <div className="w-20 h-20 bg-[#EC1C24]/5 rounded-[24px] flex items-center justify-center mb-8 text-[#EC1C24] group-hover:bg-[#EC1C24] group-hover:text-white transition-all transform group-hover:scale-110 duration-500">
+              <i className="fas fa-truck-fast text-2xl"></i>
+            </div>
+            <h3 className="text-xl font-black mb-4 uppercase tracking-tighter">Blitz Delivery</h3>
+            <p className="text-gray-400 text-xs font-medium leading-relaxed uppercase tracking-tighter">Authorized logistics for AP & Telangana. Guaranteed 48-hour dispatch for all Govt. workbooks.</p>
+          </div>
+          <div className="flex flex-col items-center text-center p-12 rounded-[40px] bg-white shadow-xl hover:shadow-[0_40px_80px_rgba(0,0,0,0.05)] transition-all group border border-gray-50 luxury-shadow">
+            <div className="w-20 h-20 bg-[#01A651]/5 rounded-[24px] flex items-center justify-center mb-8 text-[#01A651] group-hover:bg-[#01A651] group-hover:text-white transition-all transform group-hover:scale-110 duration-500">
+              <i className="fas fa-file-invoice text-2xl"></i>
+            </div>
+            <h3 className="text-xl font-black mb-4 uppercase tracking-tighter">Order Form 2026</h3>
+            <p className="text-gray-400 text-xs font-medium leading-relaxed uppercase tracking-tighter">Streamlined procurement for educational institutions. Accurate 2026 academic pricing.</p>
+          </div>
+          <div className="flex flex-col items-center text-center p-12 rounded-[40px] bg-white shadow-xl hover:shadow-[0_40px_80px_rgba(0,0,0,0.05)] transition-all group border border-gray-50 luxury-shadow">
+            <div className="w-20 h-20 bg-[#2E3092]/5 rounded-[24px] flex items-center justify-center mb-8 text-[#2E3092] group-hover:bg-[#2E3092] group-hover:text-white transition-all transform group-hover:scale-110 duration-500">
+              <i className="fas fa-graduation-cap text-2xl"></i>
+            </div>
+            <h3 className="text-xl font-black mb-4 uppercase tracking-tighter">Authorized Content</h3>
+            <p className="text-gray-400 text-xs font-medium leading-relaxed uppercase tracking-tighter">Standardized curriculum solutions since 1988. Verified by board subject experts.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+});
 
 // App Router Wrapper to access navigate
 const AppContent = () => {
@@ -213,6 +302,31 @@ const AppContent = () => {
 
       <Routes>
         <Route path="/" element={<HomePage onAddToCart={handleAddToCart} />} />
+
+        {/* SERIES PAGES (Consolidated) */}
+        <Route path="/series/enlight" element={<SeriesPage onAddToCart={handleAddToCart} />} />
+        <Route path="/series/joyway" element={<SeriesPage onAddToCart={handleAddToCart} />} />
+        <Route path="/series/ravi" element={<SeriesPage onAddToCart={handleAddToCart} />} />
+        <Route path="/series/:seriesName" element={<SeriesPage onAddToCart={handleAddToCart} />} />
+
+        {/* ENLIGHT CATEGORIES MAPPING */}
+        <Route path="/category/enlight-term" element={<SeriesPage onAddToCart={handleAddToCart} initialType="Term" />} />
+        <Route path="/category/enlight-semester" element={<SeriesPage onAddToCart={handleAddToCart} initialType="Semester" />} />
+        <Route path="/category/enlight-workbook" element={<SeriesPage onAddToCart={handleAddToCart} initialType="Workbook" />} />
+        <Route path="/category/enlight-coursebooks" element={<SeriesPage onAddToCart={handleAddToCart} initialType="Coursebook" />} />
+
+        {/* JOYWAY CATEGORIES MAPPING */}
+        <Route path="/category/joyway-term" element={<SeriesPage onAddToCart={handleAddToCart} initialType="Term" />} />
+        <Route path="/category/joyway-workbook" element={<SeriesPage onAddToCart={handleAddToCart} initialType="Workbook" />} />
+        <Route path="/category/joyway-coursebooks" element={<SeriesPage onAddToCart={handleAddToCart} initialType="Coursebook" />} />
+
+        {/* RAVI CATEGORIES MAPPING */}
+        <Route path="/category/ravi-telugu" element={<SeriesPage onAddToCart={handleAddToCart} initialLanguage="Telugu" />} />
+        <Route path="/category/ravi-govt-ap" element={<SeriesPage onAddToCart={handleAddToCart} initialRegion="AP" />} />
+        <Route path="/category/ravi-govt-tg" element={<SeriesPage onAddToCart={handleAddToCart} initialRegion="TG" />} />
+        <Route path="/category/ravi" element={<SeriesPage onAddToCart={handleAddToCart} />} />
+
+        {/* STANDARD ROUTES */}
         <Route path="/category/:categoryId" element={<CategoryPage onAddToCart={handleAddToCart} />} />
         <Route path="/book/:bookId" element={<BookDetailPage onAddToCart={handleAddToCart} />} />
         <Route path="/about" element={<AboutPage />} />
@@ -221,9 +335,6 @@ const AppContent = () => {
         <Route path="/workbooks" element={<WorkbooksPage onAddToCart={handleAddToCart} />} />
         <Route path="/kits-flash" element={<KitsFlashPage onAddToCart={handleAddToCart} />} />
         <Route path="/languages" element={<LanguagesPage onAddToCart={handleAddToCart} />} />
-        <Route path="/enlight-course" element={<EnlightCoursePage onAddToCart={handleAddToCart} />} />
-        <Route path="/enlight-semester" element={<EnlightSemesterPage onAddToCart={handleAddToCart} />} />
-        <Route path="/enlight-term" element={<EnlightTermPage onAddToCart={handleAddToCart} />} />
       </Routes>
 
       <Footer />
