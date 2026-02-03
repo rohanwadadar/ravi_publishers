@@ -169,34 +169,27 @@ const AppContent = () => {
     localStorage.setItem('ravibooks_cart', JSON.stringify(cart));
   }, [cart]);
 
-  const handleAddToCart = (book) => {
+  const handleAddToCart = (book, quantity = 1) => {
+    const qty = parseInt(quantity);
+    if (isNaN(qty) || qty <= 0) return;
+
     setCart(prevCart => {
       const existingItem = prevCart.find(item => item.id === book.id);
       if (existingItem) {
         return prevCart.map(item =>
-          item.id === book.id ? { ...item, quantity: (item.quantity * 1) + 1 } : item
+          item.id === book.id ? { ...item, quantity: (item.quantity * 1) + qty } : item
         );
       }
-      return [...prevCart, { ...book, quantity: 1 }];
+      return [...prevCart, { ...book, quantity: qty }];
     });
 
     // Show notification
-    setNotification(`${book.name} added to Order Bag!`);
+    setNotification(`${qty} x ${book.name} added to Order Bag!`);
     setTimeout(() => setNotification(null), 3000);
   };
 
   const removeFromCart = (id) => {
     setCart(prev => prev.filter(item => item.id !== id));
-  };
-
-  const updateQuantity = (id, delta) => {
-    setCart(prev => prev.map(item => {
-      if (item.id === id) {
-        const newQty = (item.quantity * 1) + delta;
-        return newQty > 0 ? { ...item, quantity: newQty } : item;
-      }
-      return item;
-    }));
   };
 
   const cartTotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
@@ -264,14 +257,15 @@ const AppContent = () => {
                     <h4 className="font-black text-xs uppercase mb-1 line-clamp-2 leading-tight text-[#231F20]">{item.name}</h4>
                     <p className="text-[10px] text-[#01A651] font-bold mb-4 uppercase tracking-widest">{item.category}</p>
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center bg-gray-100 rounded-lg p-1">
-                        <button onClick={() => updateQuantity(item.id, -1)} className="w-6 h-6 flex items-center justify-center hover:bg-white hover:shadow-sm rounded transition-all"><i className="fas fa-minus text-[8px]"></i></button>
-                        <span className="w-8 text-center text-xs font-black">{item.quantity}</span>
-                        <button onClick={() => updateQuantity(item.id, 1)} className="w-6 h-6 flex items-center justify-center hover:bg-white hover:shadow-sm rounded transition-all"><i className="fas fa-plus text-[8px]"></i></button>
+                      <div className="flex items-center bg-gray-50 rounded-lg px-3 py-1 border border-gray-100">
+                        <span className="text-[10px] font-black uppercase text-gray-400 mr-2 tracking-widest">Qty:</span>
+                        <span className="text-xs font-black text-[#231F20]">{item.quantity}</span>
                       </div>
                       <div className="flex flex-col items-end">
                         <span className="text-sm font-black text-[#EC1C24]">₹{item.price * item.quantity}</span>
-                        <button onClick={() => removeFromCart(item.id)} className="text-[8px] text-gray-300 hover:text-[#EC1C24] font-black uppercase tracking-[0.2em] mt-1">Remove</button>
+                        <button onClick={() => removeFromCart(item.id)} className="text-[8px] text-gray-300 hover:text-[#EC1C24] font-black uppercase tracking-[0.2em] mt-1 flex items-center gap-1 transition-colors">
+                          <i className="fas fa-trash-alt"></i> Remove
+                        </button>
                       </div>
                     </div>
                   </div>

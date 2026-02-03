@@ -6,6 +6,7 @@ const BookDetailPage = ({ onAddToCart }) => {
     const { bookId } = useParams();
     const book = booksData.find(b => b.id === parseInt(bookId));
     const [activeTab, setActiveTab] = useState('description');
+    const [quantity, setQuantity] = useState(1);
 
     if (!book) return <div className="pt-60 text-center font-black h-screen uppercase tracking-widest text-[#EC1C24]">Archive Not Found</div>;
 
@@ -56,13 +57,18 @@ const BookDetailPage = ({ onAddToCart }) => {
                                 <span className="text-[10px] text-gray-300 line-through font-bold tracking-widest uppercase italic mt-1">Order Form: ₹{book.oldPrice}.00</span>
                             </div>
                             <div className="h-px sm:h-12 w-full sm:w-[1px] bg-gray-100"></div>
-                            <div className="flex flex-col gap-2 relative z-10">
-                                <div className="flex gap-1">
+                            <div className="flex flex-col gap-2 relative z-10 text-left">
+                                <div className="flex gap-1 justify-start">
                                     {[...Array(5)].map((_, i) => (
                                         <i key={i} className={`fas fa-star text-[9px] ${i < book.rating ? 'text-[#FFF200]' : 'text-gray-100'}`}></i>
                                     ))}
                                 </div>
-                                <span className="text-[8px] font-black text-gray-400 uppercase tracking-[0.15em] lg:tracking-[0.2em]">Authorized Publication Since 1988</span>
+                                <div className="flex flex-wrap items-center gap-4">
+                                    <span className="text-[8px] font-black text-gray-400 uppercase tracking-[0.15em] lg:tracking-[0.2em]">Authorized Publication Since 1988</span>
+                                    <span className="px-2 py-1 bg-[#01A651]/10 text-[#01A651] text-[7px] font-black uppercase tracking-widest rounded-md border border-[#01A651]/10 flex items-center gap-1">
+                                        <i className="fas fa-check-circle"></i> In Stock
+                                    </span>
+                                </div>
                             </div>
                         </div>
 
@@ -110,9 +116,33 @@ const BookDetailPage = ({ onAddToCart }) => {
                             )}
                         </div>
 
+                        <div className="flex flex-col gap-3 mb-8">
+                            <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest ml-1">Select Quantity</label>
+                            <div className="flex items-center gap-4 bg-white border border-gray-100 p-2 rounded-2xl w-fit shadow-sm">
+                                <button
+                                    onClick={() => setQuantity(prev => Math.max(1, prev - 1))}
+                                    className="w-12 h-12 flex items-center justify-center bg-gray-50 hover:bg-[#EC1C24] hover:text-white rounded-xl transition-all font-black"
+                                >
+                                    <i className="fas fa-minus text-xs"></i>
+                                </button>
+                                <input
+                                    type="number"
+                                    value={quantity}
+                                    onChange={(e) => setQuantity(Math.max(1, parseInt(e.target.value) || 1))}
+                                    className="w-16 text-center font-black text-lg bg-transparent border-none outline-none"
+                                />
+                                <button
+                                    onClick={() => setQuantity(prev => prev + 1)}
+                                    className="w-12 h-12 flex items-center justify-center bg-gray-50 hover:bg-[#01A651] hover:text-white rounded-xl transition-all font-black"
+                                >
+                                    <i className="fas fa-plus text-xs"></i>
+                                </button>
+                            </div>
+                        </div>
+
                         <div className="flex flex-col sm:flex-row gap-4 mt-auto">
                             <button
-                                onClick={() => onAddToCart(book)}
+                                onClick={() => onAddToCart(book, quantity)}
                                 className="flex-[2] bg-black hover:bg-[#EC1C24] text-white py-5 md:py-6 rounded-2xl md:rounded-3xl font-black text-[9px] md:text-[10px] uppercase tracking-[0.3em] transition-all shadow-2xl flex items-center justify-center gap-4 md:gap-6 group active:scale-95"
                             >
                                 Add To Order Form

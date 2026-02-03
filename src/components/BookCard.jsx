@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const BookCard = React.memo(({ book, onAddToCart }) => {
+    const [quantity, setQuantity] = useState(1);
     return (
         <div className="group bg-white rounded-[24px] md:rounded-[32px] border border-gray-100 hover:border-[#EC1C24]/20 transition-all duration-700 flex flex-col h-full overflow-hidden hover:shadow-[0_30px_60px_rgba(236,28,36,0.12)]">
             {/* Dynamic Image Container */}
@@ -24,12 +25,6 @@ const BookCard = React.memo(({ book, onAddToCart }) => {
                     >
                         <i className="fas fa-expand-arrows-alt text-base md:text-lg"></i>
                     </Link>
-                    <button
-                        onClick={() => onAddToCart(book)}
-                        className="w-12 h-12 md:w-14 md:h-14 bg-white text-[#231F20] rounded-xl md:rounded-2xl shadow-2xl flex items-center justify-center hover:bg-[#01A651] hover:text-white transition-all transform translate-y-8 group-hover:translate-y-0 duration-500 delay-[100ms]"
-                    >
-                        <i className="fas fa-shopping-bag text-base md:text-lg"></i>
-                    </button>
                 </div>
 
                 {/* Dynamic Badge */}
@@ -61,18 +56,40 @@ const BookCard = React.memo(({ book, onAddToCart }) => {
                     {book.description}
                 </p>
 
+                <div className="flex items-center gap-2 mb-4">
+                    <span className="px-2 py-0.5 bg-[#01A651]/5 text-[#01A651] text-[7px] font-black uppercase tracking-[0.15em] rounded-md border border-[#01A651]/10">
+                        <i className="fas fa-check-circle mr-1"></i> In Stock
+                    </span>
+                </div>
+
                 <div className="mt-auto flex items-center justify-between pt-4 md:pt-6 border-t border-gray-50">
                     <div className="flex flex-col">
                         <span className="text-xl md:text-2xl font-black text-[#231F20] tracking-tighter">₹{book.price}</span>
                         <span className="text-[8px] md:text-[10px] text-gray-300 line-through font-bold uppercase">MRP ₹{book.oldPrice}</span>
                     </div>
-                    <button
-                        onClick={() => onAddToCart(book)}
-                        className="group/btn relative w-10 h-10 md:w-12 md:h-12 bg-gray-50 rounded-xl md:rounded-2xl flex items-center justify-center transition-all hover:bg-[#EC1C24] overflow-hidden active:scale-90"
-                    >
-                        <i className="fas fa-plus text-[#EC1C24] group-hover/btn:text-white transition-all duration-500"></i>
-                        <span className="absolute inset-0 bg-white/20 translate-y-full group-hover/btn:translate-y-0 transition-transform"></span>
-                    </button>
+                    <div className="flex items-center gap-3">
+                        <div className="flex items-center bg-gray-50 rounded-xl md:rounded-2xl px-3 py-1 border border-gray-100 group/qty hover:bg-white hover:border-[#EC1C24]/20 transition-all">
+                            <span className="text-[8px] md:text-[9px] font-black text-gray-400 uppercase tracking-widest mr-1">QTY</span>
+                            <input
+                                type="number"
+                                min="1"
+                                value={quantity}
+                                onChange={(e) => setQuantity(Math.max(1, parseInt(e.target.value) || 1))}
+                                className="w-8 md:w-10 text-center font-black text-[10px] md:text-xs bg-transparent border-none outline-none"
+                                onClick={(e) => e.stopPropagation()}
+                            />
+                        </div>
+                        <button
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                onAddToCart(book, quantity);
+                            }}
+                            className="group/btn relative w-10 h-10 md:w-12 md:h-12 bg-[#231F20] rounded-xl md:rounded-2xl flex items-center justify-center transition-all hover:bg-[#EC1C24] overflow-hidden active:scale-90"
+                        >
+                            <i className="fas fa-cart-plus text-white transition-all duration-500"></i>
+                            <span className="absolute inset-0 bg-white/20 translate-y-full group-hover/btn:translate-y-0 transition-transform"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
