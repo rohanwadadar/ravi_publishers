@@ -5,9 +5,9 @@ import { navCategories, booksData } from '../data';
 // Memoized Logo for performance
 const Logo = React.memo(() => (
     <div className="flex flex-col items-center">
-        <div className="bg-[#01A651] px-4 py-1 rounded-full flex flex-col items-center shadow-lg border-2 border-white/20 transition-transform duration-300 hover:scale-105 active:scale-95">
-            <div className="bg-[#FFF200] px-3 py-0.5 rounded-full flex items-center gap-2 border border-[#01A651]/20">
-                <span className="text-[#EC1C24] font-black italic text-xl md:text-2xl tracking-tighter drop-shadow-sm leading-none">Ravi</span>
+        <div className="bg-[#EC1C24] px-4 py-1 rounded-full flex flex-col items-center shadow-lg border-2 border-white/20 transition-transform duration-300 hover:scale-105 active:scale-95">
+            <div className="bg-[#FFF200] px-3 py-0.5 rounded-full flex items-center gap-2 border border-[#EC1C24]/20">
+                <span className="text-[#231F20] font-black italic text-xl md:text-2xl tracking-tighter drop-shadow-sm leading-none">Ravi</span>
                 <div className="w-3 h-3 text-white">
                     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L14.39 8.26L21 9.27L16.27 13.87L17.38 20.46L12 17.38L6.62 20.46L7.73 13.87L3 9.27L9.61 8.26L12 2Z" /></svg>
                 </div>
@@ -184,7 +184,7 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
             </div>
 
             {/* Main Branding Bar */}
-            <nav className={`py-3 px-4 md:px-20 flex items-center justify-between gap-4 md:gap-10 transition-all duration-500 ${useSolidStyle ? 'bg-white border-b border-gray-100' : 'bg-[#01A651] text-white shadow-lg'}`}>
+            <nav className={`py-3 px-4 md:px-20 flex items-center justify-between gap-4 md:gap-10 transition-all duration-500 ${useSolidStyle ? 'bg-white border-b border-gray-100' : 'bg-[#EC1C24] text-white shadow-lg'}`}>
                 <div className="flex items-center gap-4 text-left">
                     <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="md:hidden text-xl focus:outline-none" aria-label="Toggle Menu">
                         <i className={`fas ${mobileMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
@@ -269,7 +269,7 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
                             className={`flex items-center gap-3 transition-colors ${useSolidStyle ? 'text-[#231F20]' : 'text-white'} active:scale-95`}
                         >
                             <div className={`w-10 h-10 md:w-11 md:h-11 rounded-full flex items-center justify-center transition-all border-4 overflow-hidden ${useSolidStyle ? 'bg-gray-50 border-white shadow-sm' : 'bg-white/10 border-white/20'}`}>
-                                <img src={`https://ui-avatars.com/api/?name=${profile.name}&background=EC1C24&color=fff`} alt="Profile" className="w-full h-full object-cover" />
+                                <img src={`https://ui-avatars.com/api/?name=${profile.name}&background=01A651&color=fff`} alt="Profile" className="w-full h-full object-cover" />
                             </div>
                             <div className="hidden lg:block text-left leading-tight">
                                 <div className="text-[8px] font-black uppercase tracking-widest opacity-60 mb-0.5">Identity</div>
@@ -304,7 +304,7 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
                         <div className={`w-10 h-10 md:w-12 md:h-12 rounded-2xl flex items-center justify-center transition-all ${useSolidStyle ? 'bg-black text-white hover:bg-[#EC1C24]' : 'bg-white/10 hover:bg-white/20'}`}>
                             <i className="fas fa-file-invoice-dollar text-lg md:text-xl group-hover:scale-110 transition-transform"></i>
                         </div>
-                        <span className={`absolute -top-1 -right-1 w-5 h-5 md:w-6 md:h-6 rounded-full flex items-center justify-center text-[8px] md:text-[10px] font-black border-2 md:border-4 ${useSolidStyle ? 'bg-[#EC1C24] text-white border-white' : 'bg-[#FFF200] text-[#231F20] border-[#01A651]'}`}>
+                        <span className={`absolute -top-1 -right-1 w-5 h-5 md:w-6 md:h-6 rounded-full flex items-center justify-center text-[8px] md:text-[10px] font-black border-2 md:border-4 ${useSolidStyle ? 'bg-[#EC1C24] text-white border-white' : 'bg-[#FFF200] text-[#231F20] border-[#EC1C24]'}`}>
                             {cartCount}
                         </span>
                     </button>
@@ -388,7 +388,7 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
                                         className="text-white text-2xl font-black uppercase tracking-tighter flex items-center justify-between group hover:text-[#EC1C24] transition-colors"
                                     >
                                         {cat.label}
-                                        <i className="fas fa-arrow-right text-[#01A651] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                        <i className="fas fa-arrow-right text-[#EC1C24] opacity-0 group-hover:opacity-100 transition-opacity"></i>
                                     </Link>
                                 )}
                             </li>
@@ -436,7 +436,7 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
                         <div className="flex-1 bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-10 flex items-center justify-between border border-gray-200 relative overflow-hidden group/mega text-left">
                             <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#EC1C24]/5 rounded-full blur-3xl"></div>
                             <div className="max-w-xs relative z-10">
-                                <span className="bg-[#01A651] text-white px-4 py-1.5 rounded-full text-[8px] font-black uppercase mb-4 inline-block tracking-widest shadow-lg">2026 Collection</span>
+                                <span className="bg-[#EC1C24] text-white px-4 py-1.5 rounded-full text-[8px] font-black uppercase mb-4 inline-block tracking-widest shadow-lg">2026 Collection</span>
                                 <h3 className="text-3xl font-black text-[#231F20] leading-none uppercase tracking-tighter mt-2">Academic <br /> Excellence</h3>
                                 <Link to={getPath(activeDropdown)} onClick={() => setActiveDropdown(null)} className="inline-block mt-8 bg-[#231F20] text-white px-8 py-3 rounded-xl font-black text-[9px] uppercase tracking-[0.2em] hover:bg-[#EC1C24] transition-all shadow-xl active:scale-95">Explore Full Series</Link>
                             </div>
