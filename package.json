@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "https://rohanwadadar.github.io/ravi_publishers",
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "vite build --mode gh-pages",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",

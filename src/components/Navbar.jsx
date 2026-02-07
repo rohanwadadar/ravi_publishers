@@ -25,6 +25,7 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [searchStr, setSearchStr] = useState('');
     const [liveResults, setLiveResults] = useState({ books: [], categories: [] });
+    const [expandedSections, setExpandedSections] = useState({}); // Track expanded semester sections
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -36,9 +37,110 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
             id: 'joyway',
             type: 'dropdown',
             items: [
-                { label: 'Term Guide', path: '/series/joyway' },
-                { label: 'Workbook', path: '/series/joyway' },
-                { label: 'Coursebooks', path: '/series/joyway' }
+                {
+                    label: 'Semester - 1',
+                    id: 'joyway-semester-1',
+                    type: 'sub-structure',
+                    items: [
+                        {
+                            label: 'Term Guide',
+                            id: 'joyway-sem1-termguide',
+                            type: 'nested-structure',
+                            items: [
+                                { label: 'Pre-KG', path: '/series/joyway?semester=1&type=termguide&grade=prekg' },
+                                { label: 'LKG', path: '/series/joyway?semester=1&type=termguide&grade=lkg' },
+                                { label: 'UKG', path: '/series/joyway?semester=1&type=termguide&grade=ukg' },
+                                { label: '1st', path: '/series/joyway?semester=1&type=termguide&grade=1st' },
+                                { label: '2nd', path: '/series/joyway?semester=1&type=termguide&grade=2nd' },
+                                { label: '3rd', path: '/series/joyway?semester=1&type=termguide&grade=3rd' },
+                                { label: '4th', path: '/series/joyway?semester=1&type=termguide&grade=4th' },
+                                { label: '5th', path: '/series/joyway?semester=1&type=termguide&grade=5th' }
+                            ]
+                        },
+                        {
+                            label: 'Workbook',
+                            id: 'joyway-sem1-workbook',
+                            type: 'nested-structure',
+                            items: [
+                                { label: 'Pre-KG', path: '/series/joyway?semester=1&type=workbook&grade=prekg' },
+                                { label: 'LKG', path: '/series/joyway?semester=1&type=workbook&grade=lkg' },
+                                { label: 'UKG', path: '/series/joyway?semester=1&type=workbook&grade=ukg' },
+                                { label: '1st', path: '/series/joyway?semester=1&type=workbook&grade=1st' },
+                                { label: '2nd', path: '/series/joyway?semester=1&type=workbook&grade=2nd' },
+                                { label: '3rd', path: '/series/joyway?semester=1&type=workbook&grade=3rd' },
+                                { label: '4th', path: '/series/joyway?semester=1&type=workbook&grade=4th' },
+                                { label: '5th', path: '/series/joyway?semester=1&type=workbook&grade=5th' }
+                            ]
+                        },
+                        {
+                            label: 'Coursebook',
+                            id: 'joyway-sem1-coursebook',
+                            type: 'nested-structure',
+                            items: [
+                                { label: 'Pre-KG', path: '/series/joyway?semester=1&type=coursebook&grade=prekg' },
+                                { label: 'LKG', path: '/series/joyway?semester=1&type=coursebook&grade=lkg' },
+                                { label: 'UKG', path: '/series/joyway?semester=1&type=coursebook&grade=ukg' },
+                                { label: '1st', path: '/series/joyway?semester=1&type=coursebook&grade=1st' },
+                                { label: '2nd', path: '/series/joyway?semester=1&type=coursebook&grade=2nd' },
+                                { label: '3rd', path: '/series/joyway?semester=1&type=coursebook&grade=3rd' },
+                                { label: '4th', path: '/series/joyway?semester=1&type=coursebook&grade=4th' },
+                                { label: '5th', path: '/series/joyway?semester=1&type=coursebook&grade=5th' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    label: 'Semester - 2',
+                    id: 'joyway-semester-2',
+                    type: 'sub-structure',
+                    items: [
+                        {
+                            label: 'Term Guide',
+                            id: 'joyway-sem2-termguide',
+                            type: 'nested-structure',
+                            items: [
+                                { label: 'Pre-KG', path: '/series/joyway?semester=2&type=termguide&grade=prekg' },
+                                { label: 'LKG', path: '/series/joyway?semester=2&type=termguide&grade=lkg' },
+                                { label: 'UKG', path: '/series/joyway?semester=2&type=termguide&grade=ukg' },
+                                { label: '1st', path: '/series/joyway?semester=2&type=termguide&grade=1st' },
+                                { label: '2nd', path: '/series/joyway?semester=2&type=termguide&grade=2nd' },
+                                { label: '3rd', path: '/series/joyway?semester=2&type=termguide&grade=3rd' },
+                                { label: '4th', path: '/series/joyway?semester=2&type=termguide&grade=4th' },
+                                { label: '5th', path: '/series/joyway?semester=2&type=termguide&grade=5th' }
+                            ]
+                        },
+                        {
+                            label: 'Workbook',
+                            id: 'joyway-sem2-workbook',
+                            type: 'nested-structure',
+                            items: [
+                                { label: 'Pre-KG', path: '/series/joyway?semester=2&type=workbook&grade=prekg' },
+                                { label: 'LKG', path: '/series/joyway?semester=2&type=workbook&grade=lkg' },
+                                { label: 'UKG', path: '/series/joyway?semester=2&type=workbook&grade=ukg' },
+                                { label: '1st', path: '/series/joyway?semester=2&type=workbook&grade=1st' },
+                                { label: '2nd', path: '/series/joyway?semester=2&type=workbook&grade=2nd' },
+                                { label: '3rd', path: '/series/joyway?semester=2&type=workbook&grade=3rd' },
+                                { label: '4th', path: '/series/joyway?semester=2&type=workbook&grade=4th' },
+                                { label: '5th', path: '/series/joyway?semester=2&type=workbook&grade=5th' }
+                            ]
+                        },
+                        {
+                            label: 'Coursebook',
+                            id: 'joyway-sem2-coursebook',
+                            type: 'nested-structure',
+                            items: [
+                                { label: 'Pre-KG', path: '/series/joyway?semester=2&type=coursebook&grade=prekg' },
+                                { label: 'LKG', path: '/series/joyway?semester=2&type=coursebook&grade=lkg' },
+                                { label: 'UKG', path: '/series/joyway?semester=2&type=coursebook&grade=ukg' },
+                                { label: '1st', path: '/series/joyway?semester=2&type=coursebook&grade=1st' },
+                                { label: '2nd', path: '/series/joyway?semester=2&type=coursebook&grade=2nd' },
+                                { label: '3rd', path: '/series/joyway?semester=2&type=coursebook&grade=3rd' },
+                                { label: '4th', path: '/series/joyway?semester=2&type=coursebook&grade=4th' },
+                                { label: '5th', path: '/series/joyway?semester=2&type=coursebook&grade=5th' }
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
@@ -70,7 +172,7 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
             ]
         },
         { label: 'KITS', id: 'kits-flash', type: 'link' },
-        { label: 'PRICE LIST', id: 'price-list', type: 'link' },
+        { label: 'CATALOG', id: 'price-list', type: 'link' },
         { label: 'ABOUT', id: 'about', type: 'link' }
     ], []);
 
@@ -128,6 +230,14 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
         } else {
             setMobileMenuOpen(false);
         }
+    };
+
+    // Toggle expanded state for semester sections
+    const toggleSection = (sectionId) => {
+        setExpandedSections(prev => ({
+            ...prev,
+            [sectionId]: !prev[sectionId]
+        }));
     };
 
     useEffect(() => {
@@ -348,23 +458,51 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
                                         <div className="ml-4 space-y-4 border-l-2 border-white/10 pl-4">
                                             {cat.items.map((item, index) => {
                                                 if (item.type === 'sub-structure') {
+                                                    const isExpanded = expandedSections[item.id];
                                                     return (
                                                         <div key={index} className="space-y-3">
-                                                            <div className="text-[#FFF200] text-[10px] font-black uppercase tracking-widest">
-                                                                {item.label}
-                                                            </div>
-                                                            <div className="grid grid-cols-2 gap-2">
-                                                                {item.items.map((nested, nestedIndex) => (
-                                                                    <Link
-                                                                        key={nestedIndex}
-                                                                        to={nested.path}
-                                                                        onClick={() => setMobileMenuOpen(false)}
-                                                                        className="bg-white/5 text-white text-[10px] font-bold uppercase py-3 px-3 rounded-xl text-center hover:bg-[#FFF200] hover:text-black transition-all"
-                                                                    >
-                                                                        {nested.label}
-                                                                    </Link>
-                                                                ))}
-                                                            </div>
+                                                            <button
+                                                                onClick={() => toggleSection(item.id)}
+                                                                className="w-full text-left text-[#FFF200] text-[11px] font-black uppercase tracking-widest flex items-center justify-between hover:text-white transition-colors"
+                                                            >
+                                                                <span className="font-black">{item.label}</span>
+                                                                <i className={`fas fa-chevron-${isExpanded ? 'up' : 'down'} text-[10px]`}></i>
+                                                            </button>
+                                                            {isExpanded && (
+                                                                <div className="space-y-3 pl-3 border-l-2 border-white/10 animate-in slide-in-from-top-2 duration-300">
+                                                                    {item.items.map((nested, nestedIndex) => {
+                                                                        if (nested.type === 'nested-structure') {
+                                                                            const isNestedExpanded = expandedSections[nested.id];
+                                                                            return (
+                                                                                <div key={nestedIndex} className="space-y-2">
+                                                                                    <button
+                                                                                        onClick={() => toggleSection(nested.id)}
+                                                                                        className="w-full text-left text-white/80 text-[10px] font-bold uppercase tracking-wide flex items-center justify-between hover:text-[#FFF200] transition-colors"
+                                                                                    >
+                                                                                        <span>{nested.label}</span>
+                                                                                        <i className={`fas fa-chevron-${isNestedExpanded ? 'up' : 'down'} text-[8px]`}></i>
+                                                                                    </button>
+                                                                                    {isNestedExpanded && (
+                                                                                        <div className="grid grid-cols-2 gap-2 animate-in slide-in-from-top-2 duration-200">
+                                                                                            {nested.items.map((grade, gradeIndex) => (
+                                                                                                <Link
+                                                                                                    key={gradeIndex}
+                                                                                                    to={grade.path}
+                                                                                                    onClick={() => setMobileMenuOpen(false)}
+                                                                                                    className="bg-white/5 text-white text-[9px] font-bold uppercase py-2 px-2 rounded-lg text-center hover:bg-[#FFF200] hover:text-black transition-all"
+                                                                                                >
+                                                                                                    {grade.label}
+                                                                                                </Link>
+                                                                                            ))}
+                                                                                        </div>
+                                                                                    )}
+                                                                                </div>
+                                                                            );
+                                                                        }
+                                                                        return null;
+                                                                    })}
+                                                                </div>
+                                                            )}
                                                         </div>
                                                     );
                                                 }
@@ -406,32 +544,71 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
                     >
                         <div className="w-1/3">
                             <h4 className="text-[#EC1C24] text-[10px] font-black mb-6 border-b pb-3 uppercase tracking-[0.3em] text-left">{activeDropdown}</h4>
-                            <ul className="grid grid-cols-1 gap-3">
-                                {(() => {
-                                    const activeItem = navStructure.find(n => n.id === activeDropdown);
-                                    return activeItem?.items.map((item, i) => {
-                                        if (item.type === 'sub-structure') {
+                            <div className="max-h-[60vh] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+                                <ul className="grid grid-cols-1 gap-3">
+                                    {(() => {
+                                        const activeItem = navStructure.find(n => n.id === activeDropdown);
+                                        return activeItem?.items.map((item, i) => {
+                                            if (item.type === 'sub-structure') {
+                                                const isExpanded = expandedSections[item.id];
+                                                return (
+                                                    <div key={i} className="space-y-2 mt-2 first:mt-0">
+                                                        <button
+                                                            onClick={() => toggleSection(item.id)}
+                                                            className="w-full text-left text-gray-800 text-[11px] font-black uppercase tracking-widest mb-1 flex items-center justify-between hover:text-[#EC1C24] transition-colors group"
+                                                        >
+                                                            <span className="font-black">{item.label}</span>
+                                                            <i className={`fas fa-chevron-${isExpanded ? 'up' : 'down'} text-[8px] text-gray-400 group-hover:text-[#EC1C24] transition-transform`}></i>
+                                                        </button>
+                                                        {isExpanded && (
+                                                            <div className="space-y-3 pl-3 border-l-2 border-gray-200 animate-in slide-in-from-top-2 duration-300">
+                                                                {item.items.map((nested, j) => {
+                                                                    if (nested.type === 'nested-structure') {
+                                                                        const isNestedExpanded = expandedSections[nested.id];
+                                                                        return (
+                                                                            <div key={j} className="space-y-2">
+                                                                                <button
+                                                                                    onClick={() => toggleSection(nested.id)}
+                                                                                    className="w-full text-left text-gray-600 text-[10px] font-bold uppercase tracking-wide flex items-center justify-between hover:text-[#EC1C24] transition-colors group"
+                                                                                >
+                                                                                    <span>{nested.label}</span>
+                                                                                    <i className={`fas fa-chevron-${isNestedExpanded ? 'up' : 'down'} text-[7px] text-gray-300 group-hover:text-[#EC1C24]`}></i>
+                                                                                </button>
+                                                                                {isNestedExpanded && (
+                                                                                    <div className="grid grid-cols-2 gap-2 animate-in slide-in-from-top-2 duration-200">
+                                                                                        {nested.items.map((grade, k) => (
+                                                                                            <Link
+                                                                                                key={k}
+                                                                                                to={grade.path}
+                                                                                                onClick={() => setActiveDropdown(null)}
+                                                                                                className="text-gray-400 hover:text-white hover:bg-[#EC1C24] transition-all cursor-pointer font-bold text-[9px] uppercase flex items-center gap-2 group/nav px-2 py-1.5 rounded-lg"
+                                                                                            >
+                                                                                                <div className="w-1 h-1 bg-gray-200 rounded-full group-hover/nav:bg-white"></div>
+                                                                                                {grade.label}
+                                                                                            </Link>
+                                                                                        ))}
+                                                                                    </div>
+                                                                                )}
+                                                                            </div>
+                                                                        );
+                                                                    }
+                                                                    return null;
+                                                                })}
+                                                            </div>
+                                                        )}
+                                                    </div>
+                                                );
+                                            }
                                             return (
-                                                <div key={i} className="space-y-2 mt-2 first:mt-0">
-                                                    <div className="text-gray-300 text-[8px] font-black uppercase tracking-widest mb-1">{item.label}</div>
-                                                    {item.items.map((nested, j) => (
-                                                        <li key={j} className="text-gray-400 hover:text-black hover:translate-x-2 transition-all cursor-pointer font-bold text-[10px] uppercase flex items-center gap-2 group/nav">
-                                                            <div className="w-1 h-1 bg-gray-200 rounded-full group-hover/nav:bg-[#EC1C24]"></div>
-                                                            <Link to={nested.path} onClick={() => setActiveDropdown(null)}>{nested.label}</Link>
-                                                        </li>
-                                                    ))}
-                                                </div>
+                                                <li key={i} className="text-gray-400 hover:text-black hover:translate-x-2 transition-all cursor-pointer font-bold text-[10px] uppercase flex items-center gap-2 group/nav">
+                                                    <div className="w-1 h-1 bg-gray-200 rounded-full group-hover/nav:bg-[#EC1C24]"></div>
+                                                    <Link to={item.path} onClick={() => setActiveDropdown(null)}>{item.label}</Link>
+                                                </li>
                                             );
-                                        }
-                                        return (
-                                            <li key={i} className="text-gray-400 hover:text-black hover:translate-x-2 transition-all cursor-pointer font-bold text-[10px] uppercase flex items-center gap-2 group/nav">
-                                                <div className="w-1 h-1 bg-gray-200 rounded-full group-hover/nav:bg-[#EC1C24]"></div>
-                                                <Link to={item.path} onClick={() => setActiveDropdown(null)}>{item.label}</Link>
-                                            </li>
-                                        );
-                                    });
-                                })()}
-                            </ul>
+                                        });
+                                    })()}
+                                </ul>
+                            </div>
                         </div>
                         <div className="flex-1 bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-10 flex items-center justify-between border border-gray-200 relative overflow-hidden group/mega text-left">
                             <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#EC1C24]/5 rounded-full blur-3xl"></div>

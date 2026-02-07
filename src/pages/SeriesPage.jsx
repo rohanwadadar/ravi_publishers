@@ -7,6 +7,11 @@ const SeriesPage = ({ onAddToCart, initialType, initialLanguage, initialRegion }
     const { seriesName } = useParams();
     const location = useLocation();
 
+    // Parse URL query parameters for semester and grade filtering
+    const queryParams = new URLSearchParams(location.search);
+    const semesterParam = queryParams.get('semester');
+    const gradeParam = queryParams.get('grade');
+
     // Normalize series name from URL or determine from props
     const currentSeries = seriesName || (location.pathname.includes('enlight') ? 'enlight' : location.pathname.includes('joyway') ? 'joyway' : 'ravi');
 
@@ -16,7 +21,9 @@ const SeriesPage = ({ onAddToCart, initialType, initialLanguage, initialRegion }
         subject: [],
         type: initialType ? [initialType] : [],
         language: initialLanguage ? [initialLanguage] : [],
-        region: initialRegion ? [initialRegion] : []
+        region: initialRegion ? [initialRegion] : [],
+        semester: semesterParam ? [semesterParam] : [],
+        grade: gradeParam ? [gradeParam] : []
     });
 
     // Dynamic Series Config
@@ -66,16 +73,44 @@ const SeriesPage = ({ onAddToCart, initialType, initialLanguage, initialRegion }
 
     const series = seriesConfig[currentSeries] || seriesConfig.enlight;
 
+    // Helper function to normalize grade names from URL params to match data structure
+    const normalizeGrade = (grade) => {
+        const gradeMap = {
+            'prekg': 'Pre-KG',
+            'lkg': 'LKG',
+            'ukg': 'UKG',
+            'srkg': 'Sr.KG',
+            'jrkg': 'Jr.KG',
+            '1st': '1st Class',
+            '2nd': '2nd Class',
+            '3rd': '3rd Class',
+            '4th': '4th Class',
+            '5th': '5th Class',
+            '6th': '6th Class',
+            '7th': '7th Class',
+            '8th': '8th Class',
+            '9th': '9th Class',
+            '10th': '10th Class'
+        };
+        return gradeMap[grade.toLowerCase()] || grade;
+    };
+
     // Reset or update filters when series or initial props change
     useEffect(() => {
+        const queryParams = new URLSearchParams(location.search);
+        const semesterParam = queryParams.get('semester');
+        const gradeParam = queryParams.get('grade');
+
         setFilters({
-            class: [],
+            class: gradeParam ? [normalizeGrade(gradeParam)] : [],
             subject: [],
-            type: initialType ? [initialType] : [],
+            type: semesterParam ? ['Semester'] : (initialType ? [initialType] : []),
             language: initialLanguage ? [initialLanguage] : [],
-            region: initialRegion ? [initialRegion] : []
+            region: initialRegion ? [initialRegion] : [],
+            semester: semesterParam ? [semesterParam] : [],
+            grade: gradeParam ? [gradeParam] : []
         });
-    }, [currentSeries, initialType, initialLanguage, initialRegion]);
+    }, [currentSeries, initialType, initialLanguage, initialRegion, location.search]);
 
     const handleFilterChange = (category, value) => {
         setFilters(prev => {
@@ -140,7 +175,20 @@ const SeriesPage = ({ onAddToCart, initialType, initialLanguage, initialRegion }
                 (book.category && book.category.toLowerCase().includes(l.toLowerCase()))
             );
 
-            return matchesClass && matchesType && matchesSubject && matchesLanguage;
+            // Semester Filter - match books with specific semester number in their name
+            const matchesSemester = (filters.semester || []).length === 0 || filters.semester.some(sem => {
+                // Look for "Semester 1", "Semester 2", "Semester Coursebook 1", "Semester Coursebook 2", etc.
+                const semesterPattern = new RegExp(`semester.*${sem}|semester.*coursebook.*${sem}|semester.*workbook.*${sem}`, 'i');
+                return semesterPattern.test(book.name) || semesterPattern.test(book.category);
+            });
+
+            // Grade Filter - already handled by class filter, but keep for explicit URL param matching
+            const matchesGrade = (filters.grade || []).length === 0 || filters.grade.some(g => {
+                const normalizedGrade = normalizeGrade(g);
+                return book.subCategory === normalizedGrade;
+            });
+
+            return matchesClass && matchesType && matchesSubject && matchesLanguage && matchesSemester && matchesGrade;
         });
     }, [baseBooks, filters]);
 
