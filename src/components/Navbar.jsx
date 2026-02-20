@@ -5,14 +5,12 @@ import { navCategories, booksData } from '../data';
 // Memoized Logo for performance
 const Logo = React.memo(() => (
     <div className="flex flex-col items-center">
-        <div className="bg-[#01A651] px-4 py-1 rounded-full flex flex-col items-center shadow-lg border-2 border-white/20 transition-transform duration-300 hover:scale-105 active:scale-95">
-            <div className="bg-[#FFF200] px-3 py-0.5 rounded-full flex items-center gap-2 border border-[#01A651]/20">
-                <span className="text-[#EC1C24] font-black italic text-xl md:text-2xl tracking-tighter drop-shadow-sm leading-none">Ravi</span>
-                <div className="w-3 h-3 text-white">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L14.39 8.26L21 9.27L16.27 13.87L17.38 20.46L12 17.38L6.62 20.46L7.73 13.87L3 9.27L9.61 8.26L12 2Z" /></svg>
-                </div>
-            </div>
-            <span className="text-white font-black text-[7px] md:text-[9px] uppercase tracking-[0.2em] mt-0.5">Since 1988</span>
+        <div className="transition-all duration-500 hover:scale-110 active:scale-95 group">
+            <img
+                src="/ravi-logo-new.jpeg"
+                alt="Ravi Publishers"
+                className="h-12 md:h-16 w-auto drop-shadow-2xl brightness-110 group-hover:brightness-125 transition-all mix-blend-multiply"
+            />
         </div>
     </div>
 ));
