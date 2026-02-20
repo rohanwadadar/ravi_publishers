@@ -98,11 +98,11 @@ const AboutPage = () => {
                 </div>
 
                 {/* Management & Office */}
-                <div className="bg-[#231F20] rounded-[40px] md:rounded-[60px] p-10 md:p-20 text-white relative overflow-hidden mb-16 md:mb-24">
+                <div className="bg-[#231F20] rounded-[40px] md:rounded-[60px] p-10 md:p-20 text-white relative overflow-hidden">
                     <div className="absolute top-0 right-0 w-64 h-64 bg-[#EC1C24]/10 rounded-full blur-3xl"></div>
-                    <div className="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-12 md:gap-16 relative z-10 text-left">
-                        <div className="flex-1">
-                            <h3 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-6 md:mb-8 border-l-4 border-[#FFF200] pl-6 md:pl-8 leading-none">Leadership <br /> Perspective</h3>
+                    <div className="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-12 md:gap-16 relative z-10">
+                        <div className="text-left">
+                            <h3 className="text-3xl md:text-4xl font-black uppercase tracking-tighter mb-6 md:mb-8 border-l-4 border-[#FFF200] pl-6 md:pl-8 leading-none">Leadership <br /> Perspective</h3>
                             <div className="space-y-6 max-w-xl">
                                 <p className="text-white/60 text-base md:text-lg leading-relaxed font-medium">
                                     "Built on trust and quality for nearly four decades, we remain dedicated to providing future generations with reliable and valuable educational resources."
@@ -113,104 +113,24 @@ const AboutPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-full lg:w-[400px] space-y-8 relative z-10">
-                            <div className="bg-white/5 border border-white/10 rounded-[32px] md:rounded-[40px] p-8 md:p-10 backdrop-blur-xl group hover:border-white/20 transition-all">
-                                <h4 className="text-[10px] md:text-xs font-black uppercase tracking-[0.2em] md:tracking-[0.3em] mb-8 md:mb-10 text-white/40 border-b border-white/5 pb-4">Corporate Office</h4>
-                                <div className="space-y-6 md:space-y-8">
-                                    <div className="flex items-start gap-4 md:gap-5">
-                                        <div className="w-10 h-10 rounded-xl bg-[#EC1C24] flex items-center justify-center shadow-lg"><i className="fas fa-location-dot text-white text-sm"></i></div>
-                                        <div>
-                                            <p className="text-[10px] text-white/40 font-black uppercase tracking-widest mb-1">Visit Us</p>
-                                            <p className="text-xs md:text-sm font-bold uppercase tracking-widest leading-relaxed">Ranigari Thota, <br /> Vijayawada - 13</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex items-start gap-4 md:gap-5">
-                                        <div className="w-10 h-10 rounded-xl bg-[#01A651] flex items-center justify-center shadow-lg"><i className="fas fa-phone text-white text-sm"></i></div>
-                                        <div>
-                                            <p className="text-[10px] text-white/40 font-black uppercase tracking-widest mb-1">Call Support</p>
-                                            <p className="text-xs md:text-sm font-bold uppercase tracking-widest leading-none">+91 98491 00063</p>
-                                            <p className="text-xs md:text-sm font-bold uppercase tracking-widest leading-none mt-2">+91 99668 10000</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex items-start gap-4 md:gap-5">
-                                        <div className="w-10 h-10 rounded-xl bg-[#2E3092] flex items-center justify-center shadow-lg"><i className="fas fa-envelope text-white text-sm"></i></div>
-                                        <div>
-                                            <p className="text-[10px] text-white/40 font-black uppercase tracking-widest mb-1">Email Enquiry</p>
-                                            <p className="text-xs md:text-sm font-bold uppercase tracking-widest">info@ravipublishers.com</p>
-                                        </div>
+                        <div className="w-full lg:w-[350px] bg-white/5 border border-white/10 rounded-[32px] md:rounded-[40px] p-8 md:p-10 backdrop-blur-xl">
+                            <h4 className="text-[10px] md:text-xs font-black uppercase tracking-[0.2em] md:tracking-[0.3em] mb-8 md:mb-10 text-white/40">Head Office</h4>
+                            <div className="space-y-6 md:space-y-8">
+                                <div className="flex items-start gap-4 md:gap-5 text-left">
+                                    <i className="fas fa-location-dot text-[#EC1C24] text-lg md:text-xl mt-1"></i>
+                                    <p className="text-xs md:text-sm font-bold uppercase tracking-widest leading-relaxed">Ranigari Thota, <br /> Vijayawada - 13</p>
+                                </div>
+                                <div className="flex items-start gap-4 md:gap-5 text-left">
+                                    <i className="fas fa-phone text-[#01A651] text-lg md:text-xl mt-1"></i>
+                                    <div>
+                                        <p className="text-xs md:text-sm font-bold uppercase tracking-widest">+91 98491 00063</p>
+                                        <p className="text-xs md:text-sm font-bold uppercase tracking-widest">+91 99668 10000</p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Integration: Stylish Map Display */}
-                <div className="relative mb-20 md:mb-32">
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[#EC1C24]/5 via-transparent to-[#01A651]/5 rounded-full blur-[120px] -z-10"></div>
-
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
-                        <div className="lg:col-span-8 relative bg-white rounded-[40px] md:rounded-[60px] overflow-hidden shadow-2xl border border-gray-100 h-[450px] md:h-[650px] group text-left">
-                            {/* Glassmorphism Map Control Overlay */}
-                            <div className="absolute top-8 left-8 z-10 flex items-center gap-5 bg-white/90 backdrop-blur-xl px-8 py-6 rounded-[32px] shadow-2xl border border-white/50 animate-in slide-in-from-left duration-700">
-                                <div className="w-14 h-14 bg-gradient-to-br from-[#EC1C24] to-[#BD0000] rounded-2xl flex items-center justify-center text-white shadow-xl">
-                                    <i className="fas fa-map-marked-alt text-2xl"></i>
+                                <div className="flex items-start gap-4 md:gap-5 text-left">
+                                    <i className="fas fa-envelope text-[#2E3092] text-lg md:text-xl mt-1"></i>
+                                    <p className="text-xs md:text-sm font-bold uppercase tracking-widest">info@ravipublishers.com</p>
                                 </div>
-                                <div className="text-left">
-                                    <h4 className="text-[11px] font-black uppercase text-[#EC1C24] tracking-[0.3em] mb-1">Locate Headquarters</h4>
-                                    <h3 className="text-lg font-black uppercase text-[#231F20] tracking-tighter leading-none">Vijayawada, India</h3>
-                                </div>
-                            </div>
-
-                            {/* Actual Map Widget */}
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d418.91899149725806!2d80.658234!3d16.4969639!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f01c95555555%3A0x2c2e7013841f4770!2sRavi%20Publishers!5e0!3m2!1sen!2sin!4v1740045233156!5m2!1sen!2sin"
-                                width="100%"
-                                height="100%"
-                                style={{ border: 0, filter: 'contrast(1.1) brightness(1.05)' }}
-                                allowFullScreen=""
-                                loading="lazy"
-                                referrerPolicy="no-referrer-when-downgrade"
-                                title="Ravi Publishers Official Location"
-                                className="bg-gray-50 scale-105 group-hover:scale-100 transition-transform duration-[2s]"
-                            ></iframe>
-
-                            {/* Floating CTA */}
-                            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 lg:left-auto lg:right-10 lg:translate-x-0 z-10">
-                                <a
-                                    href="https://www.google.com/maps/place/Ravi+Publishers/@16.4969639,80.658234,21z/data=!4m6!3m5!1s0x3a35f01c95555555:0x2c2e7013841f4770!8m2!3d16.4998283!4d80.6363273"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="flex items-center gap-6 bg-[#231F20] hover:bg-[#EC1C24] text-white pl-10 pr-8 py-5 rounded-full font-black text-[11px] uppercase tracking-[0.3em] transition-all shadow-[0_20px_50px_rgba(0,0,0,0.3)] active:scale-95 group/mapbtn"
-                                >
-                                    Navigate in Maps
-                                    <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center group-hover/mapbtn:bg-white group-hover/mapbtn:text-[#EC1C24] transition-all">
-                                        <i className="fas fa-location-arrow group-hover/mapbtn:translate-x-1 group-hover/mapbtn:-translate-y-1 transition-transform"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div className="lg:col-span-4 flex flex-col gap-8">
-                            <div className="bg-white rounded-[40px] border border-gray-100 p-10 shadow-xl flex-1 text-left flex flex-col justify-center">
-                                <span className="text-[#01A651] font-black text-[10px] uppercase tracking-[0.4em] mb-4 block">Dispatch Hub</span>
-                                <h3 className="text-2xl font-black text-[#231F20] uppercase tracking-tighter mb-6">Regional Distribution</h3>
-                                <p className="text-gray-400 text-xs font-bold uppercase tracking-widest leading-relaxed">
-                                    Strategically located in Vijayawada to ensure 48-hour delivery across Andhra Pradesh & Telangana.
-                                </p>
-                                <div className="mt-8 flex gap-3">
-                                    <div className="px-4 py-2 bg-gray-50 border border-gray-100 rounded-full text-[9px] font-black uppercase text-gray-500 tracking-widest">AP Central</div>
-                                    <div className="px-4 py-2 bg-gray-50 border border-gray-100 rounded-full text-[9px] font-black uppercase text-gray-500 tracking-widest">TG Express</div>
-                                </div>
-                            </div>
-                            <div className="bg-[#EC1C24] rounded-[40px] p-10 shadow-xl shadow-red-500/20 text-white text-left relative overflow-hidden group/card cursor-pointer">
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-700"></div>
-                                <i className="fas fa-headset text-4xl mb-6 opacity-40"></i>
-                                <h3 className="text-xl font-black uppercase tracking-tighter mb-2">Institutional Support</h3>
-                                <p className="text-white/70 text-[10px] font-bold uppercase tracking-widest leading-relaxed mb-8">
-                                    For Bulk Orders & School Management Enquiries
-                                </p>
-                                <a href="tel:+919849100063" className="inline-block text-[11px] font-black uppercase tracking-[0.2em] border-b-2 border-[#FFF200] pb-1 hover:text-[#FFF200] transition-colors">Start Conversation</a>
                             </div>
                         </div>
                     </div>

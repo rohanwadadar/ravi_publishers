@@ -37,9 +37,110 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
             id: 'joyway',
             type: 'dropdown',
             items: [
-                { label: 'Term Series', path: '/category/joyway-term' },
-                { label: 'Workbook', path: '/category/joyway-workbook' },
-                { label: 'Coursebooks', path: '/category/joyway-coursebooks' }
+                {
+                    label: 'Semester - 1',
+                    id: 'joyway-semester-1',
+                    type: 'sub-structure',
+                    items: [
+                        {
+                            label: 'Term Guide',
+                            id: 'joyway-sem1-termguide',
+                            type: 'nested-structure',
+                            items: [
+                                { label: 'Pre-KG', path: '/series/joyway?semester=1&type=termguide&grade=prekg' },
+                                { label: 'LKG', path: '/series/joyway?semester=1&type=termguide&grade=lkg' },
+                                { label: 'UKG', path: '/series/joyway?semester=1&type=termguide&grade=ukg' },
+                                { label: '1st', path: '/series/joyway?semester=1&type=termguide&grade=1st' },
+                                { label: '2nd', path: '/series/joyway?semester=1&type=termguide&grade=2nd' },
+                                { label: '3rd', path: '/series/joyway?semester=1&type=termguide&grade=3rd' },
+                                { label: '4th', path: '/series/joyway?semester=1&type=termguide&grade=4th' },
+                                { label: '5th', path: '/series/joyway?semester=1&type=termguide&grade=5th' }
+                            ]
+                        },
+                        {
+                            label: 'Workbook',
+                            id: 'joyway-sem1-workbook',
+                            type: 'nested-structure',
+                            items: [
+                                { label: 'Pre-KG', path: '/series/joyway?semester=1&type=workbook&grade=prekg' },
+                                { label: 'LKG', path: '/series/joyway?semester=1&type=workbook&grade=lkg' },
+                                { label: 'UKG', path: '/series/joyway?semester=1&type=workbook&grade=ukg' },
+                                { label: '1st', path: '/series/joyway?semester=1&type=workbook&grade=1st' },
+                                { label: '2nd', path: '/series/joyway?semester=1&type=workbook&grade=2nd' },
+                                { label: '3rd', path: '/series/joyway?semester=1&type=workbook&grade=3rd' },
+                                { label: '4th', path: '/series/joyway?semester=1&type=workbook&grade=4th' },
+                                { label: '5th', path: '/series/joyway?semester=1&type=workbook&grade=5th' }
+                            ]
+                        },
+                        {
+                            label: 'Coursebook',
+                            id: 'joyway-sem1-coursebook',
+                            type: 'nested-structure',
+                            items: [
+                                { label: 'Pre-KG', path: '/series/joyway?semester=1&type=coursebook&grade=prekg' },
+                                { label: 'LKG', path: '/series/joyway?semester=1&type=coursebook&grade=lkg' },
+                                { label: 'UKG', path: '/series/joyway?semester=1&type=coursebook&grade=ukg' },
+                                { label: '1st', path: '/series/joyway?semester=1&type=coursebook&grade=1st' },
+                                { label: '2nd', path: '/series/joyway?semester=1&type=coursebook&grade=2nd' },
+                                { label: '3rd', path: '/series/joyway?semester=1&type=coursebook&grade=3rd' },
+                                { label: '4th', path: '/series/joyway?semester=1&type=coursebook&grade=4th' },
+                                { label: '5th', path: '/series/joyway?semester=1&type=coursebook&grade=5th' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    label: 'Semester - 2',
+                    id: 'joyway-semester-2',
+                    type: 'sub-structure',
+                    items: [
+                        {
+                            label: 'Term Guide',
+                            id: 'joyway-sem2-termguide',
+                            type: 'nested-structure',
+                            items: [
+                                { label: 'Pre-KG', path: '/series/joyway?semester=2&type=termguide&grade=prekg' },
+                                { label: 'LKG', path: '/series/joyway?semester=2&type=termguide&grade=lkg' },
+                                { label: 'UKG', path: '/series/joyway?semester=2&type=termguide&grade=ukg' },
+                                { label: '1st', path: '/series/joyway?semester=2&type=termguide&grade=1st' },
+                                { label: '2nd', path: '/series/joyway?semester=2&type=termguide&grade=2nd' },
+                                { label: '3rd', path: '/series/joyway?semester=2&type=termguide&grade=3rd' },
+                                { label: '4th', path: '/series/joyway?semester=2&type=termguide&grade=4th' },
+                                { label: '5th', path: '/series/joyway?semester=2&type=termguide&grade=5th' }
+                            ]
+                        },
+                        {
+                            label: 'Workbook',
+                            id: 'joyway-sem2-workbook',
+                            type: 'nested-structure',
+                            items: [
+                                { label: 'Pre-KG', path: '/series/joyway?semester=2&type=workbook&grade=prekg' },
+                                { label: 'LKG', path: '/series/joyway?semester=2&type=workbook&grade=lkg' },
+                                { label: 'UKG', path: '/series/joyway?semester=2&type=workbook&grade=ukg' },
+                                { label: '1st', path: '/series/joyway?semester=2&type=workbook&grade=1st' },
+                                { label: '2nd', path: '/series/joyway?semester=2&type=workbook&grade=2nd' },
+                                { label: '3rd', path: '/series/joyway?semester=2&type=workbook&grade=3rd' },
+                                { label: '4th', path: '/series/joyway?semester=2&type=workbook&grade=4th' },
+                                { label: '5th', path: '/series/joyway?semester=2&type=workbook&grade=5th' }
+                            ]
+                        },
+                        {
+                            label: 'Coursebook',
+                            id: 'joyway-sem2-coursebook',
+                            type: 'nested-structure',
+                            items: [
+                                { label: 'Pre-KG', path: '/series/joyway?semester=2&type=coursebook&grade=prekg' },
+                                { label: 'LKG', path: '/series/joyway?semester=2&type=coursebook&grade=lkg' },
+                                { label: 'UKG', path: '/series/joyway?semester=2&type=coursebook&grade=ukg' },
+                                { label: '1st', path: '/series/joyway?semester=2&type=coursebook&grade=1st' },
+                                { label: '2nd', path: '/series/joyway?semester=2&type=coursebook&grade=2nd' },
+                                { label: '3rd', path: '/series/joyway?semester=2&type=coursebook&grade=3rd' },
+                                { label: '4th', path: '/series/joyway?semester=2&type=coursebook&grade=4th' },
+                                { label: '5th', path: '/series/joyway?semester=2&type=coursebook&grade=5th' }
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
@@ -47,10 +148,10 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
             id: 'enlight',
             type: 'dropdown',
             items: [
-                { label: 'Term Series', path: '/category/enlight-term' },
-                { label: 'Semester', path: '/category/enlight-semester' },
-                { label: 'Workbook', path: '/category/enlight-workbook' },
-                { label: 'Coursebooks', path: '/category/enlight-coursebooks' }
+                { label: 'Term Series', path: '/series/enlight' },
+                { label: 'Semester', path: '/series/enlight' },
+                { label: 'Workbook', path: '/series/enlight' },
+                { label: 'Coursebooks', path: '/series/enlight' }
             ]
         },
         {
@@ -59,8 +160,15 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
             type: 'dropdown',
             items: [
                 { label: 'Telugu', path: '/category/ravi-telugu' },
-                { label: 'GOVT - A.P', path: '/category/ravi-govt-ap' },
-                { label: 'GOVT - T.G', path: '/category/ravi-govt-tg' }
+                {
+                    label: 'GOVT',
+                    id: 'ravi-govt',
+                    type: 'sub-structure',
+                    items: [
+                        { label: 'A.P', path: '/category/ravi-govt-ap' },
+                        { label: 'T.G', path: '/category/ravi-govt-tg' }
+                    ]
+                }
             ]
         },
         { label: 'KITS', id: 'kits-flash', type: 'link' },
@@ -484,13 +592,7 @@ const Navbar = ({ cartCount, onOpenCart, onSearch }) => {
                                                                             </div>
                                                                         );
                                                                     }
-                                                                    // Fallback for simple links inside sub-structure (e.g. Ravi's GOVT items)
-                                                                    return (
-                                                                        <div key={j} className="text-gray-400 hover:text-black hover:translate-x-2 transition-all cursor-pointer font-bold text-[10px] uppercase flex items-center gap-2 group/nav">
-                                                                            <div className="w-1 h-1 bg-gray-200 rounded-full group-hover/nav:bg-[#EC1C24]"></div>
-                                                                            <Link to={nested.path} onClick={() => setActiveDropdown(null)}>{nested.label}</Link>
-                                                                        </div>
-                                                                    );
+                                                                    return null;
                                                                 })}
                                                             </div>
                                                         )}

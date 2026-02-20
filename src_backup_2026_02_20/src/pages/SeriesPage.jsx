@@ -38,7 +38,7 @@ const SeriesPage = ({ onAddToCart, initialType, initialLanguage, initialRegion }
             textColor: "#231F20",
             accentColor: "#EC1C24", // The dot color
             bgImage: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1920&q=80",
-            types: ['Term', 'Workbook', 'Coursebook', 'Semester'],
+            types: ['Term Book', 'Workbook', 'Coursebook', 'Semester'],
             subjects: ['English', 'Math', 'EVS', 'Rhymes', 'Story']
         },
         enlight: {

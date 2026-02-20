@@ -90,10 +90,9 @@ const HomePage = React.memo(({ onAddToCart }) => {
 
             <div className="flex flex-wrap gap-2 md:gap-3">
               {[
-                { label: 'Semester Series', path: '/category/enlight-semester' },
-                { label: 'Term Series', path: '/category/enlight-term' },
-                { label: 'Workbooks', path: '/category/enlight-workbook' },
-                { label: 'Coursebooks', path: '/category/enlight-coursebooks' }
+                { label: 'Semester Guide', path: '/series/enlight' },
+                { label: 'Term Series', path: '/series/enlight' },
+                { label: 'Workbooks', path: '/series/enlight' }
               ].map((tag, i) => (
                 <span
                   key={i}
@@ -315,8 +314,11 @@ const AppContent = () => {
         <Route path="/category/joyway-workbook" element={<SeriesPage onAddToCart={handleAddToCart} initialType="Workbook" />} />
         <Route path="/category/joyway-coursebooks" element={<SeriesPage onAddToCart={handleAddToCart} initialType="Coursebook" />} />
 
-        {/* RAVI CATEGORIES MAPPING (Reverted to fallback) */}
-        <Route path="/series/ravi" element={<SeriesPage onAddToCart={handleAddToCart} />} />
+        {/* RAVI CATEGORIES MAPPING */}
+        <Route path="/category/ravi-telugu" element={<SeriesPage onAddToCart={handleAddToCart} initialLanguage="Telugu" />} />
+        <Route path="/category/ravi-govt-ap" element={<SeriesPage onAddToCart={handleAddToCart} initialRegion="AP" />} />
+        <Route path="/category/ravi-govt-tg" element={<SeriesPage onAddToCart={handleAddToCart} initialRegion="TG" />} />
+        <Route path="/category/ravi" element={<SeriesPage onAddToCart={handleAddToCart} />} />
 
         {/* STANDARD ROUTES */}
         <Route path="/category/:categoryId" element={<CategoryPage onAddToCart={handleAddToCart} />} />
