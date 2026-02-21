@@ -2,14 +2,14 @@ import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { navCategories, booksData } from '../data';
 
-// Memoized Logo for performance
+// Memoized Logo — High-Def Clean Branding
 const Logo = React.memo(() => (
     <div className="flex flex-col items-center">
-        <div className="transition-all duration-500 hover:scale-110 active:scale-95 group">
+        <div className="transition-transform duration-300 hover:scale-105 active:scale-95 group">
             <img
-                src="/ravi-logo-new.jpeg"
+                src="/ravi_official_logo.png"
                 alt="Ravi Publishers"
-                className="h-12 md:h-16 w-auto drop-shadow-2xl brightness-110 group-hover:brightness-125 transition-all mix-blend-multiply"
+                className="h-14 md:h-[72px] w-auto object-contain"
             />
         </div>
     </div>

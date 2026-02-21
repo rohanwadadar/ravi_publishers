@@ -3,14 +3,21 @@ import { Link } from 'react-router-dom';
 import { booksData } from '../data';
 
 const PriceListPage = () => {
-    // Select basic featured books from Enlight to display in the catalog
+    // Select some featured books from Enlight and Joyway to display in the catalog
     const featuredBooks = useMemo(() => {
-        // Find books that are explicitly marked as Enlight series 
-        // OR have it in their category/name for consistency with branding
-        return booksData.filter(b =>
+        // Find books that are either explicitly marked as Enlight/Joyway series 
+        // OR have it in their category/name for older data entries
+        const enlight = booksData.filter(b =>
             b.series === 'Enlight' ||
             b.category?.toLowerCase().includes('enlight')
-        ).slice(0, 12);
+        ).slice(0, 8);
+
+        const joyway = booksData.filter(b =>
+            b.series === 'Joyway' ||
+            b.category?.toLowerCase().includes('joyway')
+        ).slice(0, 8);
+
+        return [...enlight, ...joyway];
     }, []);
 
     return (
@@ -54,6 +61,24 @@ const PriceListPage = () => {
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-10">
                             {featuredBooks.filter(b => b.series === 'Enlight' || b.category?.toLowerCase().includes('enlight')).map((book) => (
+                                <Link key={book.id} to={`/book/${book.id}`} className="group block focus:outline-none">
+                                    <div className="aspect-[3/4] bg-white rounded-3xl p-4 shadow-lg border border-gray-100 mb-4 transition-transform duration-500 group-hover:-translate-y-2 flex items-center justify-center overflow-hidden">
+                                        <img src={book.image} alt={book.name} className="max-h-full object-contain drop-shadow-2xl transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+                                    </div>
+                                    <h4 className="text-[9px] font-black uppercase text-gray-400 group-hover:text-[#EC1C24] tracking-widest transition-colors text-center px-4">{book.name}</h4>
+                                </Link>
+                            ))}
+                        </div>
+                    </section>
+
+                    {/* Joyway Showcase */}
+                    <section>
+                        <div className="flex items-center gap-4 mb-12">
+                            <div className="h-1 w-12 bg-[#FFF200]"></div>
+                            <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-[#231F20]">Joyway <span className="text-[#EC1C24]">Series</span></h2>
+                        </div>
+                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-10">
+                            {featuredBooks.filter(b => b.series === 'Joyway' || b.category?.toLowerCase().includes('joyway')).map((book) => (
                                 <Link key={book.id} to={`/book/${book.id}`} className="group block focus:outline-none">
                                     <div className="aspect-[3/4] bg-white rounded-3xl p-4 shadow-lg border border-gray-100 mb-4 transition-transform duration-500 group-hover:-translate-y-2 flex items-center justify-center overflow-hidden">
                                         <img src={book.image} alt={book.name} className="max-h-full object-contain drop-shadow-2xl transition-transform duration-700 group-hover:scale-110" loading="lazy" />

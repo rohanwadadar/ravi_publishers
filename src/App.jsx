@@ -38,9 +38,14 @@ const HomePage = React.memo(({ onAddToCart }) => {
               <span className="text-[#FFF200] font-black uppercase tracking-[0.2em] md:tracking-[0.3em] text-[8px] md:text-[10px]">Early Learning Series</span>
             </div>
 
-            <h2 className="text-4xl md:text-7xl font-black text-white uppercase tracking-tighter mb-4 md:mb-6 leading-none group-hover:text-black transition-colors duration-300">
-              Joyway
-            </h2>
+            {/* Joyway Logo — Official High-Def Asset */}
+            <div className="mb-6 md:mb-8">
+              <img
+                src="/joyway_official_logo.png"
+                alt="Joyway Series"
+                className="h-24 md:h-36 w-auto object-contain mix-blend-multiply"
+              />
+            </div>
 
             <p className="text-gray-300 text-[12px] md:text-sm font-medium leading-relaxed max-w-sm border-l-2 border-[#FFF200] pl-4 md:pl-6 mb-8 md:mb-10 opacity-80 group-hover:opacity-100 transition-opacity">
               A complete interactive curriculum designed to spark curiosity in early learners. From Pre-Primary to Class 5.
@@ -80,9 +85,14 @@ const HomePage = React.memo(({ onAddToCart }) => {
               <span className="text-[#01A651] font-black uppercase tracking-[0.2em] md:tracking-[0.3em] text-[8px] md:text-[10px]">Academic Excellence</span>
             </div>
 
-            <h2 className="text-4xl md:text-7xl font-black text-white uppercase tracking-tighter mb-4 md:mb-6 leading-none group-hover:text-[#01A651] transition-colors duration-300">
-              Enlight
-            </h2>
+            {/* Enlight Logo — High-Def Clean Asset */}
+            <div className="mb-6 md:mb-8">
+              <img
+                src="/enlight_official_logo.png"
+                alt="Enlight Series"
+                className="h-24 md:h-36 w-auto object-contain mix-blend-multiply"
+              />
+            </div>
 
             <p className="text-gray-300 text-[12px] md:text-sm font-medium leading-relaxed max-w-sm border-l-2 border-[#01A651] pl-4 md:pl-6 mb-8 md:mb-10 opacity-80 group-hover:opacity-100 transition-opacity">
               Digital-ready semester and term solutions engineered for the modern classroom. Class 1 to Class 10.
