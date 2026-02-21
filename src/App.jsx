@@ -43,7 +43,7 @@ const HomePage = React.memo(({ onAddToCart }) => {
               <img
                 src="/joyway_official_logo.png"
                 alt="Joyway Series"
-                className="h-24 md:h-36 w-auto object-contain mix-blend-multiply"
+                className="h-24 md:h-36 w-auto object-contain"
               />
             </div>
 
@@ -90,7 +90,7 @@ const HomePage = React.memo(({ onAddToCart }) => {
               <img
                 src="/enlight_official_logo.png"
                 alt="Enlight Series"
-                className="h-24 md:h-36 w-auto object-contain mix-blend-multiply"
+                className="h-24 md:h-36 w-auto object-contain"
               />
             </div>
 
